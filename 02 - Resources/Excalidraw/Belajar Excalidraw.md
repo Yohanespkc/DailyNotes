@@ -25,7 +25,7 @@ Selamat datang di kurikulum pembelajaran **Excalidraw** bertahap! Dokumen ini di
 
 ## 🎥 Tahap 2: Video Panduan Pilihan Terbaik (Curated Video Learning)
 
-Berikut adalah 3 video tutorial pilihan kualitas terbaik dari kreator resmi Excalidraw (**Zsolt Viczián - @VisualPKM**) dan pengembang Obsidian terkemuka:
+Berikut adalah video tutorial pilihan kualitas terbaik dari kreator resmi Excalidraw (**Zsolt Viczián - @VisualPKM**) dan pengembang Obsidian terkemuka:
 
 ### 1️⃣ Video 1: Dasar-Dasar Pemakaian Excalidraw untuk Pemula
 *Panduan dasar mengenal toolbar, menggambar bentuk, dan membuat kanvas visual pertama Anda:*
@@ -37,23 +37,9 @@ Berikut adalah 3 video tutorial pilihan kualitas terbaik dari kreator resmi Exca
 
 ---
 
-### 2️⃣ Video 2: Mengintegrasikan Mind-Map & Link Catatan (`[[WikiLinks]]`)
-*Pelajari cara menghubungkan kotak-kotak di Excalidraw langsung ke catatan Obsidian Anda:*
-
-<iframe width="100%" height="380" src="https://www.youtube.com/embed/uNal-QvLq5U?start=0" title="Visual Personal Knowledge Management with Excalidraw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-> 🔗 **Link Direct:** [Tonton di YouTube: Visual PKM & Mind Mapping](https://youtu.be/uNal-QvLq5U)  
-> 🕒 **Dimasukkan Pada:** 31 Juli 2026
 
 ---
 
-### 3️⃣ Video 3: Memaksimalkan Pustaka Ikon (Libraries) & Script Otomatis
-*Pelajari cara memanfaatkan pustaka ikon arsitektur, flowchart, dan elemen visual siap pakai:*
-
-<iframe width="100%" height="380" src="https://www.youtube.com/embed/Z0e1a146Y3M?start=0" title="Excalidraw Advanced Libraries & Scripts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-> 🔗 **Link Direct:** [Tonton di YouTube: Advanced Excalidraw Scripts](https://youtu.be/Z0e1a146Y3M)  
-> 🕒 **Dimasukkan Pada:** 31 Juli 2026
 
 ---
 
