@@ -90,7 +90,7 @@ def convert_png_to_svg(png_path, svg_path):
     from PIL import ImageFilter
     smoothed = img.filter(ImageFilter.SMOOTH_MORE)
     
-    q_img = smoothed.quantize(colors=12, method=Image.Quantization.MEDIANCUT)
+    q_img = smoothed.convert('RGB').quantize(colors=16)
     palette = q_img.getpalette()
     q_data = np.array(q_img)
     alpha = np.array(img)[:, :, 3]
