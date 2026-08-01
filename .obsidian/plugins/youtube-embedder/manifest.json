@@ -1,0 +1,9 @@
+{
+  "id": "youtube-embedder",
+  "name": "YouTube Video Embedder",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Click button to insert YouTube video embed & thumbnail with timestamp.",
+  "author": "Antigravity",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,11 @@
+{
+  "confirmDeletion": true,
+  "showMacroNotice": true,
+  "ribbon": [
+    {
+      "id": "youtube-embedder:insert-youtube-video",
+      "name": "Insert Video",
+      "icon": "video"
+    }
+  ]
+}
