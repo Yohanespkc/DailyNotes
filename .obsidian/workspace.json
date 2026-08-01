@@ -6,7 +6,7 @@
       {
         "id": "dd98b0a63c59917e",
         "type": "tabs",
-        "dimension": 54.567901234567906,
+        "dimension": 24.691358024691358,
         "children": [
           {
             "id": "60df863bf816205b",
@@ -140,7 +140,7 @@
       {
         "id": "30c815b42e3ab186",
         "type": "tabs",
-        "dimension": 45.4320987654321,
+        "dimension": 75.30864197530865,
         "children": [
           {
             "id": "779f562465640fa3",
@@ -229,7 +229,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Idea Excalidraw.md",
+                "file": "Excalidraw/Idea Excalidraw 2026-08-02 03.46.42.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -349,7 +349,7 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "55d717a8c408e6cc",
+  "active": "779f562465640fa3",
   "lastOpenFiles": [
     "Excalidraw/Idea Excalidraw 2026-08-02 03.46.42.excalidraw.md",
     "Idea Excalidraw.md",
