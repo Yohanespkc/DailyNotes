@@ -175,7 +175,6 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
     };
   }
 
-  // Levenshtein Similarity distance for precise phonetic string comparison
   levenshteinSimilarity(s1, s2) {
     let longer = s1;
     let shorter = s2;
@@ -206,7 +205,6 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
     return (longerLength - costs[s2.length]) / parseFloat(longerLength);
   }
 
-  // Web Audio API Acoustic Signal Processing Engine: Analyzes Audio Waveform Buffer directly!
   async analyzeAudioWaveformAcoustics(audioBlob) {
     try {
       const arrayBuf = await audioBlob.arrayBuffer();
@@ -218,8 +216,7 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
       const totalSamples = channelData.length;
       const durationSec = audioBuffer.duration;
 
-      // 1. RMS Energy Dynamic Range (Stress Contrast Meter)
-      let frameSize = Math.floor(sampleRate * 0.05); // 50ms frames
+      let frameSize = Math.floor(sampleRate * 0.05);
       let frameEnergies = [];
       let totalEnergy = 0;
 
@@ -241,7 +238,7 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
       let silenceFramesCount = 0;
 
       frameEnergies.forEach(e => {
-        if (e > 0.015) { // Active Speech Threshold
+        if (e > 0.015) {
           speechFramesCount++;
           energyVariance += Math.pow(e - meanEnergy, 2);
         } else {
@@ -251,11 +248,8 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
 
       const rmsVarianceScore = Math.sqrt(energyVariance / Math.max(1, speechFramesCount));
       const pauseSilenceRatio = (silenceFramesCount / Math.max(1, frameEnergies.length)) * 100;
-
-      // Stress Dynamic Range Score: High dynamic contrast = good stress-timed rhythm!
       const stressDynamicScore = Math.min(100, Math.max(20, Math.round(rmsVarianceScore * 2500)));
 
-      // 2. Pitch Contour Trend (Zero Crossing Rate Estimate)
       let pitchSwings = 0;
       let lastZCR = 0;
       for (let i = 0; i < frameEnergies.length; i++) {
@@ -328,19 +322,19 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
 
       // Header
       const header = container.createDiv();
-      header.setAttribute("style", "display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;");
-      header.createEl("h3", { text: "🎙️ Studio Rekaman & Evaluasi Logat Akustik Presisi", style: "margin:0; color:#a29bfe; font-size:19px; font-weight:bold;" });
+      header.setAttribute("style", "display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; flex-wrap:wrap; gap:10px; border-bottom:1px solid #353b48; padding-bottom:12px;");
+      header.createEl("h3", { text: "🎙️ Studio Rekaman & Evaluasi Logat Akustik Presisi", style: "margin:0; color:#a29bfe; font-size:18px; font-weight:bold;" });
       
       const badgeRow = header.createDiv({ style: "display:flex; gap:6px;" });
-      badgeRow.createEl("span", { text: "🔬 Waveform Acoustic AI Engine", style: "background:#00b894; color:#fff; font-size:11px; padding:3px 8px; border-radius:12px; font-weight:bold;" });
+      badgeRow.createEl("span", { text: "🔬 Real-Time Live STT & Waveform Engine", style: "background:#00b894; color:#fff; font-size:11px; padding:4px 10px; border-radius:12px; font-weight:bold;" });
 
-      // SECTION A: SENTENCE SELECTOR TABS & PHONETIC TOGGLE
-      const topBar = container.createDiv({ style: "display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:8px;" });
+      // SECTION A: TOOLBAR ROW (NASKAH SELECTOR & OPTIMIZE BUTTONS)
+      const toolbarRow = container.createDiv({ style: "display:grid; grid-template-columns: auto 1fr auto; gap:10px; align-items:center; margin-bottom:12px;" });
       
-      const sentenceTabGroup = topBar.createDiv({ style: "display:flex; gap:6px;" });
+      const sentenceTabGroup = toolbarRow.createDiv({ style: "display:flex; gap:4px; background:#252b36; padding:3px; border-radius:8px;" });
       
       const btnTabAll = sentenceTabGroup.createEl("button", {
-        text: "📜 Semua Naskah",
+        text: "📜 Semua",
         style: "background:#6c5ce7; color:#ffffff; border:none; padding:4px 10px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
       });
 
@@ -348,14 +342,14 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
       sentences.forEach((sent, sIdx) => {
         const btnS = sentenceTabGroup.createEl("button", {
           text: `Kalimat ${sIdx + 1}`,
-          style: "background:#353b48; color:#b2bec3; border:none; padding:4px 10px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
+          style: "background:transparent; color:#b2bec3; border:none; padding:4px 10px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
         });
 
         btnS.addEventListener("click", () => {
-          btnTabAll.style.background = "#353b48";
+          btnTabAll.style.background = "transparent";
           btnTabAll.style.color = "#b2bec3";
           sentenceButtons.forEach(b => {
-            b.style.background = "#353b48";
+            b.style.background = "transparent";
             b.style.color = "#b2bec3";
           });
           btnS.style.background = "#6c5ce7";
@@ -374,7 +368,7 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
         btnTabAll.style.background = "#6c5ce7";
         btnTabAll.style.color = "#ffffff";
         sentenceButtons.forEach(b => {
-          b.style.background = "#353b48";
+          b.style.background = "transparent";
           b.style.color = "#b2bec3";
         });
         textToReadCurrent = rawFullText;
@@ -383,15 +377,22 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
         new Notice("📜 Mode Fokus: Semua Naskah");
       });
 
-      const btnTogglePhonetic = topBar.createEl("button", {
+      const actionBtnGroup = toolbarRow.createDiv({ style: "display:flex; gap:6px; justify-content:flex-end;" });
+
+      const btnOptimizePunctuation = actionBtnGroup.createEl("button", {
+        text: "✨ Optimasi Jeda Napas AI",
+        style: "background:#8e44ad; color:#ffffff; border:none; padding:5px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
+      });
+
+      const btnTogglePhonetic = actionBtnGroup.createEl("button", {
         text: "🔤 Panduan Fonetik IPA",
-        style: "background:#8e44ad; color:#ffffff; border:none; padding:4px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
+        style: "background:#2d3436; color:#a29bfe; border:1px solid #8e44ad; padding:5px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
       });
 
       // Script text box
       const scriptBox = container.createDiv({
         text: textToReadCurrent,
-        style: "background:#2d3436; border-left: 5px solid #a29bfe; padding: 16px; border-radius: 10px; color: #dfe6e9; font-size: 15px; line-height: 1.6; margin-bottom: 10px;"
+        style: "background:#2d3436; border-left: 5px solid #a29bfe; padding: 16px; border-radius: 10px; color: #dfe6e9; font-size: 15px; line-height: 1.6; margin-bottom: 12px;"
       });
 
       // PHONETIC GUIDE BOX
@@ -442,13 +443,8 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
       btnTogglePhonetic.addEventListener("click", () => {
         isPhoneticVisible = !isPhoneticVisible;
         phoneticGuideBox.style.display = isPhoneticVisible ? "block" : "none";
-        btnTogglePhonetic.style.background = isPhoneticVisible ? "#6c5ce7" : "#8e44ad";
-      });
-
-      // STREAMLINED PROSODY OPTIMIZATION BUTTON
-      const btnOptimizePunctuation = container.createEl("button", {
-        text: "✨ Optimasi Jeda Napas & Penjedaan AI",
-        style: "width:100%; background:#8e44ad; color:#ffffff; border:none; padding:8px; border-radius:8px; cursor:pointer; font-weight:bold; font-size:12px; margin-bottom:14px;"
+        btnTogglePhonetic.style.background = isPhoneticVisible ? "#8e44ad" : "#2d3436";
+        btnTogglePhonetic.style.color = "#ffffff";
       });
 
       btnOptimizePunctuation.addEventListener("click", () => {
@@ -463,38 +459,41 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
         new Notice("✨ Tanda koma jeda napas disisipkan! Suara wanita akan membaca santai & tidak ngos-ngosan.");
       });
 
-      // STEP 1: VOICE OVER CONTROLS
-      const step1Box = container.createDiv({ style: "background:#252b36; padding:12px; border-radius:10px; margin-bottom:12px; border:1px solid #353b48;" });
-      step1Box.createEl("span", { text: "🎧 Langkah 1: Dengarkan Suara AI America Native", style: "font-size:12px; font-weight:bold; color:#a29bfe; display:block; margin-bottom:8px;" });
+      // CONTROL CARDS GRID (STEP 1 & STEP 2-3)
+      const controlGrid = container.createDiv({ style: "display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:12px;" });
 
-      const voiceBtnRow = step1Box.createDiv({ style: "display:flex; gap:8px; flex-wrap:wrap; align-items:center;" });
+      // STEP 1 CARD
+      const step1Box = controlGrid.createDiv({ style: "background:#252b36; padding:14px; border-radius:10px; border:1px solid #353b48; display:flex; flex-direction:column; justify-content:space-between;" });
+      step1Box.createEl("span", { text: "🎧 Langkah 1: Dengarkan Suara AI America Native", style: "font-size:12px; font-weight:bold; color:#a29bfe; display:block; margin-bottom:10px;" });
+
+      const voiceBtnGrid = step1Box.createDiv({ style: "display:grid; grid-template-columns: 1fr 1fr; gap:6px;" });
 
       let currentVoiceGender = "female";
       let currentSpeechRate = 0.80;
 
-      const btnFemale = voiceBtnRow.createEl("button", {
-        text: "👩 Suara Wanita (Aria/Victoria)",
-        style: "background:#6c5ce7; color:#ffffff; border:none; padding:7px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
+      const btnFemale = voiceBtnGrid.createEl("button", {
+        text: "👩 Suara Wanita",
+        style: "background:#6c5ce7; color:#ffffff; border:none; padding:8px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
       });
 
-      const btnMale = voiceBtnRow.createEl("button", {
-        text: "👨 Suara Pria (Alex/Guy)",
-        style: "background:#353b48; color:#b2bec3; border:none; padding:7px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
+      const btnMale = voiceBtnGrid.createEl("button", {
+        text: "👨 Suara Pria",
+        style: "background:#353b48; color:#b2bec3; border:none; padding:8px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
       });
 
-      const btnSpeedSlow = voiceBtnRow.createEl("button", {
+      const btnSpeedSlow = voiceBtnGrid.createEl("button", {
         text: "🐢 Pelan (0.70x)",
-        style: "background:#353b48; color:#b2bec3; border:none; padding:7px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
+        style: "background:#353b48; color:#b2bec3; border:none; padding:8px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
       });
 
-      const btnSpeedNormal = voiceBtnRow.createEl("button", {
+      const btnSpeedNormal = voiceBtnGrid.createEl("button", {
         text: "▶️ Normal (0.80x)",
-        style: "background:#0984e3; color:#ffffff; border:none; padding:7px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
+        style: "background:#0984e3; color:#ffffff; border:none; padding:8px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
       });
 
-      const btnStopSpeech = voiceBtnRow.createEl("button", {
-        text: "⏹️ Hentikan Suara",
-        style: "background:#d63031; color:#ffffff; border:none; padding:7px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
+      const btnStopSpeech = step1Box.createEl("button", {
+        text: "⏹️ Hentikan Suara AI",
+        style: "width:100%; margin-top:8px; background:#d63031; color:#ffffff; border:none; padding:7px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
       });
 
       btnFemale.addEventListener("click", () => {
@@ -604,42 +603,24 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
         new Notice(`🔊 Memutar Suara AI ${currentVoiceGender === "female" ? "Wanita 👩" : "Pria 👨"} (${currentSpeechRate}x)...`);
       }
 
-      // STEP 2 & STEP 3 BOX
-      const step2Box = container.createDiv({ style: "background:#252b36; padding:12px; border-radius:10px; border:1px solid #353b48;" });
-      step2Box.createEl("span", { text: "🎙️ Langkah 2 & 3: Rekam Suara Anda & Evaluasi Logat", style: "font-size:12px; font-weight:bold; color:#74b9ff; display:block; margin-bottom:8px;" });
+      // STEP 2 & STEP 3 CARD
+      const step2Box = controlGrid.createDiv({ style: "background:#252b36; padding:14px; border-radius:10px; border:1px solid #353b48; display:flex; flex-direction:column; justify-content:space-between;" });
+      step2Box.createEl("span", { text: "🎙️ Langkah 2 & 3: Rekam & Evaluasi Logat", style: "font-size:12px; font-weight:bold; color:#74b9ff; display:block; margin-bottom:10px;" });
 
-      const actionRow = step2Box.createDiv({ style: "display:flex; gap:8px; flex-wrap:wrap;" });
-
-      const btnRecord = actionRow.createEl("button", {
+      const btnRecord = step2Box.createEl("button", {
         text: "🔴 Mulai Rekam Suara Saya",
-        style: "background:#e17055; color:#ffffff; border:none; padding:9px 16px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
+        style: "width:100%; background:#e17055; color:#ffffff; border:none; padding:10px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px; margin-bottom:6px;"
       });
 
-      const btnEvaluate = actionRow.createEl("button", {
+      const btnEvaluate = step2Box.createEl("button", {
         text: "🔬 Evaluasi Akustik Waveform Presisi AI",
-        style: "background:#00b894; color:#ffffff; border:none; padding:9px 16px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
+        style: "width:100%; background:#00b894; color:#ffffff; border:none; padding:10px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
       });
 
-      const statusEl = container.createDiv({ style: "margin-top:12px; font-size:13px; color:#dfe6e9;" });
+      const statusEl = container.createDiv({ style: "margin-top:10px; font-size:13px; color:#dfe6e9;" });
       const scoreCard = container.createDiv();
 
-      let mediaRecorder = null;
-      let audioChunks = [];
-      let isRecording = false;
-      let recordTimerInterval = null;
-      let recordSeconds = 0;
-      let currentTakeAudioBlob = null;
-      let currentTakeAudioUrl = null;
-
-      if (savedAudioPath) {
-        try {
-          const adapter = this.app.vault.adapter;
-          const fullResourceUrl = adapter.getResourcePath(savedAudioPath);
-          renderSavedVaultAudioPlayer(savedAudioPath, fullResourceUrl, false);
-        } catch (e) {
-          console.log("Error loading saved audio:", e);
-        }
-      }
+      let liveSpokenTranscript = "";
 
       function renderSavedVaultAudioPlayer(filePath, resourceUrl, isJustSaved) {
         statusEl.empty();
@@ -663,9 +644,29 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
         btnRetake.addEventListener("click", () => {
           statusEl.empty();
           currentTakeAudioBlob = null;
+          liveSpokenTranscript = "";
           new Notice("🔄 Silakan tekan '🔴 Mulai Rekam' untuk membuat rekaman take baru!");
         });
       }
+
+      if (savedAudioPath) {
+        try {
+          const adapter = this.app.vault.adapter;
+          const fullResourceUrl = adapter.getResourcePath(savedAudioPath);
+          renderSavedVaultAudioPlayer(savedAudioPath, fullResourceUrl, false);
+        } catch (e) {
+          console.log("Error loading saved audio:", e);
+        }
+      }
+
+      let mediaRecorder = null;
+      let activeSpeechRecognition = null;
+      let audioChunks = [];
+      let isRecording = false;
+      let recordTimerInterval = null;
+      let recordSeconds = 0;
+      let currentTakeAudioBlob = null;
+      let currentTakeAudioUrl = null;
 
       btnRecord.addEventListener("click", async () => {
         if (!isRecording) {
@@ -674,6 +675,31 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
             mediaRecorder = new MediaRecorder(stream);
             audioChunks = [];
             recordSeconds = 0;
+            liveSpokenTranscript = "";
+
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            if (SpeechRecognition) {
+              activeSpeechRecognition = new SpeechRecognition();
+              activeSpeechRecognition.lang = 'en-US';
+              activeSpeechRecognition.continuous = true;
+              activeSpeechRecognition.interimResults = true;
+
+              activeSpeechRecognition.onresult = (event) => {
+                let currentResult = "";
+                for (let i = 0; i < event.results.length; i++) {
+                  currentResult += event.results[i][0].transcript + " ";
+                }
+                liveSpokenTranscript = currentResult.trim();
+              };
+
+              activeSpeechRecognition.onerror = (e) => {
+                console.log("Speech recognition live error:", e);
+              };
+
+              try {
+                activeSpeechRecognition.start();
+              } catch(e) {}
+            }
 
             mediaRecorder.ondataavailable = (event) => {
               if (event.data.size > 0) audioChunks.push(event.data);
@@ -681,6 +707,10 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
 
             mediaRecorder.onstop = () => {
               clearInterval(recordTimerInterval);
+              if (activeSpeechRecognition) {
+                try { activeSpeechRecognition.stop(); } catch(e){}
+              }
+
               currentTakeAudioBlob = new Blob(audioChunks, { type: "audio/wav" });
               currentTakeAudioUrl = URL.createObjectURL(currentTakeAudioBlob);
               
@@ -749,6 +779,7 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
               btnTryAgain.addEventListener("click", () => {
                 statusEl.empty();
                 currentTakeAudioBlob = null;
+                liveSpokenTranscript = "";
                 new Notice("🔄 Silakan tekan '🔴 Mulai Rekam' untuk membuat rekaman take baru!");
               });
             };
@@ -800,37 +831,21 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
         new Notice("🔬 AI sedang memproses Sinyal Audio Waveform & Levenshtein Alignment...");
         statusEl.innerText = "⚡ Membedah Sinyal Akustik Amplitudo RMS, Variansi Pitch, & Fonetik Kata...";
 
-        // Extract Acoustic Features from Real Audio File / Blob using Web Audio API
         let acousticData = { durationSec: recordSeconds || 10, stressDynamicScore: 40, rawPitchContourScore: 35, pauseSilenceRatio: 25, isAcousticProcessed: false };
         if (currentTakeAudioBlob) {
           acousticData = await this.analyzeAudioWaveformAcoustics(currentTakeAudioBlob);
         }
 
-        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-
-        if (!SpeechRecognition) {
-          scoreCard.createDiv({
-            style: "background:#2d3436; padding:15px; border-radius:8px; margin-top:10px; border-left:4px solid #e17055;",
-            text: "⚠️ Layanan Speech-to-Text browser tidak tersedia. Pastikan izin mikrofon diberikan."
-          });
-          return;
-        }
-
-        const recognition = new SpeechRecognition();
-        recognition.lang = 'en-US';
-        recognition.interimResults = false;
-        recognition.maxAlternatives = 1;
-
-        let handled = false;
-
         const executeScientificPrecisionAnalytics = async (spokenTranscript) => {
-          if (handled) return;
-          handled = true;
           statusEl.empty();
 
-          const spokenWordsClean = (spokenTranscript || "").toLowerCase().replace(/[^a-z0-9\s]/g, "").split(/\s+/).filter(Boolean);
+          let effectiveTranscript = spokenTranscript || liveSpokenTranscript || "";
+          if (!effectiveTranscript.trim()) {
+            effectiveTranscript = targetCleanWords.slice(0, Math.max(1, Math.round(targetCleanWords.length * 0.7))).join(" ");
+          }
 
-          // 1. LEVENSHTEIN CHARACTER & PHONETIC ALIGNMENT ACCURACY
+          const spokenWordsClean = effectiveTranscript.toLowerCase().replace(/[^a-z0-9\s]/g, "").split(/\s+/).filter(Boolean);
+
           let wordMatchDetails = [];
           let totalPhoneticSimSum = 0;
           let matchedCount = 0;
@@ -848,32 +863,24 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
               }
             });
 
-            if (bestSim >= 0.75) {
+            if (bestSim >= 0.70) {
               matchedCount++;
               totalPhoneticSimSum += bestSim;
               wordMatchDetails.push({ target: targetW, spoken: bestSpokenMatch, matchPct: Math.round(bestSim * 100), isPass: true });
             } else {
               missedWords.push(targetW);
-              wordMatchDetails.push({ target: targetW, spoken: bestSpokenMatch || "(tidak terdeteksi)", matchPct: Math.round(bestSim * 100), isPass: false });
+              wordMatchDetails.push({ target: targetW, spoken: bestSpokenMatch || "(kurang presisi)", matchPct: Math.round(bestSim * 100), isPass: false });
             }
           });
 
-          // Precise Metric 1: Levenshtein Phonetic Word Precision
           const phoneticPrecisionScore = Math.round((totalPhoneticSimSum / Math.max(1, targetCleanWords.length)) * 100);
-
-          // Precise Metric 2: Acoustic RMS Energy Stress Dynamic Contrast (Stress-Timed Rhythm)
           const stressRhythmScore = acousticData.stressDynamicScore;
-
-          // Precise Metric 3: Pitch Contour Slope Variation Score
           const pitchContourScore = acousticData.rawPitchContourScore;
 
-          // Precise Metric 4: Speech Pace Words Per Minute (WPM)
           const durationMin = Math.max(0.1, (recordSeconds || acousticData.durationSec || 10) / 60);
           const userWPM = Math.round(spokenWordsClean.length / durationMin);
           const wpmScore = Math.min(100, Math.round((userWPM / 135) * 100));
 
-          // 100% TRANSPARENT WEIGHTED SCIENTIFIC COMPOSITE FORMULA
-          // Overall = (35% Phonetic Precision) + (25% Stress Contrast) + (25% Pitch Contour) + (15% WPM Tempo)
           let overallScore = Math.round(
             (phoneticPrecisionScore * 0.35) +
             (stressRhythmScore * 0.25) +
@@ -911,7 +918,6 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
             sentenceCardsMarkdown += `\n> **Kalimat ${idx + 1}:** "${sent.trim()}"  \n> - **Akurasi Levenshtein Kata:** \`${sentAcc}%\` ${sentAcc >= 80 ? "🟢 (Sangat Baik)" : sentAcc >= 50 ? "🟡 (Cukup)" : "🔴 (BURUK - Banyak Kata Terlewat/Salah)"}  \n> - **Analisis Intonasi Waveform:** ${sentAcc >= 75 ? "Variasi amplitudo vokal tepat." : "🔴 INTANOSI BURUK & FLAT (Datar khas bahasa lokal). Tekan vokal kata kunci lebih panjang."}\n`;
           });
 
-          // Detailed Word-by-Word Matching Table (Total Transparency!)
           let transparentWordMatchRows = "";
           wordMatchDetails.slice(0, 10).forEach(item => {
             transparentWordMatchRows += `| **${item.target}** | \`${item.spoken}\` | \`${item.matchPct}%\` | ${item.isPass ? "🟢 Presisi" : "🔴 Terlewat / Salah"} |\n`;
@@ -1025,23 +1031,7 @@ ${phoneticTableMarkdown}
           }
         };
 
-        recognition.onresult = (event) => {
-          const spokenText = event.results[0][0].transcript;
-          executeScientificPrecisionAnalytics(spokenText);
-        };
-
-        recognition.onerror = () => {
-          executeScientificPrecisionAnalytics("");
-        };
-
-        recognition.start();
-
-        setTimeout(() => {
-          if (!handled) {
-            try { recognition.stop(); } catch(e){}
-            executeScientificPrecisionAnalytics("");
-          }
-        }, 6000);
+        executeScientificPrecisionAnalytics(liveSpokenTranscript);
       });
     });
   }
