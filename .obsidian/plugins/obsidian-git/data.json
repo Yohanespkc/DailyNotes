@@ -1,0 +1,9 @@
+{
+  "autoSaveInterval": 10,
+  "autoPushInterval": 10,
+  "autoPullInterval": 0,
+  "autoPullOnBoot": false,
+  "disablePush": false,
+  "commitMessage": "vault backup: {{date}}",
+  "syncMethod": "merge"
+}
