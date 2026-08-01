@@ -1,1 +1,1 @@
-![[Idea Excalidraw 2026-08-02 03.46.42.excalidraw]]
+![[Idea Excalidraw 2026-08-02 03.46.42.excalidraw|100]]
