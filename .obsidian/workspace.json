@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 - Daily Notes/Note Harian - 2026-07-31 06.29.md",
+                "file": "05 - Daily Notes/Note Harian - 2026-08-01 14.21.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Note Harian - 2026-07-31 06.29"
+              "title": "Note Harian - 2026-08-01 14.21"
             }
           }
         ],
@@ -195,13 +195,23 @@
               "icon": "lucide-list",
               "title": "Outline of Daftar Link Video Menarik"
             }
+          },
+          {
+            "id": "05174d4f309ff4bb",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -224,6 +234,8 @@
   },
   "active": "60df863bf816205b",
   "lastOpenFiles": [
+    "05 - Daily Notes/Note Harian - 2026-07-31 06.29.md",
+    "05 - Daily Notes/Note Harian - 2026-08-01 14.21.md",
     "05 - Daily Notes/Attachments/Rekaman-1785551711323.wav",
     "05 - Daily Notes/Attachments/Rekaman-1785551395956.wav",
     "05 - Daily Notes/Attachments/Rekaman-1785550951087.wav",
@@ -231,7 +243,6 @@
     "05 - Daily Notes/Attachments/Rekaman-1785546827199.wav",
     "05 - Daily Notes/Attachments",
     "01 - Notes/Note Harian - 2026-07-31 06.29.md",
-    "05 - Daily Notes/Note Harian - 2026-07-31 06.29.md",
     "01 - Notes/Note Harian - 2026-07-31 06.19.md",
     "01 - Notes/Note Harian - 2026-07-31 06.35.md",
     "Top Repo 1.md",
@@ -258,7 +269,6 @@
     "Excalidraw/Soal Penjumlahan 2026-08-01 02.33.47.excalidraw.md",
     "Excalidraw",
     "04 - Archive/DataBase.base",
-    "04 - Archive",
-    "03 - Templates"
+    "04 - Archive"
   ]
 }
