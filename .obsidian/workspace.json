@@ -20,8 +20,35 @@
               "icon": "lucide-file",
               "title": "Video Excalidraw"
             }
+          },
+          {
+            "id": "ad7c6b64bf4d13b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "gambar.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "gambar"
+            }
+          },
+          {
+            "id": "9b373d39ddc5a89d",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-08-02 05.46.19.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-08-02 05.46.19.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -96,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 - Resources/Excalidraw/Video Excalidraw.md",
+                "file": "Excalidraw/Drawing 2026-08-02 05.46.19.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -216,10 +243,12 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "60df863bf816205b",
+  "active": "9b373d39ddc5a89d",
   "lastOpenFiles": [
-    "02 - Resources/Excalidraw/Belajar Excalidraw.md",
+    "gambar.md",
+    "Excalidraw/Drawing 2026-08-02 05.46.19.excalidraw.md",
     "02 - Resources/Excalidraw/Video Excalidraw.md",
+    "02 - Resources/Excalidraw/Belajar Excalidraw.md",
     "Idea Excalidraw.md",
     "Excalidraw/Idea Excalidraw 2026-08-02 03.46.42.excalidraw.md",
     "02 - Resources/Excalidraw/Tutorial Lengkap Tombol Excalidraw.md",
@@ -248,8 +277,6 @@
     "05 - Daily Notes/Attachments",
     "01 - Notes/Note Harian - 2026-07-31 06.29.md",
     "01 - Notes/Note Harian - 2026-07-31 06.19.md",
-    "01 - Notes/Note Harian - 2026-07-31 06.35.md",
-    "03 - Templates/Template Note Harian.md",
     "05 - Daily Notes",
     "Excalidraw",
     "04 - Archive/DataBase.base",
