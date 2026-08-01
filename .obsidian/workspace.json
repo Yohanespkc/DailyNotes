@@ -8,35 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b5997d868c55d0a0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "notes"
-            }
-          },
-          {
             "id": "60df863bf816205b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "audio",
               "state": {
-                "file": "01 - Notes/Daftar Tugas.md",
-                "mode": "source",
-                "source": false
+                "file": "05 - Daily Notes/Attachments/Rekaman-1785546827199.wav"
               },
-              "icon": "lucide-file",
-              "title": "Daftar Tugas"
+              "icon": "lucide-file-audio",
+              "title": "Rekaman-1785546827199"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -234,8 +217,20 @@
   },
   "active": "60df863bf816205b",
   "lastOpenFiles": [
+    "Top Repo 1.md",
+    "Untitled 2.md",
+    "ISI PKC.md",
+    "notes1.md",
+    "notes.md",
+    "IDE UNTUK PKC.md",
     "05 - Daily Notes/Note Harian - 2026-08-01 14.21.md",
     "05 - Daily Notes/Note Harian - 2026-07-31 06.29.md",
+    "02 - Resources/Videos/Video Web 3D.md",
+    "02 - Resources/Videos/video excalidraw.md",
+    "02 - Resources/Videos/Top Repo July 2026.md",
+    "02 - Resources/Videos/Excalidraw + AI.md",
+    "02 - Resources/Videos/Koleksi Video Referensi.md",
+    "01 - Notes/Daftar Tugas.md",
     "05 - Daily Notes/Attachments/Rekaman-1785551711323.wav",
     "05 - Daily Notes/Attachments/Rekaman-1785551395956.wav",
     "05 - Daily Notes/Attachments/Rekaman-1785550951087.wav",
@@ -245,28 +240,16 @@
     "01 - Notes/Note Harian - 2026-07-31 06.29.md",
     "01 - Notes/Note Harian - 2026-07-31 06.19.md",
     "01 - Notes/Note Harian - 2026-07-31 06.35.md",
-    "Top Repo 1.md",
     "03 - Templates/Template Note Harian.md",
-    "02 - Resources/Videos/Excalidraw + AI.md",
-    "02 - Resources/Videos/Video Web 3D.md",
-    "02 - Resources/Videos/Top Repo July 2026.md",
-    "Untitled 2.md",
-    "02 - Resources/Videos/Koleksi Video Referensi.md",
-    "notes1.md",
     "05 - Daily Notes",
-    "notes.md",
     "02 - Resources/Excalidraw/Belajar Excalidraw.md",
-    "02 - Resources/Videos/video excalidraw.md",
     "Excalidraw/IDE UNTUK PKC 2026-08-01 02.46.08.excalidraw.md",
     "02 - Resources/Excalidraw/video excalidraw.md",
     "02 - Resources/Excalidraw/Tutorial Lengkap Tombol Excalidraw.md",
     "02 - Resources/Excalidraw/Panduan Belajar Excalidraw.md",
-    "IDE UNTUK PKC.md",
     "Excalidraw/Soal Penjumlahan.md",
     "Excalidraw/Drawing 2026-08-01 02.43.51.excalidraw.md",
     "Excalidraw/Drawing 2026-08-01 02.35.09.excalidraw.md",
-    "Excalidraw/Drawing 2026-08-01 02.38.30.excalidraw.md",
-    "Excalidraw/Soal Penjumlahan 2026-08-01 02.33.47.excalidraw.md",
     "Excalidraw",
     "04 - Archive/DataBase.base",
     "04 - Archive"
