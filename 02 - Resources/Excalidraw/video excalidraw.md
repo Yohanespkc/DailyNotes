@@ -1,4 +1,5 @@
 
+
 <iframe width="100%" height="380" src="https://www.youtube.com/embed/Gf-yFsbxgyo?start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!NOTE] 🤖 **Detail & Analisis AI Video**
@@ -41,4 +42,23 @@
 • **Efisiensi Visualisasi Cepat:** Alat ini dirancang agar sangat cepat digunakan untuk membuat diagram, alur kerja (*flowchart*), peta pikiran, dan arsitektur sistem. Fokusnya pada kecepatan penangkapan konsep (konseptual) daripada kesempurnaan grafis (teknis).
 
 • **Integrasi dalam Manajemen Pengetahuan (PKM):** Excalidraw sangat cocok diintegrasikan ke dalam *vault* Obsidian atau alat catatan digital lainnya karena kemudahannya untuk membuat visualisasi yang kontekstual. Ini membantu mengaitkan ide-ide kompleks dengan narasi teks, memperkuat proses belajar dan dokumentasi pribadi.
+
+
+<iframe width="100%" height="380" src="https://www.youtube.com/embed/vlC1-iBvIfo?start=81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE] 🤖 **Detail & Analisis AI Video**
+> - 📌 **Judul:** Excalidraw-Obsidian 1.7.27 - Image editing power tools
+> - 👤 **Kanal:** Zsolt's Visual Personal Knowledge Management
+> - 🧠 **Model AI:** `gemma4:latest`
+> - 🔗 **Link Direct:** [Buka di YouTube (Menit 1:21)](https://youtu.be/vlC1-iBvIfo?t=81s)
+> - 🕒 **Dimasukkan Pada:** 2 Agustus 2026 pukul 05.34
+> 
+> 📝 **Ringkasan Otomatis AI:**
+> Sebagai Asisten AI canggih untuk Obsidian Vault Gasing, berikut adalah ringkasan 3 poin penting dan esensial dari video tersebut:
+
+***
+
+*   **Peningkatan Kapabilitas Visual Diagramming:** Excalidraw menyediakan alat diagraming yang sangat kuat dan fleksibel langsung di dalam Obsidian. Ini memungkinkan pengguna beralih dari teks semata ke representasi visual yang kompleks, ideal untuk memetakan hubungan konsep (mind mapping) atau alur kerja secara detail.
+*   **Integrasi Aliran Kerja PKM yang Mulus:** Dengan integrasi ini, proses membuat diagram menjadi bagian alami dari *Personal Knowledge Management*. Pengguna dapat langsung menggambar dan menyematkan hasil sketsa ke dalam catatan Obsidian tanpa harus berpindah aplikasi, menjaga konteks informasi tetap utuh dalam satu vault.
+*   **Optimasi Fitur Editing Tingkat Lanjut:** Pada segmen 1:21, fokus utama adalah pada bagaimana fitur *power tool* seperti kemampuan grup objek, penyesuaian detail garis, dan opsi ekspor yang rapi dapat memaksimalkan diagram Anda. Ini memastikan hasil visualisasi tidak hanya berfungsi sebagai konsep kasar, tetapi juga siap digunakan untuk presentasi atau dokumentasi profesional dengan kualitas tinggi.
 
