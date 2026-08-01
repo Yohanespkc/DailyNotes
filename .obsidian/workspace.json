@@ -206,6 +206,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "youtube-embedder:Buat Note Harian Baru": false,
       "youtube-embedder:Generate AI English Progress Report": false,
       "templater-obsidian:Templater": false,

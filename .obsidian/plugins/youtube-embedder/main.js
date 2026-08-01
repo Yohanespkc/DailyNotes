@@ -198,7 +198,13 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
           textLines.push(l);
         }
       });
-      let textToReadCurrent = textLines.join("\n").trim();
+      let rawFullText = textLines.join("\n").trim();
+      
+      // Clean up spacing around commas (Fix punctuation bug `is , transitioning`)
+      rawFullText = rawFullText.replace(/\s+,/g, ",");
+      let textToReadCurrent = rawFullText;
+
+      const sentences = rawFullText.split(/(?<=[.!?])\s+/).filter(Boolean);
 
       const container = el.createDiv();
       container.setAttribute("style", "background:#1e1e2e; border: 2px solid #6c5ce7; border-radius: 16px; padding: 22px; color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 15px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.4);");
@@ -211,70 +217,167 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
       const badgeRow = header.createDiv({ style: "display:flex; gap:6px;" });
       badgeRow.createEl("span", { text: "👩‍💼 Relaxed Professional Voice", style: "background:#6c5ce7; color:#fff; font-size:11px; padding:3px 8px; border-radius:12px; font-weight:bold;" });
 
-      container.createEl("p", { text: "Bahan Naskah Lisan (1-2 Paragraf) Yang Disusun AI untuk Dikelaskan & Dilatih:", style: "margin-top:0; color:#b2bec3; font-size:13px;" });
-
-      // Script text box (Clean natural paragraph layout)
-      const scriptBox = container.createDiv({
-        text: textToReadCurrent,
-        style: "background:#2d3436; border-left: 5px solid #a29bfe; padding: 16px; border-radius: 10px; color: #dfe6e9; font-size: 15px; line-height: 1.6; margin-bottom: 14px;"
+      // SECTION A: SENTENCE SELECTOR TABS & PHONETIC TOGGLE
+      const topBar = container.createDiv({ style: "display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:8px;" });
+      
+      const sentenceTabGroup = topBar.createDiv({ style: "display:flex; gap:6px;" });
+      
+      const btnTabAll = sentenceTabGroup.createEl("button", {
+        text: "📜 Semua Naskah",
+        style: "background:#6c5ce7; color:#ffffff; border:none; padding:4px 10px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
       });
 
-      // SECTION 1: PROSODY PAUSE INSERTER (INSERTS COMMAS FOR BREATHING PAUSES, NO NGOS-NGOSSAN)
-      const prosodySection = container.createDiv({ style: "display:flex; justify-content:space-between; align-items:center; background:#2c2c3e; padding:10px 14px; border-radius:8px; margin-bottom:14px; border:1px dashed #8e44ad;" });
-      prosodySection.createEl("span", { text: "✨ Sisipkan Tanda Koma Jeda Napas Alami:", style: "font-size:12px; font-weight:bold; color:#d6a2e8;" });
+      const sentenceButtons = [];
+      sentences.forEach((sent, sIdx) => {
+        const btnS = sentenceTabGroup.createEl("button", {
+          text: `Kalimat ${sIdx + 1}`,
+          style: "background:#353b48; color:#b2bec3; border:none; padding:4px 10px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
+        });
 
-      const btnOptimizePunctuation = prosodySection.createEl("button", {
-        text: "✨ Sisipkan Tanda Koma Jeda Napas Alami",
-        style: "background:#8e44ad; color:#ffffff; border:none; padding:7px 14px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
+        btnS.addEventListener("click", () => {
+          btnTabAll.style.background = "#353b48";
+          btnTabAll.style.color = "#b2bec3";
+          sentenceButtons.forEach(b => {
+            b.style.background = "#353b48";
+            b.style.color = "#b2bec3";
+          });
+          btnS.style.background = "#6c5ce7";
+          btnS.style.color = "#ffffff";
+
+          textToReadCurrent = sent.trim();
+          scriptBox.innerText = sent.trim();
+          updatePhoneticGuideBox();
+          new Notice(`🎯 Mode Fokus: Kalimat ${sIdx + 1}`);
+        });
+
+        sentenceButtons.push(btnS);
+      });
+
+      btnTabAll.addEventListener("click", () => {
+        btnTabAll.style.background = "#6c5ce7";
+        btnTabAll.style.color = "#ffffff";
+        sentenceButtons.forEach(b => {
+          b.style.background = "#353b48";
+          b.style.color = "#b2bec3";
+        });
+        textToReadCurrent = rawFullText;
+        scriptBox.innerText = rawFullText;
+        updatePhoneticGuideBox();
+        new Notice("📜 Mode Fokus: Semua Naskah");
+      });
+
+      const btnTogglePhonetic = topBar.createEl("button", {
+        text: "🔤 Panduan Fonetik IPA",
+        style: "background:#8e44ad; color:#ffffff; border:none; padding:4px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:11px;"
+      });
+
+      // Script text box
+      const scriptBox = container.createDiv({
+        text: textToReadCurrent,
+        style: "background:#2d3436; border-left: 5px solid #a29bfe; padding: 16px; border-radius: 10px; color: #dfe6e9; font-size: 15px; line-height: 1.6; margin-bottom: 10px;"
+      });
+
+      // PHONETIC GUIDE BOX
+      const phoneticGuideBox = container.createDiv({ style: "display:none; background:#252b36; border:1px solid #8e44ad; padding:12px; border-radius:8px; margin-bottom:12px;" });
+      
+      function updatePhoneticGuideBox() {
+        phoneticGuideBox.empty();
+        phoneticGuideBox.createEl("span", { text: "🔤 Panduan Ejaan Suku Kata & Penekanan Fonetik:", style: "font-size:12px; font-weight:bold; color:#d6a2e8; display:block; margin-bottom:6px;" });
+        
+        const words = textToReadCurrent.toLowerCase().replace(/[^a-z\s]/g, "").split(/\s+/).filter(Boolean);
+        const uniqueWords = [...new Set(words)];
+        
+        let pItems = [];
+        uniqueWords.forEach(w => {
+          if (w.length > 5) {
+            const g = getPhoneticGuide(w);
+            pItems.push(`<span style="background:#2d3436; padding:3px 8px; border-radius:4px; font-size:11px; margin-right:6px; display:inline-block; margin-bottom:4px;"><strong style="color:#55efc4;">${w}</strong> ➔ <code style="color:#fdcb6e;">${g}</code></span>`);
+          }
+        });
+
+        if (pItems.length > 0) {
+          phoneticGuideBox.createDiv({ html: pItems.join(" ") });
+        } else {
+          phoneticGuideBox.createEl("p", { text: "Semua kata dalam kalimat ini sederhana dan siap dilatih!", style: "margin:0; font-size:11px; color:#b2bec3;" });
+        }
+      }
+
+      function getPhoneticGuide(w) {
+        const d = {
+          "methodology": "meh-thuh-DAHL-uh-jee",
+          "foundational": "fown-DAY-shuhn-uhl",
+          "instructional": "in-STRUK-shuhn-uhl",
+          "transitioning": "tran-ZISH-uhn-ing",
+          "readiness": "RED-ee-niss",
+          "mathematics": "math-uh-MAT-iks",
+          "curriculum": "kuh-RIK-yuh-luhm",
+          "mandatory": "MAN-duh-tor-ee",
+          "transmission": "tranz-MISH-uhn",
+          "successfully": "suhk-SESS-fuh-lee",
+          "application": "ap-li-KAY-shuhn"
+        };
+        return d[w] || (w.slice(0,3) + "-" + w.slice(3, -2).toUpperCase() + "-" + w.slice(-2));
+      }
+
+      updatePhoneticGuideBox();
+
+      let isPhoneticVisible = false;
+      btnTogglePhonetic.addEventListener("click", () => {
+        isPhoneticVisible = !isPhoneticVisible;
+        phoneticGuideBox.style.display = isPhoneticVisible ? "block" : "none";
+        btnTogglePhonetic.style.background = isPhoneticVisible ? "#6c5ce7" : "#8e44ad";
+      });
+
+      // STREAMLINED PROSODY OPTIMIZATION BUTTON
+      const btnOptimizePunctuation = container.createEl("button", {
+        text: "✨ Optimasi Jeda Napas & Penjedaan AI",
+        style: "width:100%; background:#8e44ad; color:#ffffff; border:none; padding:8px; border-radius:8px; cursor:pointer; font-weight:bold; font-size:12px; margin-bottom:14px;"
       });
 
       btnOptimizePunctuation.addEventListener("click", () => {
         let opt = textToReadCurrent;
-        // Clean out literal emdash
         opt = opt.replace(/—|–|emdash|--/g, ", ");
-        // Insert natural commas before conjunctions so female TTS takes a relaxed breath
-        opt = opt.replace(/\b(and|but|however|therefore|which|that|using|proving|transitioning|for|to|with)\b/gi, ", $1");
+        opt = opt.replace(/\b(and|but|however|therefore|which|that|using|proving|transitioning|for|to)\b/gi, ", $1");
+        opt = opt.replace(/\s+,/g, ",");
         opt = opt.replace(/,\s*,/g, ",");
         
         textToReadCurrent = opt;
         scriptBox.innerText = opt;
-        new Notice("✨ Tanda koma jeda napas berhasil disisipkan! Suara wanita akan membaca dengan sangat santai & tidak ngos-ngosan.");
+        new Notice("✨ Tanda koma jeda napas disisipkan! Suara wanita akan membaca santai & tidak ngos-ngosan.");
       });
 
-      // SECTION 2: Voice Over Controls with STOP BUTTON & CLAUSE-BY-CLAUSE PROSODIC PAUSE ENGINE
-      const voiceControlSection = container.createDiv({ style: "background:#252b36; padding:12px 16px; border-radius:10px; margin-bottom:14px; border:1px solid #353b48;" });
-      
-      const voiceHeader = voiceControlSection.createDiv({ style: "display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;" });
-      voiceHeader.createEl("span", { text: "🇺🇸 1. Karakter Suara Amerika Professional (Voice Over):", style: "font-size:13px; font-weight:bold; color:#a29bfe;" });
+      // STEP 1: VOICE OVER CONTROLS
+      const step1Box = container.createDiv({ style: "background:#252b36; padding:12px; border-radius:10px; margin-bottom:12px; border:1px solid #353b48;" });
+      step1Box.createEl("span", { text: "🎧 Langkah 1: Dengarkan Suara AI America Native", style: "font-size:12px; font-weight:bold; color:#a29bfe; display:block; margin-bottom:8px;" });
 
-      const voiceBtnRow = voiceControlSection.createDiv({ style: "display:flex; gap:8px; flex-wrap:wrap; align-items:center;" });
+      const voiceBtnRow = step1Box.createDiv({ style: "display:flex; gap:8px; flex-wrap:wrap; align-items:center;" });
 
       let currentVoiceGender = "female";
-      let currentSpeechRate = 0.80; // Relaxed unhurried pace
+      let currentSpeechRate = 0.80;
 
       const btnFemale = voiceBtnRow.createEl("button", {
-        text: "👩 Suara Wanita (Aria/Victoria/Samantha)",
-        style: "background:#6c5ce7; color:#ffffff; border:none; padding:8px 14px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
+        text: "👩 Suara Wanita (Aria/Victoria)",
+        style: "background:#6c5ce7; color:#ffffff; border:none; padding:7px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
       });
 
       const btnMale = voiceBtnRow.createEl("button", {
         text: "👨 Suara Pria (Alex/Guy)",
-        style: "background:#353b48; color:#b2bec3; border:none; padding:8px 14px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
+        style: "background:#353b48; color:#b2bec3; border:none; padding:7px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
       });
 
       const btnSpeedSlow = voiceBtnRow.createEl("button", {
-        text: "🐢 Pelan & Santai (0.70x)",
-        style: "background:#353b48; color:#b2bec3; border:none; padding:8px 14px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
+        text: "🐢 Pelan (0.70x)",
+        style: "background:#353b48; color:#b2bec3; border:none; padding:7px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
       });
 
       const btnSpeedNormal = voiceBtnRow.createEl("button", {
-        text: "▶️ Normal Santai (0.80x)",
-        style: "background:#0984e3; color:#ffffff; border:none; padding:8px 14px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
+        text: "▶️ Normal (0.80x)",
+        style: "background:#0984e3; color:#ffffff; border:none; padding:7px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
       });
 
       const btnStopSpeech = voiceBtnRow.createEl("button", {
-        text: "⏹️ Hentikan Suara AI",
-        style: "background:#d63031; color:#ffffff; border:none; padding:8px 14px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
+        text: "⏹️ Hentikan Suara",
+        style: "background:#d63031; color:#ffffff; border:none; padding:7px 12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
       });
 
       btnFemale.addEventListener("click", () => {
@@ -318,17 +421,14 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
         new Notice("⏹️ Suara AI Dihentikan!");
       });
 
-      // Calibrated Speech Engine: Reads text with natural breathing pauses at commas (no rushing!)
       function playCalibratedVoice() {
         window.speechSynthesis.cancel();
 
-        // Clean out literal emdash / dash symbols and replace with pause commas
         let cleanText = textToReadCurrent.replace(/—|–|emdash|--/gi, ", ");
-        // Ensure natural commas before conjunctions so TTS takes a relaxed breath
         cleanText = cleanText.replace(/\b(and|but|however|therefore|which|that|using|proving|transitioning|for|to)\b/gi, ", $1");
+        cleanText = cleanText.replace(/\s+,/g, ",");
         cleanText = cleanText.replace(/,\s*,/g, ",");
 
-        // Split text by punctuation marks: commas, periods, semicolons
         let clauses = cleanText.split(/(?<=[,.!?])\s+/).filter(Boolean);
         
         let voices = window.speechSynthesis.getVoices();
@@ -361,7 +461,7 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
           utterance.rate = currentSpeechRate;
 
           if (currentVoiceGender === "female") {
-            utterance.pitch = 1.0; // Pure 1.0 natural female pitch (unforced, calm)
+            utterance.pitch = 1.0;
           } else {
             utterance.pitch = 0.8;
           }
@@ -371,7 +471,6 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
           utterance.onend = () => {
             clauseIndex++;
             if (clauseIndex < clauses.length) {
-              // 400ms relaxed breathing pause at commas/periods so TTS never sounds out of breath!
               setTimeout(speakNextClause, 400);
             }
           };
@@ -385,20 +484,23 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
         }
 
         speakNextClause();
-        new Notice(`🔊 Memutar Suara AI ${currentVoiceGender === "female" ? "Wanita 👩" : "Pria 👨"} (${currentSpeechRate}x)... Jeda koma bernapas santai aktif.`);
+        new Notice(`🔊 Memutar Suara AI ${currentVoiceGender === "female" ? "Wanita 👩" : "Pria 👨"} (${currentSpeechRate}x)...`);
       }
 
-      // SECTION 3: Recording Controls & PERMANENT VAULT SAVE & RETAKE
-      const actionRow = container.createDiv({ style: "display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;" });
+      // STEP 2 & STEP 3 BOX
+      const step2Box = container.createDiv({ style: "background:#252b36; padding:12px; border-radius:10px; border:1px solid #353b48;" });
+      step2Box.createEl("span", { text: "🎙️ Langkah 2 & 3: Rekam Suara Anda & Evaluasi Logat", style: "font-size:12px; font-weight:bold; color:#74b9ff; display:block; margin-bottom:8px;" });
+
+      const actionRow = step2Box.createDiv({ style: "display:flex; gap:8px; flex-wrap:wrap;" });
 
       const btnRecord = actionRow.createEl("button", {
         text: "🔴 Mulai Rekam Suara Saya",
-        style: "background:#e17055; color:#ffffff; border:none; padding:11px 20px; border-radius:8px; cursor:pointer; font-weight:bold; font-size:13px;"
+        style: "background:#e17055; color:#ffffff; border:none; padding:9px 16px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
       });
 
       const btnEvaluate = actionRow.createEl("button", {
-        text: "🎯 Penilaian JUJUR & Grafik Kurva Pitch Amerika",
-        style: "background:#00b894; color:#ffffff; border:none; padding:11px 20px; border-radius:8px; cursor:pointer; font-weight:bold; font-size:13px;"
+        text: "🎯 Penilaian JUJUR & Dashboard Grafik",
+        style: "background:#00b894; color:#ffffff; border:none; padding:9px 16px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:12px;"
       });
 
       const statusEl = container.createDiv({ style: "margin-top:12px; font-size:13px; color:#dfe6e9;" });
@@ -565,7 +667,7 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
         }
       });
 
-      // SECTION 4: STRICT UNFILTERED REALITY-BASED SCORING ENGINE WITH NATIVE SVG PITCH WAVEFORM GRAPHICS
+      // STRICT UNFILTERED REALITY-BASED SCORING ENGINE WITH NATIVE SVG PITCH WAVEFORM GRAPHICS
       btnEvaluate.addEventListener("click", async () => {
         scoreCard.empty();
 
