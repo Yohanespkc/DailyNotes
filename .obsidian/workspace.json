@@ -13,15 +13,58 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Resources/Excalidraw/Panduan Belajar Excalidraw.md",
+                "file": "02 - Resources/Excalidraw/video excalidraw.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Panduan Belajar Excalidraw"
+              "title": "video excalidraw"
+            }
+          },
+          {
+            "id": "e6aa735c58b268c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Resources/Excalidraw/Belajar Excalidraw.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Belajar Excalidraw"
+            }
+          },
+          {
+            "id": "1ab0b8e829bc7f60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Resources/Excalidraw/video excalidraw.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "video excalidraw"
+            }
+          },
+          {
+            "id": "bf036bdc4dc595bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Resources/Excalidraw/video excalidraw.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "video excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -217,12 +260,13 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "60df863bf816205b",
+  "active": "bf036bdc4dc595bc",
   "lastOpenFiles": [
-    "02 - Resources/Excalidraw/Tutorial Lengkap Tombol Excalidraw.md",
+    "02 - Resources/Excalidraw/Belajar Excalidraw.md",
     "02 - Resources/Excalidraw/video excalidraw.md",
     "02 - Resources/Excalidraw/Excalidraw + AI.md",
-    "02 - Resources/Excalidraw/Belajar Excalidraw.md",
+    "02 - Resources/Excalidraw/Panduan Belajar Excalidraw.md",
+    "02 - Resources/Excalidraw/Tutorial Lengkap Tombol Excalidraw.md",
     "01 - Notes/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
     "05 - Daily Notes/Attachments/Rekaman-1785546827199.wav",
     "AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
@@ -250,7 +294,6 @@
     "03 - Templates/Template Note Harian.md",
     "05 - Daily Notes",
     "Excalidraw/IDE UNTUK PKC 2026-08-01 02.46.08.excalidraw.md",
-    "02 - Resources/Excalidraw/Panduan Belajar Excalidraw.md",
     "Excalidraw",
     "04 - Archive/DataBase.base",
     "04 - Archive"
