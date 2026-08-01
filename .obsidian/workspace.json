@@ -11,12 +11,14 @@
             "id": "60df863bf816205b",
             "type": "leaf",
             "state": {
-              "type": "audio",
+              "type": "markdown",
               "state": {
-                "file": "05 - Daily Notes/Attachments/Rekaman-1785546827199.wav"
+                "file": "01 - Notes/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-audio",
-              "title": "Rekaman-1785546827199"
+              "icon": "lucide-file",
+              "title": "AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec)"
             }
           }
         ]
@@ -215,8 +217,9 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "e04689de63811493",
+  "active": "60df863bf816205b",
   "lastOpenFiles": [
+    "05 - Daily Notes/Attachments/Rekaman-1785546827199.wav",
     "AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
     "01 - Notes/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
     "Top Repo 1.md",
@@ -237,7 +240,6 @@
     "05 - Daily Notes/Attachments/Rekaman-1785551395956.wav",
     "05 - Daily Notes/Attachments/Rekaman-1785550951087.wav",
     "05 - Daily Notes/Attachments/Rekaman-1785549446464.wav",
-    "05 - Daily Notes/Attachments/Rekaman-1785546827199.wav",
     "05 - Daily Notes/Attachments",
     "01 - Notes/Note Harian - 2026-07-31 06.29.md",
     "01 - Notes/Note Harian - 2026-07-31 06.19.md",
@@ -249,7 +251,6 @@
     "02 - Resources/Excalidraw/video excalidraw.md",
     "02 - Resources/Excalidraw/Tutorial Lengkap Tombol Excalidraw.md",
     "02 - Resources/Excalidraw/Panduan Belajar Excalidraw.md",
-    "Excalidraw/Soal Penjumlahan.md",
     "Excalidraw",
     "04 - Archive/DataBase.base",
     "04 - Archive"
