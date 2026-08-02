@@ -67,14 +67,12 @@
             "id": "1f93c713c01c35f2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "video",
               "state": {
-                "file": "05 - Daily Notes/Note Harian - 2026-08-03.md",
-                "mode": "source",
-                "source": false
+                "file": "video/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4"
               },
               "icon": "lucide-file",
-              "title": "Note Harian - 2026-08-03"
+              "title": "clip_cBgT0PG4JkM_0-00_to_0-42"
             }
           }
         ],
@@ -278,8 +276,14 @@
   },
   "active": "1f93c713c01c35f2",
   "lastOpenFiles": [
-    "05 - Daily Notes/2026-08-03.md",
     "05 - Daily Notes/Note Harian - 2026-08-03.md",
+    "video/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4",
+    "video/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4.part",
+    "video/potongan video",
+    "video",
+    "scratch/test_clip.mp4",
+    "scratch/test_clip.mp4.part",
+    "05 - Daily Notes/2026-08-03.md",
     "05 - Daily Notes/Note Harian - 2026-07-31 06.29.md",
     "Git push.md",
     "CHANGELOG.md",
@@ -299,12 +303,6 @@
     "02 - Resources/Videos/video hologram 2/hologramlist.md",
     "02 - Resources/Videos/video hologram 2/dragon_fire_hologram.mp4",
     "02 - Resources/Videos/video hologram 2/wild_animals_hologram_3l.mp4",
-    "video/dragon_fire_hologram.mp4.part",
-    "video/particle_mix_presstoplay.temp.mp4",
-    "video/particle_mix_presstoplay.mp4.part-Frag14.part",
-    "video/particle_mix_presstoplay.mp4.part-Frag13.part",
-    "video/wild_animals_hologram_3l.mp4.part",
-    "video/particle_mix_presstoplay.mp4.part-Frag12.part",
     "02 - Resources/Videos/Top Repo 1.md",
     "02 - Resources/Videos/video Hologram 1/hologramlist.md",
     "02 - Resources/Videos/Video Web 3D.md",
@@ -314,7 +312,6 @@
     "01 - Notes/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
     "00 - Dashboards/Papan Kanban Proyek Gasing.md",
     "00 - Dashboards/Dashboard Gasing.md",
-    "00 - Dashboards/Daftar Artikel.md",
     "Excalidraw/logo_gasing.svg"
   ]
 }
