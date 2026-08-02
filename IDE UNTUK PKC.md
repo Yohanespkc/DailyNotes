@@ -1,1 +1,0 @@
-![[IDE UNTUK PKC 2026-08-01 02.46.08.excalidraw]]

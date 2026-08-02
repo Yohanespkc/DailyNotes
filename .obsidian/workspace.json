@@ -53,14 +53,12 @@
             "id": "03f0e6f8ed2e3619",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "ISI PKC.md",
-                "mode": "source",
-                "source": false
+                "file": "04 - Archive/logo_gasing 1.png"
               },
-              "icon": "lucide-file",
-              "title": "ISI PKC"
+              "icon": "lucide-image",
+              "title": "logo_gasing 1"
             }
           }
         ],
@@ -262,24 +260,30 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "03f0e6f8ed2e3619",
+  "active": "e04689de63811493",
   "lastOpenFiles": [
-    "logo_gasing 1.png",
-    "Top Repo 1.md",
-    "3D pakai botol.md",
-    "video Hologram/planet_jupiter_hologram.mp4",
-    "video Hologram/jellyfish_aquatic_hologram.mp4",
-    "video Hologram/ironman_hologram.mp4",
-    "video Hologram/hologramlist.md",
-    "video Hologram/holho_compilation_hologram.mp4",
-    "video Hologram/butterfly_hologram.mp4",
+    "04 - Archive/logo_gasing 1.png",
+    "scratch/ISI PKC.md",
+    "04 - Archive/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
+    "Idea Excalidraw.md",
+    "IDE UNTUK PKC.md",
+    "gambar.md",
+    "02 - Resources/Videos/3D pakai botol.md",
+    "02 - Resources/Videos/video Hologram 1/holho_compilation_hologram.mp4",
+    "02 - Resources/Videos/video hologram 2/particle_mix_presstoplay.mp4",
+    "02 - Resources/Videos/video hologram 2/hologramlist.md",
+    "02 - Resources/Videos/video hologram 2/dragon_fire_hologram.mp4",
+    "02 - Resources/Videos/video hologram 2/wild_animals_hologram_3l.mp4",
+    "video/dragon_fire_hologram.mp4.part",
+    "video/particle_mix_presstoplay.temp.mp4",
+    "video/particle_mix_presstoplay.mp4.part-Frag14.part",
+    "video/particle_mix_presstoplay.mp4.part-Frag13.part",
+    "video/wild_animals_hologram_3l.mp4.part",
+    "video/particle_mix_presstoplay.mp4.part-Frag12.part",
+    "02 - Resources/Videos/Top Repo 1.md",
+    "02 - Resources/Videos/video Hologram 1/hologramlist.md",
     "02 - Resources/Videos/Video Web 3D.md",
     "02 - Resources/Videos/Koleksi Video Referensi.md",
-    "video/butterfly_hologram.mp4.part",
-    "video/holho_compilation_hologram.mp4.part",
-    "video/ironman_hologram.mp4.part",
-    "video/planet_jupiter_hologram.mp4.part",
-    "video/jellyfish_aquatic_hologram.mp4.part",
     "01 - Notes/Panduan Plugins Obsidian.md",
     "01 - Notes/Daftar Tugas.md",
     "01 - Notes/Catatan Pembelajaran 1.md",
@@ -291,15 +295,9 @@
     "Untitled.md",
     "02 - Resources/Excalidraw/Video Excalidraw.md",
     "Excalidraw/logo_gasing.svg",
-    "gambar.md",
     "Excalidraw/Drawing 2026-08-02 05.46.19.excalidraw.md",
     "02 - Resources/Excalidraw/Belajar Excalidraw.md",
-    "Idea Excalidraw.md",
     "Excalidraw/Idea Excalidraw 2026-08-02 03.46.42.excalidraw.md",
-    "02 - Resources/Excalidraw/Tutorial Lengkap Tombol Excalidraw.md",
-    "02 - Resources/Excalidraw/Panduan Belajar Excalidraw.md",
-    "02 - Resources/Excalidraw/video excalidraw.md",
-    "AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
-    "Untitled 2.md"
+    "02 - Resources/Excalidraw/Tutorial Lengkap Tombol Excalidraw.md"
   ]
 }
