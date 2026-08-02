@@ -53,12 +53,14 @@
             "id": "03f0e6f8ed2e3619",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "04 - Archive/logo_gasing 1.png"
+                "file": "02 - Resources/Videos/Koleksi 20 Video Physics Toys Terbaik.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "logo_gasing 1"
+              "icon": "lucide-file",
+              "title": "Koleksi 20 Video Physics Toys Terbaik"
             }
           }
         ],
@@ -260,8 +262,11 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "e04689de63811493",
+  "active": "03f0e6f8ed2e3619",
   "lastOpenFiles": [
+    "02 - Resources/Videos/Koleksi Video Referensi.md",
+    "Untitled.md",
+    "02 - Resources/Videos/Koleksi 20 Video Physics Toys Terbaik.md",
     "04 - Archive/logo_gasing 1.png",
     "scratch/ISI PKC.md",
     "04 - Archive/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
@@ -283,7 +288,6 @@
     "02 - Resources/Videos/Top Repo 1.md",
     "02 - Resources/Videos/video Hologram 1/hologramlist.md",
     "02 - Resources/Videos/Video Web 3D.md",
-    "02 - Resources/Videos/Koleksi Video Referensi.md",
     "01 - Notes/Panduan Plugins Obsidian.md",
     "01 - Notes/Daftar Tugas.md",
     "01 - Notes/Catatan Pembelajaran 1.md",
@@ -292,7 +296,6 @@
     "00 - Dashboards/Dashboard Gasing.md",
     "00 - Dashboards/Daftar Artikel.md",
     "Excalidraw/Drawing 2026-08-02 06.34.08.excalidraw.md",
-    "Untitled.md",
     "02 - Resources/Excalidraw/Video Excalidraw.md",
     "Excalidraw/logo_gasing.svg",
     "Excalidraw/Drawing 2026-08-02 05.46.19.excalidraw.md",
