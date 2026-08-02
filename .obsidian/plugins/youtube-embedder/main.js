@@ -1448,7 +1448,7 @@ Format jawaban dalam 3 poin bullet (•), singkat, padat, dan langsung ke intisa
       ? "/usr/local/bin/yt-dlp"
       : "yt-dlp";
 
-    const cmd = `"${ytdlpPath}" "https://www.youtube.com/watch?v=${videoId}" --postprocessor-args "ffmpeg:-ss ${startTimeInput} -to ${endTimeInput}" -f "b[ext=mp4]/best[ext=mp4]/best" -o "${fullOutputPath}" --force-overwrites`;
+    const cmd = `"${ytdlpPath}" --download-sections "*${startTimeInput}-${endTimeInput}" --force-keyframes-at-cuts -f "b[ext=mp4]/18/best" -o "${fullOutputPath}" --force-overwrites "https://www.youtube.com/watch?v=${videoId}"`;
 
     await new Promise((resolve, reject) => {
       exec(cmd, (error, stdout, stderr) => {
