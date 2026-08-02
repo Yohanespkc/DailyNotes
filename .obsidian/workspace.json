@@ -79,12 +79,14 @@
             "id": "c0c7fadca17660f6",
             "type": "leaf",
             "state": {
-              "type": "video",
+              "type": "markdown",
               "state": {
-                "file": "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4"
+                "file": "Video ringkasan.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "clip_cBgT0PG4JkM_0-00_to_0-42"
+              "title": "Video ringkasan"
             }
           }
         ],
@@ -289,20 +291,20 @@
   },
   "active": "c0c7fadca17660f6",
   "lastOpenFiles": [
+    "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4",
+    "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4.part",
+    "02 - Resources/Videos/potongan video/Off-on line sama.mp4",
+    "Video ringkasan.md",
     "scratch/subs.en.vtt",
     "scratch/subs.en.vtt.part",
     "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-43_to_1-21.mp4",
-    "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4",
     "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-43_to_1-22.mp4",
-    "Video ringkasan.md",
-    "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4.part",
     "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-43_to_1-22.mp4.part",
     "05 - Daily Notes/Note Harian - 2026-08-03.md",
     "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-43_to_1-21.mp4.part",
     "05 - Daily Notes/Note Harian - 2026-08-02 05.43.md",
     "02 - Resources/Videos/potongan video",
     "video/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4",
-    "video/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4.part",
     "05 - Daily Notes/2026-08-03.md",
     "05 - Daily Notes/Note Harian - 2026-07-31 06.29.md",
     "Git push.md",
