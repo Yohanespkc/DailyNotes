@@ -1,4 +1,7 @@
 const { Plugin, Notice, MarkdownView, Modal, Setting, requestUrl } = require("obsidian");
+const fs = require("fs");
+const path = require("path");
+const { exec } = require("child_process");
 
 class VideoPromptModal extends Modal {
   constructor(app, onSubmit) {
@@ -82,6 +85,98 @@ class VideoPromptModal extends Modal {
   }
 }
 
+class VideoClipPromptModal extends Modal {
+  constructor(app, onSubmit) {
+    super(app);
+    this.onSubmit = onSubmit;
+  }
+
+  onOpen() {
+    const { contentEl } = this;
+    contentEl.empty();
+    contentEl.createEl("h3", { text: "✂️ Potong Video YouTube (MP4) + Ringkasan AI" });
+
+    let url = "https://www.youtube.com/watch?v=cBgT0PG4JkM";
+    let startTime = "0:00";
+    let endTime = "0:42";
+    let selectedModel = "gemma4:latest";
+    let customSummary = "";
+
+    new Setting(contentEl)
+      .setName("Link / URL YouTube")
+      .setDesc("Tempelkan link video YouTube yang ingin dipotong")
+      .addText((text) => {
+        text.setValue("https://www.youtube.com/watch?v=cBgT0PG4JkM").setPlaceholder("https://youtu.be/...").onChange((val) => {
+          url = val;
+        });
+        setTimeout(() => text.inputEl.focus(), 50);
+      });
+
+    new Setting(contentEl)
+      .setName("Waktu Mulai (Start Time)")
+      .setDesc("Menit/detik awal potongan (contoh: 0:00 atau 1:15)")
+      .addText((text) => {
+        text.setValue("0:00").onChange((val) => {
+          startTime = val;
+        });
+      });
+
+    new Setting(contentEl)
+      .setName("Waktu Selesai (End Time)")
+      .setDesc("Menit/detik akhir potongan (contoh: 0:42 atau 2:30)")
+      .addText((text) => {
+        text.setValue("0:42").onChange((val) => {
+          endTime = val;
+        });
+      });
+
+    new Setting(contentEl)
+      .setName("Pilih Model AI / LLM")
+      .setDesc("Pilih model kecerdasan buatan untuk merangkum potongan video ini")
+      .addDropdown((dropdown) => {
+        dropdown
+          .addOption("gemma4:latest", "💎 Gemma 4 (Recomended - 8B)")
+          .addOption("gasing-tutor:latest", "🎓 Gasing Tutor AI (8B)")
+          .addOption("gasing-pedagogy-qwen:latest", "⚡ Gasing Pedagogy Qwen")
+          .addOption("qwen2.5:0.5b", "🚀 Qwen 2.5 Fast (Super Cepat)")
+          .setValue("gemma4:latest")
+          .onChange((val) => {
+            selectedModel = val;
+          });
+      });
+
+    new Setting(contentEl)
+      .setName("Instruksi Khusus untuk AI (Opsional)")
+      .setDesc("Fokus pembahasan untuk ringkasan potongan video ini")
+      .addTextArea((text) => {
+        text.setPlaceholder("Contoh: Fokuskan ringkasan pada segmen ini...").onChange((val) => {
+          customSummary = val;
+        });
+        text.inputEl.rows = 2;
+        text.inputEl.style.width = "100%";
+      });
+
+    new Setting(contentEl).addButton((btn) =>
+      btn
+        .setButtonText("✂️ Potong MP4, Ringkas dengan AI & Sisipkan")
+        .setCta()
+        .onClick(() => {
+          if (!url || !url.trim()) {
+            new Notice("⚠️ Harap masukkan URL YouTube!");
+            return;
+          }
+          this.close();
+          this.onSubmit(url.trim(), startTime.trim(), endTime.trim(), selectedModel, customSummary.trim());
+        })
+    );
+  }
+
+  onClose() {
+    const { contentEl } = this;
+    contentEl.empty();
+  }
+}
+
 module.exports = class YouTubeEmbedderPlugin extends Plugin {
   async onload() {
     this.injectStudioCSS();
@@ -100,6 +195,11 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
     // 3. Ribbon Icon for Insert Video (📹)
     this.addRibbonIcon("video", "Insert Video", async () => {
       this.openVideoModal();
+    });
+
+    // 4. Ribbon Icon for Potong Video YouTube (✂️)
+    this.addRibbonIcon("scissors", "Potong Video YouTube (Trim MP4 + AI Summary)", async () => {
+      this.openVideoClipModal();
     });
 
     // Command Palette Entries
@@ -124,6 +224,14 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
       name: "Insert Video",
       callback: async () => {
         this.openVideoModal();
+      }
+    });
+
+    this.addCommand({
+      id: "trim-youtube-video-clip",
+      name: "Potong Video YouTube (Trim MP4 + AI Summary)",
+      callback: async () => {
+        this.openVideoClipModal();
       }
     });
   }
@@ -1270,5 +1378,109 @@ Format jawaban dalam 3 poin bullet (•), singkat, padat, dan langsung ke intisa
     const content = await this.app.vault.read(file);
     await this.app.vault.modify(file, content + embedResult);
     new Notice(`✅ Video + Ringkasan AI (${selectedModel}) berhasil dimasukkan!`);
+  }
+
+  openVideoClipModal() {
+    const file = this.app.workspace.getActiveFile();
+    if (!file) {
+      new Notice("⚠️ Harap buka catatan terlebih dahulu sebelum menekan tombol potong video!");
+      return;
+    }
+
+    new VideoClipPromptModal(this.app, async (url, startTime, endTime, selectedModel, customInstruction) => {
+      const loadingNotice = new Notice(`✂️ Memotong video MP4 (${startTime} -> ${endTime}) & AI (${selectedModel}) sedang merangkum...\n⏳ Mohon tunggu sebentar!`, 0);
+      try {
+        await this.insertVideoClipMarkup(file, url, startTime, endTime, selectedModel, customInstruction);
+      } catch (e) {
+        console.error("Error trimming video clip:", e);
+        new Notice("⚠️ Gagal memotong video: " + e.message, 6000);
+      } finally {
+        loadingNotice.hide();
+      }
+    }).open();
+  }
+
+  parseTimeToSeconds(timeStr) {
+    if (!timeStr) return 0;
+    if (typeof timeStr === 'number') return timeStr;
+    const parts = timeStr.toString().trim().split(":");
+    if (parts.length === 3) {
+      return (parseInt(parts[0]) || 0) * 3600 + (parseInt(parts[1]) || 0) * 60 + (parseInt(parts[2]) || 0);
+    } else if (parts.length === 2) {
+      return (parseInt(parts[0]) || 0) * 60 + (parseInt(parts[1]) || 0);
+    } else {
+      return parseInt(parts[0]) || 0;
+    }
+  }
+
+  async insertVideoClipMarkup(file, url, startTimeInput, endTimeInput, selectedModel, customInstruction) {
+    let videoId = "";
+    const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/);
+    if (match && match[1]) {
+      videoId = match[1];
+    } else {
+      videoId = url;
+    }
+
+    const startSec = this.parseTimeToSeconds(startTimeInput || "0:00");
+    const endSec = this.parseTimeToSeconds(endTimeInput || "0:42");
+
+    const vaultBasePath = (this.app.vault.adapter && typeof this.app.vault.adapter.getBasePath === "function") 
+      ? this.app.vault.adapter.getBasePath() 
+      : "/Users/yohanessurya/Documents/Development/Gasing-obs/Gasing";
+      
+    const relativeFolder = path.join("video", "potongan video");
+    const targetDir = path.join(vaultBasePath, relativeFolder);
+
+    if (!fs.existsSync(targetDir)) {
+      fs.mkdirSync(targetDir, { recursive: true });
+    }
+
+    const cleanStart = (startTimeInput || "0-00").replace(/:/g, "-");
+    const cleanEnd = (endTimeInput || "0-42").replace(/:/g, "-");
+    const fileName = `clip_${videoId}_${cleanStart}_to_${cleanEnd}.mp4`;
+    const relativeFilePath = path.join(relativeFolder, fileName);
+    const fullOutputPath = path.join(targetDir, fileName);
+
+    const ytdlpPath = fs.existsSync("/opt/homebrew/bin/yt-dlp")
+      ? "/opt/homebrew/bin/yt-dlp"
+      : fs.existsSync("/usr/local/bin/yt-dlp")
+      ? "/usr/local/bin/yt-dlp"
+      : "yt-dlp";
+
+    const cmd = `"${ytdlpPath}" "https://www.youtube.com/watch?v=${videoId}" --postprocessor-args "ffmpeg:-ss ${startTimeInput} -to ${endTimeInput}" -f "b[ext=mp4]/best[ext=mp4]/best" -o "${fullOutputPath}" --force-overwrites`;
+
+    await new Promise((resolve, reject) => {
+      exec(cmd, (error, stdout, stderr) => {
+        if (error) {
+          console.error("yt-dlp clip trim error:", stderr || stdout);
+          reject(new Error(stderr || error.message));
+        } else {
+          resolve(fullOutputPath);
+        }
+      });
+    });
+
+    const now = new Date();
+    const formattedDate = now.toLocaleString("id-ID", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+
+    const meta = await this.fetchYouTubeMetadata(videoId);
+    const videoTitle = meta && meta.title ? meta.title : "Video YouTube";
+    const authorName = meta && meta.author_name ? meta.author_name : "YouTube Creator";
+
+    const clipPromptInstruction = `Fokus analisis khusus untuk potongan video segmen durasi ${startTimeInput} hingga ${endTimeInput}. ${customInstruction || ""}`;
+    const aiSummary = await this.generateAISummary(selectedModel, videoTitle, authorName, `${startTimeInput} - ${endTimeInput}`, clipPromptInstruction);
+
+    const embedResult = `\n![[${relativeFilePath}]]\n\n<iframe width="100%" height="380" src="https://www.youtube.com/embed/${videoId}?start=${startSec}&end=${endSec}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n\n> [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**\n> - 📌 **Judul Video:** ${videoTitle}\n> - 👤 **Kanal:** ${authorName}\n> - ⏱️ **Durasi Potongan:** ${startTimeInput} - ${endTimeInput} (${endSec - startSec} detik)\n> - 📁 **File MP4 Tersimpan:** \`${relativeFilePath}\`\n> - 🧠 **Model AI:** \`${selectedModel}\`\n> - 🔗 **Link Direct YouTube:** [Buka Segmen Ini di YouTube](https://youtu.be/${videoId}?t=${startSec}s)\n> - 🕒 **Dimasukkan Pada:** ${formattedDate}\n> \n> 📝 **Ringkasan Otomatis AI Potongan Video:**\n> ${aiSummary}\n\n`;
+
+    const content = await this.app.vault.read(file);
+    await this.app.vault.modify(file, content + embedResult);
+    new Notice(`✅ Potongan Video (${startTimeInput} -> ${endTimeInput}) & Ringkasan AI berhasil disisipkan!`);
   }
 };
