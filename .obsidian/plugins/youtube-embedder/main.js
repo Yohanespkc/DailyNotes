@@ -1448,10 +1448,20 @@ Format jawaban dalam 3 poin bullet (•), singkat, padat, dan langsung ke intisa
       ? "/usr/local/bin/yt-dlp"
       : "yt-dlp";
 
-    const cmd = `"${ytdlpPath}" --download-sections "*${startTimeInput}-${endTimeInput}" --force-keyframes-at-cuts -f "b[ext=mp4]/18/best" -o "${fullOutputPath}" --force-overwrites "https://www.youtube.com/watch?v=${videoId}"`;
+    const ffmpegPath = fs.existsSync("/opt/homebrew/bin/ffmpeg")
+      ? "/opt/homebrew/bin/ffmpeg"
+      : fs.existsSync("/usr/local/bin/ffmpeg")
+      ? "/usr/local/bin/ffmpeg"
+      : "ffmpeg";
+
+    const cmd = `"${ytdlpPath}" --no-update --ffmpeg-location "${ffmpegPath}" --download-sections "*${startTimeInput}-${endTimeInput}" --force-keyframes-at-cuts -f "b[ext=mp4]/18/best" -o "${fullOutputPath}" --force-overwrites "https://www.youtube.com/watch?v=${videoId}"`;
+
+    const execEnv = Object.assign({}, process.env, {
+      PATH: `/opt/homebrew/bin:/usr/local/bin:${process.env.PATH || ""}`
+    });
 
     await new Promise((resolve, reject) => {
-      exec(cmd, (error, stdout, stderr) => {
+      exec(cmd, { env: execEnv }, (error, stdout, stderr) => {
         if (error) {
           console.error("yt-dlp clip trim error:", stderr || stdout);
           reject(new Error(stderr || error.message));
