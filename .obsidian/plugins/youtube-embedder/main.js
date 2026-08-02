@@ -1429,7 +1429,7 @@ Format jawaban dalam 3 poin bullet (•), singkat, padat, dan langsung ke intisa
       ? this.app.vault.adapter.getBasePath() 
       : "/Users/yohanessurya/Documents/Development/Gasing-obs/Gasing";
       
-    const relativeFolder = path.join("video", "potongan video");
+    const relativeFolder = path.join("02 - Resources", "Videos", "potongan video");
     const targetDir = path.join(vaultBasePath, relativeFolder);
 
     if (!fs.existsSync(targetDir)) {
