@@ -67,12 +67,14 @@
             "id": "1f93c713c01c35f2",
             "type": "leaf",
             "state": {
-              "type": "video",
+              "type": "markdown",
               "state": {
-                "file": "video/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4"
+                "file": "05 - Daily Notes/Note Harian - 2026-08-03.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "clip_cBgT0PG4JkM_0-00_to_0-42"
+              "title": "Note Harian - 2026-08-03"
             }
           }
         ],
@@ -249,15 +251,16 @@
               "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
+      "youtube-embedder:Potong Video YouTube (Trim MP4 + AI Summary)": false,
       "obsidian-git:Open Git source control": false,
       "youtube-embedder:Buat Note Harian Baru": false,
       "youtube-embedder:Generate AI English Progress Report": false,
@@ -276,9 +279,14 @@
   },
   "active": "1f93c713c01c35f2",
   "lastOpenFiles": [
-    "05 - Daily Notes/Note Harian - 2026-08-03.md",
+    "05 - Daily Notes/Note Harian - 2026-08-02 05.43.md",
+    "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4",
+    "02 - Resources/Videos/potongan video",
     "video/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4",
     "video/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4.part",
+    "video/potongan video/clip_42s_only.mp4",
+    "video/potongan video/clip_42s_only.mp4.part",
+    "05 - Daily Notes/Note Harian - 2026-08-03.md",
     "video/potongan video",
     "video",
     "scratch/test_clip.mp4",
@@ -298,11 +306,7 @@
     "IDE UNTUK PKC.md",
     "gambar.md",
     "02 - Resources/Videos/3D pakai botol.md",
-    "02 - Resources/Videos/video Hologram 1/holho_compilation_hologram.mp4",
-    "02 - Resources/Videos/video hologram 2/particle_mix_presstoplay.mp4",
     "02 - Resources/Videos/video hologram 2/hologramlist.md",
-    "02 - Resources/Videos/video hologram 2/dragon_fire_hologram.mp4",
-    "02 - Resources/Videos/video hologram 2/wild_animals_hologram_3l.mp4",
     "02 - Resources/Videos/Top Repo 1.md",
     "02 - Resources/Videos/video Hologram 1/hologramlist.md",
     "02 - Resources/Videos/Video Web 3D.md",
@@ -311,7 +315,6 @@
     "01 - Notes/Catatan Pembelajaran 1.md",
     "01 - Notes/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
     "00 - Dashboards/Papan Kanban Proyek Gasing.md",
-    "00 - Dashboards/Dashboard Gasing.md",
     "Excalidraw/logo_gasing.svg"
   ]
 }
