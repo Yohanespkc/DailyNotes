@@ -39,12 +39,14 @@
             "id": "c3c0b7103516937d",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-08-02 06.34.08.excalidraw.md"
+                "file": "01 - Notes/Panduan Plugins Obsidian.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-08-02 06.34.08.excalidraw"
+              "icon": "lucide-file",
+              "title": "Panduan Plugins Obsidian"
             }
           }
         ],
@@ -98,7 +100,10 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
@@ -245,8 +250,14 @@
   },
   "active": "c3c0b7103516937d",
   "lastOpenFiles": [
-    "Untitled.md",
+    "01 - Notes/Daftar Tugas.md",
+    "01 - Notes/Catatan Pembelajaran 1.md",
+    "01 - Notes/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
+    "00 - Dashboards/Papan Kanban Proyek Gasing.md",
+    "00 - Dashboards/Dashboard Gasing.md",
+    "00 - Dashboards/Daftar Artikel.md",
     "Excalidraw/Drawing 2026-08-02 06.34.08.excalidraw.md",
+    "Untitled.md",
     "02 - Resources/Excalidraw/Video Excalidraw.md",
     "Excalidraw/logo_gasing.svg",
     "gambar.md",
@@ -263,7 +274,6 @@
     "02 - Resources/Excalidraw/Tutorial Lengkap Tombol Excalidraw.md",
     "02 - Resources/Excalidraw/Panduan Belajar Excalidraw.md",
     "02 - Resources/Excalidraw/video excalidraw.md",
-    "01 - Notes/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
     "05 - Daily Notes/Attachments/Rekaman-1785546827199.wav",
     "AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
     "Untitled 2.md",
@@ -273,11 +283,6 @@
     "IDE UNTUK PKC.md",
     "05 - Daily Notes/Note Harian - 2026-08-01 14.21.md",
     "05 - Daily Notes/Note Harian - 2026-07-31 06.29.md",
-    "02 - Resources/Videos/Video Web 3D.md",
-    "02 - Resources/Videos/video excalidraw.md",
-    "02 - Resources/Videos/Top Repo July 2026.md",
-    "02 - Resources/Videos/Koleksi Video Referensi.md",
-    "01 - Notes/Daftar Tugas.md",
     "05 - Daily Notes/Attachments/Rekaman-1785551711323.wav",
     "05 - Daily Notes/Attachments/Rekaman-1785551395956.wav",
     "05 - Daily Notes/Attachments/Rekaman-1785550951087.wav",
