@@ -1413,16 +1413,85 @@ Format jawaban dalam 3 poin bullet (•), singkat, padat, dan langsung ke intisa
     }
   }
 
-  async generateClipAISummary(selectedModel, videoTitle, authorName, startTimeInput, endTimeInput, customInstruction) {
-    const promptText = `Anda merupakan Asisten AI cerdas untuk Obsidian Vault.
+  async fetchTranscriptForSegment(videoId, startTimeInput, endTimeInput) {
+    try {
+      const ytdlpPath = fs.existsSync("/opt/homebrew/bin/yt-dlp")
+        ? "/opt/homebrew/bin/yt-dlp"
+        : fs.existsSync("/usr/local/bin/yt-dlp")
+        ? "/usr/local/bin/yt-dlp"
+        : "yt-dlp";
+
+      const tmpSubPath = path.join(require("os").tmpdir(), `sub_${videoId}_${Date.now()}`);
+      const cmd = `"${ytdlpPath}" --no-update --write-auto-subs --sub-lang "en,id" --skip-download -o "${tmpSubPath}" "https://www.youtube.com/watch?v=${videoId}"`;
+
+      const execEnv = Object.assign({}, process.env, {
+        PATH: `/opt/homebrew/bin:/usr/local/bin:${process.env.PATH || ""}`
+      });
+
+      await new Promise((resolve) => {
+        exec(cmd, { env: execEnv }, () => resolve());
+      });
+
+      let subFile = "";
+      if (fs.existsSync(`${tmpSubPath}.en.vtt`)) subFile = `${tmpSubPath}.en.vtt`;
+      else if (fs.existsSync(`${tmpSubPath}.id.vtt`)) subFile = `${tmpSubPath}.id.vtt`;
+
+      if (!subFile) return "";
+
+      const startSec = this.parseTimeToSeconds(startTimeInput);
+      const endSec = this.parseTimeToSeconds(endTimeInput);
+
+      const vttContent = fs.readFileSync(subFile, "utf-8");
+      try { fs.unlinkSync(subFile); } catch (e) {}
+
+      const blocks = vttContent.split(/\n\r?\n/);
+      let segmentTexts = [];
+
+      for (const block of blocks) {
+        const timeMatch = block.match(/(\d{2}):(\d{2}):(\d{2})\.\d+ --> (\d{2}):(\d{2}):(\d{2})\.\d+/);
+        if (timeMatch) {
+          const sSec = parseInt(timeMatch[1]) * 3600 + parseInt(timeMatch[2]) * 60 + parseInt(timeMatch[3]);
+          const eSec = parseInt(timeMatch[4]) * 3600 + parseInt(timeMatch[5]) * 60 + parseInt(timeMatch[6]);
+          if (sSec <= endSec && eSec >= startSec) {
+            const lines = block.split(/\n/).filter(l => !l.includes("-->") && !l.startsWith("WEBVTT") && !l.startsWith("Kind:") && !l.startsWith("Language:"));
+            const cleanText = lines.map(l => l.replace(/<[^>]*>/g, "").trim()).filter(Boolean).join(" ");
+            if (cleanText) segmentTexts.push(cleanText);
+          }
+        }
+      }
+
+      return Array.from(new Set(segmentTexts)).join(" ");
+    } catch (e) {
+      console.log("Error fetching transcript segment:", e);
+      return "";
+    }
+  }
+
+  async generateClipAISummary(selectedModel, videoTitle, authorName, startTimeInput, endTimeInput, customInstruction, videoId) {
+    const transcriptText = await this.fetchTranscriptForSegment(videoId, startTimeInput, endTimeInput);
+
+    let promptText = "";
+    if (transcriptText && transcriptText.trim().length > 10) {
+      promptText = `Anda merupakan Asisten AI cerdas untuk Obsidian Vault.
+Berikut adalah TEKS TRANSKRIP/PERCAKAPAN ASLI yang diucapkan pada segmen potongan video durasi menit ${startTimeInput} sampai ${endTimeInput}:
+"${transcriptText}"
+
+Berdasarkan TEKS TRANSKRIP SEGMEN DI ATAS, buatkan ringkasan 3 poin penting dalam Bahasa Indonesia yang rapi dan informatif:
+- Judul Video Utama: "${videoTitle}"
+- Segmen Waktu: ${startTimeInput} - ${endTimeInput}
+${customInstruction ? `- Instruksi Tambahan: ${customInstruction}` : ""}
+
+Aturan: Ringkas HANYA apa yang benar-benar dikatakan pada transkrip segmen waktu ${startTimeInput}-${endTimeInput} di atas. Format dalam 3 poin bullet (•).`;
+    } else {
+      promptText = `Anda merupakan Asisten AI cerdas untuk Obsidian Vault.
 Analisis dan buatkan ringkasan 3 poin penting KHUSUS untuk POTONGAN SEGMEN VIDEO berikut:
 - Judul Video Utama: "${videoTitle}"
 - Kanal: "${authorName}"
 - Segmen Waktu Potongan: menit ${startTimeInput} hingga menit ${endTimeInput}
 ${customInstruction ? `- Instruksi Khusus Pengguna: ${customInstruction}` : ""}
 
-PENTING: Fokuskan analisis dan ringkasan HANYA pada isi pembahasan yang terjadi di dalam rentang potongan waktu menit ${startTimeInput} sampai ${endTimeInput} ini saja. JANGAN merangkum keseluruhan isi video global.
-Format jawaban dalam 3 poin bullet (•), singkat, padat, dan langsung ke intisari segmen potongan tersebut.`;
+PENTING: Fokuskan analisis HANYA pada bagian durasi menit ${startTimeInput} sampai ${endTimeInput}. Format dalam 3 poin bullet (•).`;
+    }
 
     try {
       const res = await requestUrl({
@@ -1516,7 +1585,7 @@ Format jawaban dalam 3 poin bullet (•), singkat, padat, dan langsung ke intisa
     const videoTitle = meta && meta.title ? meta.title : "Video YouTube";
     const authorName = meta && meta.author_name ? meta.author_name : "YouTube Creator";
 
-    const aiSummary = await this.generateClipAISummary(selectedModel, videoTitle, authorName, startTimeInput, endTimeInput, customInstruction);
+    const aiSummary = await this.generateClipAISummary(selectedModel, videoTitle, authorName, startTimeInput, endTimeInput, customInstruction, videoId);
 
     const embedResult = `\n![[${relativeFilePath}]]\n\n> [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**\n> - 📌 **Judul Video:** ${videoTitle}\n> - 👤 **Kanal:** ${authorName}\n> - ⏱️ **Durasi Potongan:** ${startTimeInput} - ${endTimeInput} (${endSec - startSec} detik)\n> - 📁 **File MP4 Tersimpan:** \`${relativeFilePath}\`\n> - 🧠 **Model AI:** \`${selectedModel}\`\n> - 🔗 **Link Direct YouTube:** [Buka Segmen Ini di YouTube](https://youtu.be/${videoId}?t=${startSec}s)\n> - 🕒 **Dimasukkan Pada:** ${formattedDate}\n> \n> 📝 **Ringkasan Otomatis AI Potongan Video:**\n> ${aiSummary}\n\n`;
 
