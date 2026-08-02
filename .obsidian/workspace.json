@@ -67,18 +67,30 @@
             "id": "1f93c713c01c35f2",
             "type": "leaf",
             "state": {
+              "type": "video",
+              "state": {
+                "file": "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-43_to_1-21.mp4"
+              },
+              "icon": "lucide-file",
+              "title": "clip_cBgT0PG4JkM_0-43_to_1-21"
+            }
+          },
+          {
+            "id": "c0c7fadca17660f6",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "05 - Daily Notes/Note Harian - 2026-08-03.md",
+                "file": "Video ringkasan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Note Harian - 2026-08-03"
+              "title": "Video ringkasan"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -277,20 +289,22 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "1f93c713c01c35f2",
+  "active": "c0c7fadca17660f6",
   "lastOpenFiles": [
-    "05 - Daily Notes/Note Harian - 2026-08-02 05.43.md",
+    "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4.part",
+    "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-43_to_1-21.mp4",
+    "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-43_to_1-22.mp4",
     "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4",
+    "Video ringkasan.md",
+    "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-43_to_1-22.mp4.part",
+    "05 - Daily Notes/Note Harian - 2026-08-03.md",
+    "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-43_to_1-21.mp4.part",
+    "05 - Daily Notes/Note Harian - 2026-08-02 05.43.md",
     "02 - Resources/Videos/potongan video",
     "video/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4",
     "video/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4.part",
     "video/potongan video/clip_42s_only.mp4",
     "video/potongan video/clip_42s_only.mp4.part",
-    "05 - Daily Notes/Note Harian - 2026-08-03.md",
-    "video/potongan video",
-    "video",
-    "scratch/test_clip.mp4",
-    "scratch/test_clip.mp4.part",
     "05 - Daily Notes/2026-08-03.md",
     "05 - Daily Notes/Note Harian - 2026-07-31 06.29.md",
     "Git push.md",
@@ -314,7 +328,6 @@
     "01 - Notes/Daftar Tugas.md",
     "01 - Notes/Catatan Pembelajaran 1.md",
     "01 - Notes/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
-    "00 - Dashboards/Papan Kanban Proyek Gasing.md",
     "Excalidraw/logo_gasing.svg"
   ]
 }

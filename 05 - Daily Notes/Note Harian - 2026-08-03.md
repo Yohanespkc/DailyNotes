@@ -51,3 +51,30 @@ Namun demikian, tingginya variasi proyek yang dikerjakan bersamaan dalam satu se
 ## 4 Conclusion
 
 Kegiatan pengembangan hari ini berhasil menyelesaikan beberapa milestone penting: aplikasi game edukasi Math Mario dan Duolingo clone telah terinisialisasi, sistem shortcut desktop aktif, plugin Obsidian terintegrasi, serta sistem pemantauan laporan harian otomatis jam 20.00 telah diimplementasikan. Prioritas utama untuk besok adalah melakukan commit pada repositori yang tertunda, merapikan struktur modul kode game, dan menguji eksekusi cron harian pada jam 20.00.
+
+![[02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-43_to_1-21.mp4]]
+
+<iframe width="100%" height="380" src="https://www.youtube.com/embed/cBgT0PG4JkM?start=43&end=81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**
+> - 📌 **Judul Video:** 160,000+ Cloned These 3 FREE AI Employees: Here's How (GitHub Claude Skills)
+> - 👤 **Kanal:** Helena Liu
+> - ⏱️ **Durasi Potongan:** 0:43 - 1:21 (38 detik)
+> - 📁 **File MP4 Tersimpan:** `02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-43_to_1-21.mp4`
+> - 🧠 **Model AI:** `gemma4:latest`
+> - 🔗 **Link Direct YouTube:** [Buka Segmen Ini di YouTube](https://youtu.be/cBgT0PG4JkM?t=43s)
+> - 🕒 **Dimasukkan Pada:** 3 Agustus 2026 pukul 05.52
+> 
+> 📝 **Ringkasan Otomatis AI Potongan Video:**
+> Sebagai Asisten AI cerdas untuk Obsidian Vault Gasing, berikut adalah analisis 3 poin penting dari segmen video tersebut, difokuskan pada penerapan praktis dan metodologi yang diajarkan:
+
+***
+
+**Ringkasan Analisis Video Segmentasi (0:43 - 1:21)**
+
+• **Strategi Pemanfaatan AI Skala Besar:** Penekanan pembahasan adalah bagaimana memanfaatkan model bahasa besar (LLM) gratis—seperti Claude dan melalui ekosistem GitHub—untuk secara efisien menskalakan tenaga kerja virtual ("AI Employees"). Strategi ini memungkinkan pengguna memproses volume tugas yang sangat besar tanpa biaya operasional tinggi.
+
+• **Metodologi *Prompt Engineering* Spesifik:** Segmen tersebut menyoroti pentingnya teknik *prompt engineering* yang terstruktur dan detail. Untuk "mengkloning" peran karyawan, pengguna tidak hanya memberikan perintah umum, melainkan harus mendefinisikan secara spesifik tugas, batasan peran (persona), gaya bahasa, hingga format keluaran untuk memastikan output AI memiliki kualitas profesional yang konsisten.
+
+• **Aplikasi *Skill Cloning* Profesional:** Hasil akhir dari proses ini adalah kemampuan meniru berbagai peran profesional—seperti analis konten, penulis teknis, atau programmer pemula—melalui instruksi yang terperinci. Ini memungkinkan pengguna menjalankan fungsi-fungsi pekerjaan kompleks secara otomatis hanya dengan mengoptimalkan perintah (*prompts*) pada platform AI.
+
