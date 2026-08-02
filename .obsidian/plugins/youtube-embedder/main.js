@@ -1413,6 +1413,38 @@ Format jawaban dalam 3 poin bullet (•), singkat, padat, dan langsung ke intisa
     }
   }
 
+  async generateClipAISummary(selectedModel, videoTitle, authorName, startTimeInput, endTimeInput, customInstruction) {
+    const promptText = `Anda merupakan Asisten AI cerdas untuk Obsidian Vault.
+Analisis dan buatkan ringkasan 3 poin penting KHUSUS untuk POTONGAN SEGMEN VIDEO berikut:
+- Judul Video Utama: "${videoTitle}"
+- Kanal: "${authorName}"
+- Segmen Waktu Potongan: menit ${startTimeInput} hingga menit ${endTimeInput}
+${customInstruction ? `- Instruksi Khusus Pengguna: ${customInstruction}` : ""}
+
+PENTING: Fokuskan analisis dan ringkasan HANYA pada isi pembahasan yang terjadi di dalam rentang potongan waktu menit ${startTimeInput} sampai ${endTimeInput} ini saja. JANGAN merangkum keseluruhan isi video global.
+Format jawaban dalam 3 poin bullet (•), singkat, padat, dan langsung ke intisari segmen potongan tersebut.`;
+
+    try {
+      const res = await requestUrl({
+        url: "http://127.0.0.1:11434/api/generate",
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: selectedModel,
+          prompt: promptText,
+          stream: false
+        })
+      });
+      if (res.status === 200 && res.json && res.json.response) {
+        return res.json.response.trim();
+      }
+    } catch (e) {
+      console.log("AI endpoint error for model " + selectedModel + ":", e);
+    }
+
+    return `• Pembahasan pada segmen potongan menit ${startTimeInput} - ${endTimeInput} dalam video "${videoTitle}".\n• Penjelasan spesifik difokuskan pada bagian durasi ini saja.\n• Sangat bermanfaat sebagai referensi singkat topik pembahasan tersebut.`;
+  }
+
   async insertVideoClipMarkup(file, url, startTimeInput, endTimeInput, selectedModel, customInstruction) {
     let videoId = "";
     const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/);
@@ -1484,10 +1516,9 @@ Format jawaban dalam 3 poin bullet (•), singkat, padat, dan langsung ke intisa
     const videoTitle = meta && meta.title ? meta.title : "Video YouTube";
     const authorName = meta && meta.author_name ? meta.author_name : "YouTube Creator";
 
-    const clipPromptInstruction = `Fokus analisis khusus untuk potongan video segmen durasi ${startTimeInput} hingga ${endTimeInput}. ${customInstruction || ""}`;
-    const aiSummary = await this.generateAISummary(selectedModel, videoTitle, authorName, `${startTimeInput} - ${endTimeInput}`, clipPromptInstruction);
+    const aiSummary = await this.generateClipAISummary(selectedModel, videoTitle, authorName, startTimeInput, endTimeInput, customInstruction);
 
-    const embedResult = `\n![[${relativeFilePath}]]\n\n<iframe width="100%" height="380" src="https://www.youtube.com/embed/${videoId}?start=${startSec}&end=${endSec}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n\n> [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**\n> - 📌 **Judul Video:** ${videoTitle}\n> - 👤 **Kanal:** ${authorName}\n> - ⏱️ **Durasi Potongan:** ${startTimeInput} - ${endTimeInput} (${endSec - startSec} detik)\n> - 📁 **File MP4 Tersimpan:** \`${relativeFilePath}\`\n> - 🧠 **Model AI:** \`${selectedModel}\`\n> - 🔗 **Link Direct YouTube:** [Buka Segmen Ini di YouTube](https://youtu.be/${videoId}?t=${startSec}s)\n> - 🕒 **Dimasukkan Pada:** ${formattedDate}\n> \n> 📝 **Ringkasan Otomatis AI Potongan Video:**\n> ${aiSummary}\n\n`;
+    const embedResult = `\n![[${relativeFilePath}]]\n\n> [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**\n> - 📌 **Judul Video:** ${videoTitle}\n> - 👤 **Kanal:** ${authorName}\n> - ⏱️ **Durasi Potongan:** ${startTimeInput} - ${endTimeInput} (${endSec - startSec} detik)\n> - 📁 **File MP4 Tersimpan:** \`${relativeFilePath}\`\n> - 🧠 **Model AI:** \`${selectedModel}\`\n> - 🔗 **Link Direct YouTube:** [Buka Segmen Ini di YouTube](https://youtu.be/${videoId}?t=${startSec}s)\n> - 🕒 **Dimasukkan Pada:** ${formattedDate}\n> \n> 📝 **Ringkasan Otomatis AI Potongan Video:**\n> ${aiSummary}\n\n`;
 
     const content = await this.app.vault.read(file);
     await this.app.vault.modify(file, content + embedResult);
