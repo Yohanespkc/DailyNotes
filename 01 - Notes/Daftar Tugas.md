@@ -6,4 +6,6 @@
 - [ ] Menghbungkan grafana
 - [ ] Menggunakan LLM Council
 - [ ] Menggunakan Last30days
+- [ ] Menggunakan cutting video
+- [ ] Menggunakan excalidraw
 - [ ] 
