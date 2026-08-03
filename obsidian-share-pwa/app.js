@@ -268,6 +268,10 @@ function setupDataConnection(conn) {
 
     updateStatus('online', `Terhubung (${activeConnections.size} teman)`);
     inviteModal.classList.add('hidden');
+
+    if (window.posthog && typeof window.posthog.capture === 'function') {
+      window.posthog.capture('p2p_peer_connected', { peer_id: conn.peer });
+    }
   });
 
   conn.on('data', (data) => {
@@ -468,6 +472,10 @@ function copyToClipboard(text, successMsg) {
 function handleSendMessage() {
   const text = messageInput.value.trim();
   if (!text) return;
+
+  if (window.posthog && typeof window.posthog.capture === 'function') {
+    window.posthog.capture('message_sent', { text_length: text.length });
+  }
 
   if (activeConnections.size === 0) {
     alert('Belum ada teman terhubung! Klik "Undang Teman" untuk membagikan link auto-connect ke teman Anda.');
@@ -672,3 +680,74 @@ window.addEventListener('DOMContentLoaded', () => {
   setupUserName();
   initPeer();
 });
+
+// --- PostHog Analytics Logic ---
+const btnPosthogTrack = document.getElementById('btnPosthogTrack');
+const posthogModal = document.getElementById('posthogModal');
+const btnClosePosthogModal = document.getElementById('btnClosePosthogModal');
+const posthogApiKeyInput = document.getElementById('posthogApiKeyInput');
+const posthogHostInput = document.getElementById('posthogHostInput');
+const btnSavePosthogConfig = document.getElementById('btnSavePosthogConfig');
+const btnSendTestPosthogEvent = document.getElementById('btnSendTestPosthogEvent');
+const posthogStatusMsg = document.getElementById('posthogStatusMsg');
+
+if (btnPosthogTrack) {
+  btnPosthogTrack.addEventListener('click', () => {
+    if (posthogApiKeyInput) {
+      posthogApiKeyInput.value = localStorage.getItem('posthog_api_key') || '';
+    }
+    if (posthogHostInput) {
+      posthogHostInput.value = localStorage.getItem('posthog_host') || 'https://us.i.posthog.com';
+    }
+    if (posthogModal) posthogModal.classList.remove('hidden');
+  });
+}
+
+if (btnClosePosthogModal) {
+  btnClosePosthogModal.addEventListener('click', () => {
+    if (posthogModal) posthogModal.classList.add('hidden');
+  });
+}
+
+if (btnSavePosthogConfig) {
+  btnSavePosthogConfig.addEventListener('click', () => {
+    const key = posthogApiKeyInput.value.trim();
+    const host = posthogHostInput.value.trim() || 'https://us.i.posthog.com';
+    if (key) {
+      localStorage.setItem('posthog_api_key', key);
+      localStorage.setItem('posthog_host', host);
+      if (window.posthog && typeof window.posthog.init === 'function') {
+        window.posthog.init(key, { api_host: host, person_profiles: 'identified_only' });
+      }
+      showPosthogStatus('✅ Konfigurasi PostHog berhasil disimpan & diinisialisasi!');
+    } else {
+      showPosthogStatus('⚠️ Mohon masukkan API Key PostHog Anda.');
+    }
+  });
+}
+
+if (btnSendTestPosthogEvent) {
+  btnSendTestPosthogEvent.addEventListener('click', () => {
+    if (window.posthog && typeof window.posthog.capture === 'function') {
+      window.posthog.capture('obsidian_button_clicked', {
+        app_name: 'TeleShare Obsidian PWA',
+        user_name: myUserName || 'Anonymous',
+        timestamp: new Date().toISOString()
+      });
+      showPosthogStatus('🚀 Event "obsidian_button_clicked" berhasil dikirim ke PostHog!');
+    } else {
+      showPosthogStatus('⚠️ PostHog SDK belum terinisialisasi.');
+    }
+  });
+}
+
+function showPosthogStatus(msg) {
+  if (posthogStatusMsg) {
+    posthogStatusMsg.textContent = msg;
+    posthogStatusMsg.classList.remove('hidden');
+    setTimeout(() => {
+      posthogStatusMsg.classList.add('hidden');
+    }, 4000);
+  }
+}
+

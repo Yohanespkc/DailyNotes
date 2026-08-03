@@ -14,9 +14,28 @@ class TeleShareHandler(http.server.BaseHTTPRequestHandler):
     def do_OPTIONS(self):
         self.send_response(200)
         self.send_header('Access-Control-Allow-Origin', '*')
-        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, HEAD')
         self.send_header('Access-Control-Allow-Headers', 'Content-Type')
         self.end_headers()
+
+    def do_HEAD(self):
+        req_path = self.path.split('?')[0]
+        if req_path == '/':
+            req_path = '/index.html'
+
+        local_path = os.path.join(WEB_DIR, req_path.lstrip('/'))
+        if os.path.isfile(local_path):
+            mime_type, _ = mimetypes.guess_type(local_path)
+            if not mime_type:
+                mime_type = 'application/octet-stream'
+            
+            file_size = os.path.getsize(local_path)
+            self.send_response(200)
+            self.send_header('Content-Type', mime_type)
+            self.send_header('Content-Length', str(file_size))
+            self.end_headers()
+        else:
+            self.send_error(404, "File not found")
 
     def do_POST(self):
         if self.path.startswith('/api/save-teleobsi'):
