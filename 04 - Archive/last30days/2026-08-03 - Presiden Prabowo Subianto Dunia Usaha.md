@@ -18,7 +18,7 @@ Dalam 30 hari terakhir, dinamika sentimen dunia usaha dan publik terhadap pemeri
 ## 📈 Sisi Positif: Sinergi & Keterbukaan Dialog
 
 1. **Semangat Indonesia Incorporated**: Presiden Prabowo secara aktif merangkul Kadin Indonesia dan asosiasi bisnis daerah untuk berkolaborasi mempercepat pertumbuhan ekonomi menuju target 8%.
-2. **Dukungan Program Prioritas**: Dunia usaha berkomitmen mendukung rantai pasok program strategis nasional seperti Makan Bergizi Gratis dan pemerataan ekonomi daerah.
+2. **Dukungan Program Prioritas**: Dunis usaha berkomitmen mendukung rantai pasok program strategis nasional seperti Makan Bergizi Gratis dan pemerataan ekonomi daerah.
 3. **Komunikasi Terbuka**: Pelaku bisnis mengapresiasi kemauan pimpinan nasional untuk mendengarkan aspirasi sektor riil di tengah gejolak geopolitik global.
 
 ---
