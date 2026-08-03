@@ -8,6 +8,7 @@ let myPeerId = localStorage.getItem('tele_my_peer_id') || null;
 let myUserName = localStorage.getItem('tele_username') || '';
 let deferredInstallPrompt = null;
 let currentArticleContent = '';
+let currentArticleTitle = '';
 
 // DOM Elements
 const statusBadge = document.getElementById('statusBadge');
@@ -33,6 +34,11 @@ const userNameInput = document.getElementById('userNameInput');
 const nameErrorMsg = document.getElementById('nameErrorMsg');
 const btnSaveName = document.getElementById('btnSaveName');
 
+const saveTeleobsiModal = document.getElementById('saveTeleobsiModal');
+const btnCloseSaveTeleobsiModal = document.getElementById('btnCloseSaveTeleobsiModal');
+const saveFilenameInput = document.getElementById('saveFilenameInput');
+const btnConfirmSaveTeleobsi = document.getElementById('btnConfirmSaveTeleobsi');
+
 const btnShareInvite = document.getElementById('btnShareInvite');
 const inviteModal = document.getElementById('inviteModal');
 const btnCloseInviteModal = document.getElementById('btnCloseInviteModal');
@@ -51,6 +57,7 @@ const articleModalTitle = document.getElementById('articleModalTitle');
 const articleModalBody = document.getElementById('articleModalBody');
 const btnCloseArticleModal = document.getElementById('btnCloseArticleModal');
 const btnCopyObsidianContent = document.getElementById('btnCopyObsidianContent');
+const btnOpenSaveTeleobsiModalFromPreview = document.getElementById('btnOpenSaveTeleobsiModalFromPreview');
 const btnInstallPwa = document.getElementById('btnInstallPwa');
 
 // --- 1. Service Worker & PWA Installation ---
@@ -134,7 +141,66 @@ btnEditName.addEventListener('click', () => {
   nameModal.classList.remove('hidden');
 });
 
-// --- 3. Persistent PeerJS Real-Time Connection ---
+// --- 3. Save to Obsidian Teleobsi Folder API ---
+async function saveFileToTeleobsi(filename, content) {
+  try {
+    const res = await fetch('/api/save-teleobsi', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ filename, content })
+    });
+    const data = await res.json();
+    if (data.status === 'success') {
+      alert(`🎉 ${data.message}\nFile sekarang tersedia di Obsidian Anda!`);
+      saveTeleobsiModal.classList.add('hidden');
+    } else {
+      alert(`Gagal menyimpan file: ${data.message}`);
+    }
+  } catch (err) {
+    console.error('Error saving file:', err);
+    // Fallback: Web Download as file
+    downloadFile(filename, content);
+  }
+}
+
+function downloadFile(filename, content) {
+  if (!filename.endswith('.md')) filename += '.md';
+  const blob = new Blob([content], { type: 'text/markdown;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
+  alert(`File ${filename} telah terunduh ke komputer Anda.`);
+}
+
+function triggerSaveTeleobsiModal(title, content) {
+  currentArticleTitle = title;
+  currentArticleContent = content;
+  
+  let cleanName = title.replace(/[^a-zA-Z0-9_\-\s]/g, '').trim().replace(/\s+/g, '_');
+  if (!cleanName) cleanName = 'Catatan_Teleobsi';
+  if (!cleanName.endsWith('.md')) cleanName += '.md';
+
+  saveFilenameInput.value = cleanName;
+  saveTeleobsiModal.classList.remove('hidden');
+}
+
+btnConfirmSaveTeleobsi.addEventListener('click', () => {
+  const chosenName = saveFilenameInput.value.trim();
+  if (!chosenName) {
+    alert('Harap masukkan nama file!');
+    return;
+  }
+  saveFileToTeleobsi(chosenName, currentArticleContent);
+});
+
+btnCloseSaveTeleobsiModal.addEventListener('click', () => {
+  saveTeleobsiModal.classList.add('hidden');
+});
+
+// --- 4. Persistent PeerJS Real-Time Connection ---
 function initPeer() {
   if (!myPeerId) {
     const cleanName = (myUserName || 'yohanes').toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -161,7 +227,6 @@ function initPeer() {
     updateStatus('online', 'P2P Ready - Menunggu Koneksi');
     console.log('Peer initialized with Fixed ID:', id);
 
-    // Auto-Connect from URL parameter (?connect=ID or ?room=ID)
     const urlParams = new URLSearchParams(window.location.search);
     const targetId = urlParams.get('connect') || urlParams.get('room');
     if (targetId && targetId !== myPeerId) {
@@ -308,7 +373,7 @@ function updatePeersUI() {
   });
 }
 
-// --- 4. Chat Bubbles & Messages ---
+// --- 5. Chat Bubbles & Messages ---
 function updateStatus(state, text) {
   statusText.textContent = text;
   const dot = statusBadge.querySelector('.status-dot');
@@ -353,16 +418,21 @@ function addArticleBubble(title, content, sender, senderName, timestamp = null) 
     ${headerHtml}
     <div class="article-card-msg">
       <div class="article-card-header">
-        <span>📄 Artikel Obsidian: ${escapeHtml(title)}</span>
+        <span>📄 Artikel Teleobsi: ${escapeHtml(title)}</span>
       </div>
       <div class="article-card-snippet">${escapeHtml(snippet)}</div>
       <div class="article-card-actions">
-        <button class="btn btn-primary btn-sm view-article-btn">Baca Artikel</button>
-        <button class="btn btn-secondary btn-sm copy-article-btn">Salin Ke Obsidian</button>
+        <button class="btn btn-primary btn-sm save-teleobsi-btn">💾 Simpan ke Teleobsi</button>
+        <button class="btn btn-secondary btn-sm view-article-btn">Baca Artikel</button>
+        <button class="btn btn-secondary btn-sm copy-article-btn">Salin Text</button>
       </div>
     </div>
     <div class="bubble-meta">${timeStr}</div>
   `;
+
+  div.querySelector('.save-teleobsi-btn').addEventListener('click', () => {
+    triggerSaveTeleobsiModal(title, content);
+  });
 
   div.querySelector('.view-article-btn').addEventListener('click', () => {
     openArticleModal(title, content);
@@ -394,7 +464,7 @@ function copyToClipboard(text, successMsg) {
   });
 }
 
-// --- 5. Send Message / Article Handler ---
+// --- 6. Send Message / Article Handler ---
 function handleSendMessage() {
   const text = messageInput.value.trim();
   if (!text) return;
@@ -408,7 +478,7 @@ function handleSendMessage() {
 
   if (text.startsWith('#') || text.includes('\n\n') || text.length > 250) {
     const firstLine = text.split('\n')[0].replace(/^#+\s*/, '');
-    const title = firstLine.length > 0 ? firstLine : 'Artikel Obsidian';
+    const title = firstLine.length > 0 ? firstLine : 'Catatan Teleobsi';
     
     broadcastMessage({
       type: 'article',
@@ -432,7 +502,7 @@ function handleSendMessage() {
   messageInput.style.height = 'auto';
 }
 
-// --- 6. Drag & Drop File Processing ---
+// --- 7. Universal Drag & Drop File & Text Processing ---
 function processFile(file) {
   if (!file) return;
 
@@ -440,46 +510,77 @@ function processFile(file) {
   reader.onload = (e) => {
     const content = e.target.result;
     const title = file.name.replace(/\.(md|txt|markdown)$/i, '');
-
-    if (activeConnections.size === 0) {
-      openArticleModal(title, content);
-      alert('Belum ada teman terhubung. Artikel ditampilkan sebagai pratinjau.');
-      return;
-    }
-
-    const now = Date.now();
-    broadcastMessage({
-      type: 'article',
-      title: title,
-      content: content,
-      timestamp: now
-    });
-
-    addArticleBubble(title, content, 'me', myUserName, now);
-    alert(`File "${file.name}" berhasil terkirim ke semua teman terhubung!`);
+    sendOrPreviewArticle(title, content);
   };
   reader.readAsText(file);
 }
 
-// Drag & Drop Listeners
-window.addEventListener('dragover', (e) => {
-  e.preventDefault();
-  dropZone.classList.remove('hidden');
-});
-
-dropZone.addEventListener('dragleave', (e) => {
-  e.preventDefault();
-  dropZone.classList.add('hidden');
-});
-
-dropZone.addEventListener('drop', (e) => {
-  e.preventDefault();
-  dropZone.classList.add('hidden');
-  const files = e.dataTransfer.files;
-  if (files.length > 0) {
-    processFile(files[0]);
+function sendOrPreviewArticle(title, content) {
+  const now = Date.now();
+  if (activeConnections.size === 0) {
+    openArticleModal(title, content);
+    alert(`Artikel "${title}" ditampilkan sebagai pratinjau karena belum ada teman terhubung.`);
+    return;
   }
+
+  broadcastMessage({
+    type: 'article',
+    title: title,
+    content: content,
+    timestamp: now
+  });
+
+  addArticleBubble(title, content, 'me', myUserName, now);
+  alert(`Artikel "${title}" berhasil terkirim ke teman yang terhubung!`);
+}
+
+['dragenter', 'dragover'].forEach(eventName => {
+  window.addEventListener(eventName, (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dropZone.classList.remove('hidden');
+  }, false);
 });
+
+['dragleave', 'dragend'].forEach(eventName => {
+  dropZone.addEventListener(eventName, (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dropZone.classList.add('hidden');
+  }, false);
+});
+
+window.addEventListener('drop', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  dropZone.classList.add('hidden');
+
+  const dt = e.dataTransfer;
+
+  // Case A: Dragged physical file (.md / .txt file)
+  if (dt.files && dt.files.length > 0) {
+    processFile(dt.files[0]);
+    return;
+  }
+
+  // Case B: Dragged text or Markdown content directly from Obsidian note window
+  const draggedText = dt.getData('text/plain') || dt.getData('text/markdown') || dt.getData('text/html');
+  if (draggedText && draggedText.trim()) {
+    const text = draggedText.trim();
+    
+    // Check if dragged text is just a file path (e.g. /Users/.../filename.png or filename.md)
+    if (text.startsWith('/') && text.includes('/') && !text.includes('\n')) {
+      const parts = text.split('/');
+      const filename = parts[parts.length - 1];
+      sendOrPreviewArticle(filename, text);
+      return;
+    }
+
+    const firstLine = text.split('\n')[0].replace(/^#+\s*/, '');
+    const title = (firstLine && firstLine.length < 60) ? firstLine : 'Catatan Teleobsi';
+    sendOrPreviewArticle(title, text);
+  }
+}, false);
 
 fileInput.addEventListener('change', (e) => {
   if (e.target.files.length > 0) {
@@ -487,7 +588,7 @@ fileInput.addEventListener('change', (e) => {
   }
 });
 
-// --- 7. Modals Event Listeners ---
+// --- 8. Modals Event Listeners ---
 btnOpenPeersModal.addEventListener('click', () => {
   updatePeersUI();
   peersModal.classList.remove('hidden');
@@ -498,11 +599,17 @@ btnClosePeersModal.addEventListener('click', () => {
 });
 
 function openArticleModal(title, content) {
+  currentArticleTitle = title;
   currentArticleContent = content;
   articleModalTitle.textContent = `📄 ${title}`;
   articleModalBody.innerHTML = marked.parse(content);
   articleModal.classList.remove('hidden');
 }
+
+btnOpenSaveTeleobsiModalFromPreview.addEventListener('click', () => {
+  articleModal.classList.add('hidden');
+  triggerSaveTeleobsiModal(currentArticleTitle, currentArticleContent);
+});
 
 btnCopyObsidianContent.addEventListener('click', () => {
   copyToClipboard(currentArticleContent, 'Artikel berhasil disalin! Buka Obsidian lalu tekan Cmd+V.');
