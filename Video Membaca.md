@@ -1,5 +1,6 @@
 obsidian apa
 
+
 ![[02 - Resources/Videos/potongan video/clip_uVTzzV53oQo_0-21_to_0-42.mp4]]
 
 > [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**
@@ -17,4 +18,5 @@ obsidian apa
 • **Tujuan Manajemen Pengetahuan:** Tujuan utama manajemen pengetahuan adalah menyelesaikan masalah dengan membantu pengguna menyusun (structure) informasi dan membangun hubungan yang kuat antara ide-ide tersebut dari waktu ke waktu.
 • **Definisi Obsidian:** Obsidian diposisikan sebagai alat pencatatan (notetaking) dan manajemen pengetahuan *(knowledge management)* yang dirancang untuk mengatur pikiran serta menghubungkan berbagai ide secara efektif.
 • **Fokus pada Koneksi, Bukan Penyimpanan:** Berbeda dengan sistem dokumen tradisional yang hanya berfungsi menyimpan catatan, keunggulan utama Obsidian adalah kemampuannya untuk memungkinkan tautan (*link*) antar catatan, sehingga fokusnya beralih dari sekadar penyimpanan data menjadi koneksi ide.
+
 
