@@ -147,12 +147,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Video.md",
+                "file": "04 - Archive/last30days/2026-08-03 - Saham BCA (BBCA).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Video"
+              "title": "2026-08-03 - Saham BCA (BBCA)"
             }
           },
           {
@@ -168,7 +168,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -230,7 +230,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 477.90234375
+    "width": 388.23046875
   },
   "right": {
     "id": "97476fa60baa70cc",
@@ -368,9 +368,12 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "68db7f08ad78647d",
+  "active": "b4150ea6935386f1",
   "lastOpenFiles": [
     "Video.md",
+    "04 - Archive/last30days/2026-08-03 - Saham BCA (BBCA).md",
+    "02 - Resources/Videos/potongan video/clip_OZ3ZNhrPbF4_0-10_to_0-42.mp4",
+    "02 - Resources/Videos/potongan video/clip_OZ3ZNhrPbF4_0-10_to_0-42.mp4.part",
     "Excalidraw/Drawing 2026-08-03 12.52.28.excalidraw.md",
     "05 - Daily Notes/2026-08-03.md",
     "05 - Daily Notes/Note Harian - 2026-08-03 11.42.md",
@@ -385,11 +388,9 @@
     "Anthropic.md",
     "02 - Resources/Videos/potongan video/clip_ib74sLgjIBM_1-12_to_2-00.mp4",
     "02 - Resources/Videos/potongan video/clip_ib74sLgjIBM_1-12_to_2-00.mp4.part",
-    "02 - Resources/Videos/potongan video/clip_q4k3OVq_XXU_1-23_to_2-20.mp4.part",
     "04 - Archive/last30days/2026-08-03 - Presiden Prabowo Subianto.md",
     "04 - Archive/llm-council/LatestVerdict.md",
     "04 - Archive/llm-council/2026-08-03 - Integrasi Fitur AI Studio & Otomasi Obsidian.md",
-    "04 - Archive/llm-council",
     "Prabowo.md",
     "04 - Archive/Last30days.md",
     "04 - Archive/last30days/Last30days.md",
@@ -406,7 +407,6 @@
     "04 - Archive/logo_gasing 1.png",
     "scratch/ISI PKC.md",
     "04 - Archive/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
-    "Idea Excalidraw.md",
     "Excalidraw/logo_gasing.svg"
   ]
 }
