@@ -166,9 +166,23 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-08-03 12.52.28.excalidraw"
             }
+          },
+          {
+            "id": "b29908adb15c2264",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "video LLM.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "video LLM"
+            }
           }
         ],
-        "currentTab": 11
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -368,8 +382,15 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "499132ec7153a327",
+  "active": "b29908adb15c2264",
   "lastOpenFiles": [
+    "Video.md",
+    "video LLM.md",
+    "Video Membaca.md",
+    "02 - Resources/Clippings/Arcade Games 🕹️ Play on CrazyGames.md",
+    "01 - Notes/CrazyGames - Arcade Games (Page 5).md",
+    "Games 600.md",
+    "Excalidraw/Drawing 2026-08-03 12.52.28.excalidraw.md",
     "05 - Daily Notes/Note Harian - 2026-08-04.md",
     "05 - Daily Notes/2026-08-04.md",
     "scripts/daily_report.err",
@@ -382,15 +403,11 @@
     "04 - Archive/last30days/2026-08-03 - Presiden Prabowo Subianto Dunia Usaha.md",
     "04 - Archive/last30days/2026-08-03 - Presiden Prabowo Subianto.md",
     "04 - Archive/last30days/presiden-prabowo-subianto-dunia-usaha-sentimen-raw.md",
-    "video LLM.md",
     "02 - Resources/Videos/potongan video/clip_OZ3ZNhrPbF4_3-40_to_4-30.mp4",
     "02 - Resources/Videos/potongan video/clip_OZ3ZNhrPbF4_3-40_to_4-30.mp4.part",
     "04 - Archive/last30days/2026-08-03 - Saham BCA (BBCA).md",
-    "Video.md",
     "02 - Resources/Videos/potongan video/clip_OZ3ZNhrPbF4_0-10_to_0-42.mp4",
     "02 - Resources/Videos/potongan video/clip_OZ3ZNhrPbF4_0-10_to_0-42.mp4.part",
-    "Excalidraw/Drawing 2026-08-03 12.52.28.excalidraw.md",
-    "Video Membaca.md",
     "02 - Resources/Videos/potongan video/clip_uVTzzV53oQo_0-21_to_0-42.mp4",
     "02 - Resources/Videos/potongan video/clip_uVTzzV53oQo_0-21_to_0-42.mp4.part",
     "Claude.md",
@@ -403,9 +420,6 @@
     "02 - Resources/Videos/Tren Penggunakan Video bayar atau tidak.md",
     "Git push.md",
     "05 - Daily Notes/Note Harian - 2026-08-02 05.43.md",
-    "05 - Daily Notes/Note Harian - 2026-07-31 06.29.md",
-    "CHANGELOG.md",
-    "README.md",
     "04 - Archive/logo_gasing 1.png",
     "Excalidraw/logo_gasing.svg"
   ]
