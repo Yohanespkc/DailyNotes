@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>TeleShare Obsidian Launcher</title>
+  <link rel="icon" href="icon-192.png">
+  <style>
+    body {
+      background-color: #0e1621;
+      color: #ffffff;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .icon-box {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      box-shadow: 0 8px 24px rgba(82, 136, 193, 0.4);
+    }
+    .btn {
+      background: linear-gradient(135deg, #2b5278, #5288c1);
+      color: white;
+      padding: 14px 28px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(82, 136, 193, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <img src="icon-512.png" alt="TeleShare Icon" class="icon-box">
+  <h2>TeleShare Obsidian PWA</h2>
+  <p>Menghubungkan ke Sesi P2P Telegram...</p>
+  <br>
+  <a href="http://localhost:8080" class="btn">🚀 Buka TeleShare App</a>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "http://localhost:8080";
+    }, 1000);
+  </script>
+</body>
+</html>

@@ -37,7 +37,10 @@
           </svg>
         </div>
         <div class="header-title-box">
-          <h2>TeleShare Obsidian</h2>
+          <div class="user-name-display-row">
+            <h2 id="headerUserTitle">TeleShare Obsidian</h2>
+            <button class="btn-icon-xs" id="btnEditName" title="Ubah Nama Pengguna">✏️</button>
+          </div>
           <div class="connection-status-badge" id="statusBadge">
             <span class="status-dot offline"></span>
             <span id="statusText">Memulai P2P Overlay...</span>
@@ -46,16 +49,28 @@
       </div>
 
       <div class="header-actions">
-        <!-- Main Quick Share / Auto-Connect Button -->
-        <button class="btn btn-primary" id="btnShareInvite" title="Undah teman untuk terhubung otomatis">
+        <!-- Prominent KONEKSI Button (Shows list of connected people) -->
+        <button class="btn btn-primary btn-koneksi" id="btnOpenPeersModal">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <span>Koneksi</span>
+          <span class="badge-count" id="connectedCountBadge">0</span>
+        </button>
+
+        <!-- Share Invite Link / QR Button -->
+        <button class="btn btn-secondary" id="btnShareInvite" title="Undang teman untuk terhubung otomatis">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
             <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
           </svg>
-          <span>Link Auto-Connect</span>
+          <span>Undang Teman</span>
         </button>
 
-        <!-- Install PWA Button (Hidden by default, shows if PWA installable) -->
+        <!-- Install PWA Button -->
         <button class="btn btn-secondary hidden" id="btnInstallPwa">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -71,16 +86,11 @@
     <div class="main-body">
       <!-- Sidebar Info & Connection Drawer -->
       <aside class="sidebar" id="sidebar">
-        <div class="sidebar-card">
-          <div class="card-header">
-            <h3>ID P2P Anda</h3>
-            <span class="badge" id="myIdBadge">Loading...</span>
-          </div>
-          <div class="id-display-row">
-            <input type="text" id="myPeerIdInput" readonly value="Menghubungkan...">
-            <button class="btn-icon" id="btnCopyMyId" title="Salin ID Anda">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-            </button>
+        <div class="sidebar-card user-profile-card">
+          <div class="user-avatar-large" id="myAvatarInitial">?</div>
+          <div class="user-profile-info">
+            <h3 id="sidebarMyName">Nama Pengguna</h3>
+            <span class="user-id-text" id="myPeerIdSub">ID P2P: Loading...</span>
           </div>
         </div>
 
@@ -90,7 +100,7 @@
             <span class="status-indicator" id="peerConnIndicator">Belum Terhubung</span>
           </div>
           <div class="connect-input-group">
-            <input type="text" id="targetPeerIdInput" placeholder="Masukkan ID Teman atau buka via Link...">
+            <input type="text" id="targetPeerIdInput" placeholder="Masukkan ID Teman atau Buka via Link...">
             <button class="btn btn-accent" id="btnConnectPeer">
               <span>Hubungkan</span>
             </button>
@@ -100,9 +110,10 @@
         <div class="sidebar-card quick-instructions">
           <h4>🚀 Cara Berbagi Artikel:</h4>
           <ol>
-            <li>Klik <b>Link Auto-Connect</b> & kirim link/QR ke teman.</li>
-            <li>Saat teman membuka link, Anda & teman langsung <b>Terhubung Instan</b>.</li>
-            <li>Ketik atau drop file <code>.md</code> Obsidian di bawah, lalu klik tombol <b>🚀 Kirim Artikel</b>.</li>
+            <li>Buka ikon aplikasi PWA TeleShare ini.</li>
+            <li>Klik <b>Undang Teman</b> & kirim link ke teman.</li>
+            <li>Klik tombol <b>Koneksi</b> untuk melihat siapa saja yang sudah terhubung.</li>
+            <li><b>Drag & Drop file <code>.md</code></b> Anda dari Obsidian ke sini untuk langsung mengirimnya!</li>
           </ol>
         </div>
       </aside>
@@ -115,7 +126,7 @@
             <div class="notice-icon">💬</div>
             <div class="notice-text">
               <strong>Selamat Datang di TeleShare Obsidian P2P!</strong><br>
-              Aplikasi komunikasi terenkripsi langsung (Peer-to-Peer) untuk saling berkirim artikel Obsidian dan catatan.
+              Tarik & Lepas (Drag & Drop) file <code>.md</code> artikel Obsidian Anda ke layar ini untuk mengirimnya secara instan.
             </div>
           </div>
         </div>
@@ -123,14 +134,13 @@
         <!-- File Upload Drag Overlay -->
         <div class="drop-zone-overlay hidden" id="dropZone">
           <div class="drop-message">
-            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2">
+            <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
               <polyline points="14 2 14 8 20 8"></polyline>
               <line x1="12" y1="18" x2="12" y2="12"></line>
-
               <polyline points="9 15 12 12 15 15"></polyline>
             </svg>
-            <p>Lepaskan file <code>.md</code> di sini untuk dikirim sebagai Artikel Obsidian</p>
+            <p>Lepaskan file <code>.md</code> di sini untuk dikirim ke Teman!</p>
           </div>
         </div>
 
@@ -145,7 +155,6 @@
 
           <textarea id="messageInput" placeholder="Ketik pesan atau tempel teks Artikel Markdown Obsidian di sini..." rows="1"></textarea>
 
-          <!-- Requested ONE-CLICK Share Button -->
           <button class="btn btn-send" id="btnSendMessage" title="Kirim Artikel / Pesan Ke Teman">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
               <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
@@ -157,6 +166,39 @@
     </div>
   </div>
 
+  <!-- User Name Registration / Change Modal -->
+  <div class="modal-backdrop hidden" id="nameModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>👤 Set Nama Pengguna</h3>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">Masukkan nama Anda yang akan terlihat oleh teman saat terhubung:</p>
+        <div class="form-group">
+          <input type="text" id="userNameInput" placeholder="Contoh: Yohanes, Budi, Siti..." autocomplete="off">
+          <div class="error-msg hidden" id="nameErrorMsg">⚠️ Nama ini sudah digunakan, silakan ubah nama Anda!</div>
+        </div>
+        <button class="btn btn-primary btn-block" id="btnSaveName">Simpan Nama</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Connected Peers List Modal ("Koneksi") -->
+  <div class="modal-backdrop hidden" id="peersModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>👥 Orang-Orang Terhubung</h3>
+        <button class="btn-icon close-modal" id="btnClosePeersModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">Daftar orang-orang yang sudah terhubung dengan sistem PWA Obsidian ini:</p>
+        <div class="connected-peers-list" id="connectedPeersList">
+          <!-- Dynamically populated peer items -->
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Invite & QR Code Modal -->
   <div class="modal-backdrop hidden" id="inviteModal">
     <div class="modal-content">
@@ -165,15 +207,11 @@
         <button class="btn-icon close-modal" id="btnCloseInviteModal">&times;</button>
       </div>
       <div class="modal-body text-center">
-        <p>Kirimkan link atau tunjukkan QR Code ini ke teman Anda. Begitu mereka klik atau scan, kalian akan <strong>Otomatis Terhubung</strong>!</p>
-        
+        <p>Kirimkan link ini ke teman Anda. Saat diklik, kalian akan <strong>Otomatis Terhubung</strong>!</p>
         <div class="qr-container" id="qrCodeBox"></div>
-
         <div class="share-link-input-group">
           <input type="text" id="shareUrlInput" readonly>
-          <button class="btn btn-primary" id="btnCopyShareUrl">
-            <span>Salin Link</span>
-          </button>
+          <button class="btn btn-primary" id="btnCopyShareUrl">Salin Link</button>
         </div>
       </div>
     </div>
@@ -192,9 +230,7 @@
           <button class="btn-icon close-modal" id="btnCloseArticleModal">&times;</button>
         </div>
       </div>
-      <div class="modal-body article-preview-body" id="articleModalBody">
-        <!-- Rendered markdown html will go here -->
-      </div>
+      <div class="modal-body article-preview-body" id="articleModalBody"></div>
     </div>
   </div>
 
