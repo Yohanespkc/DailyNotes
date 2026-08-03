@@ -95,3 +95,22 @@ Berikut adalah tiga poin penting yang perlu dipahami untuk memanfaatkan model ba
 
 • **Terapkan Pola Pikir Rantai Pikiran (Chain of Thought Prompting):** Hindari menerima jawaban pertama sebagai kebenaran mutlak. Untuk memecahkan masalah berat, minta AI untuk menjalankan proses berpikirnya langkah demi langkah sebelum memberikan kesimpulan akhir ("Mohon jelaskan logika Anda dalam tiga tahap: 1. Analisis data; 2. Identifikasi variabel kunci; 3. Merumuskan solusi berdasarkan tahapan di atas"). Ini meningkatkan akurasi dan memungkinkan pengguna mengoreksi alur logika AI secara efisien.
 
+
+![[02 - Resources/Videos/potongan video/clip_ib74sLgjIBM_1-12_to_2-00.mp4]]
+
+> [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**
+> - 📌 **Judul Video:** Build A Claude Knowledge Base That Self-Improves!
+> - 👤 **Kanal:** Systems Made Better
+> - ⏱️ **Durasi Potongan:** 1:12 - 2:00 (48 detik)
+> - 📁 **File MP4 Tersimpan:** `02 - Resources/Videos/potongan video/clip_ib74sLgjIBM_1-12_to_2-00.mp4`
+> - 🧠 **Model AI:** `gemma4:latest`
+> - 🔗 **Link Direct YouTube:** [Buka Segmen Ini di YouTube](https://youtu.be/ib74sLgjIBM?t=72s)
+> - 🕒 **Dimasukkan Pada:** 3 Agustus 2026 pukul 10.20
+> 
+> 📝 **Ringkasan Otomatis AI Potongan Video:**
+> Berdasarkan transkrip yang disediakan, berikut adalah 3 poin penting mengenai sistem basis pengetahuan yang dapat ditingkatkan secara mandiri:
+
+*   Sistem ini beroperasi dalam kerangka lima langkah yang berkelanjutan *(self-improving loop)*. Prosesnya melibatkan pengumpulan informasi (*dumping*) ke dalam sistem, lalu meminta AI untuk membangun wiki, mengajukan pertanyaan, menciptakan tautan kumulatif untuk menyimpan jawaban, dan menjalankan pemeriksaan kesehatan (*health check*) secara terus-menerus untuk peningkatan berkelanjutan.
+*   Melalui pemahaman sistem ini, pengguna akan mengetahui cara kerjanya serta bagaimana ia melampaui berbagai *setup* atau plugin Obsidian yang sudah ada. Selain itu, transkrip menjanjikan panduan langkah demi langkah tentang cara membangun basis pengetahuan serupa menggunakan Claude.
+*   Nilai terbesar dari basis pengetahuan ini terletak pada jangka panjangnya. Meskipun di hari pertama masih bersifat dasar, seiring waktu (misalnya Day 100), sistem tersebut akan bertransformasi menjadi aset perusahaan yang unik dan tidak dimiliki orang lain, karena mampu menyatukan perspektif, sumber, dan penilaian (*judgment*) pengguna dalam satu tempat terpusat.
+
