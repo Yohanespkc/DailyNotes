@@ -1,1 +1,0 @@
-Apa yang orang bicarakan dalam 30 hari terakhir tentang presiden prabowo, give the honest sentiment, the biggest praises, the biggest complaint dan apa approval rating prabowo sekarang menurut kamu?
