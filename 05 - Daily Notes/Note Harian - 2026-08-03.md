@@ -14,26 +14,61 @@ Yohanes Surya
 • **Sistem Pemantauan AI Lokal Harian**: Mengonfigurasi script otomatisasi pemantauan aktivitas AI lokal dan pembuatan note harian terstruktur pada folder `05 - Daily Notes` setiap jam 20.00.
 
 ### Aktivitas Repositori Git & Modifikasi File (24 Jam Terakhir)
+**BelajarSaham**:
+  - 2515c10 feat: add dynamic emiten search, update GoAPI domain to goapi.io, and expand mock stock data
 **Gasing**:
+  - d77ffb2 vault backup: 2026-08-04 04:07:09
+  - 5e88cb3 vault backup: 2026-08-04 03:57:01
+  - 88e9319 vault backup: 2026-08-03 15:00:42
+  - 26ca289 vault backup: 2026-08-03 13:02:46
+  - 2ed3daa vault backup: 2026-08-03 12:52:37
+  - b01392c vault backup: 2026-08-03 11:42:12
+  - ffb2f8c vault backup: 2026-08-03 10:33:07
+  - c38c3e7 vault backup: 2026-08-03 10:22:54
+  - d724f9c vault backup: 2026-08-03 09:41:32
+  - 390756f vault backup: 2026-08-03 09:31:17
+  - ded0dac vault backup: 2026-08-03 08:20:55
+  - aac59e8 feat: install llm-council skill and set up automatic Obsidian export to /04 - Archive/llm-council/
+  - f577e74 vault backup: 2026-08-03 07:20:21
+  - c539f38 vault backup: 2026-08-03 07:10:13
+  - 88a7563 refactor: create dedicated /04 - Archive/last30days/ folder with YYYY-MM-DD - [Title].md naming structure
+  - 3ad8be6 docs: enrich President Prabowo research brief with latest Reddit & YouTube evidence in /04 - Archive/Last30days.md
+  - 02da264 docs: add President Prabowo sentiment, praises, complaints and approval rating research report to /04 - Archive/Last30days.md
+  - ec8df4a vault backup: 2026-08-03 07:00:05
+  - 1989172 feat: automatic export of last30days research briefs directly into /04 - Archive/Last30days.md
+  - 8c43b5c vault backup: 2026-08-03 06:49:58
+  - 4ff8677 feat: install last-30-days Antigravity skill and generate 30-day activity report in /04 - Archive/Last30days.md
+  - 770b7cc vault backup: 2026-08-03 06:39:50
+  - 808f14e vault backup: 2026-08-03 06:29:43
+  - 6ba4124 docs: update README.md and CHANGELOG.md for YouTube video clipper & transcript AI summary feature
+  - fa7bb41 vault backup: 2026-08-03 06:19:35
+  - 6ba7019 feat: save trimmed video clips and note summaries
+  - fcb3e84 vault backup: 2026-08-03 06:09:18
+  - 5b27897 fix: extract exact subtitle transcript for video clip segment to feed local LLM accurate text
+  - 9026de3 vault backup: 2026-08-03 05:58:59
+  - 688dc69 fix: display single local mp4 video player only and focus AI summary strictly on cut segment
+  - 0cdecfd fix: pass ffmpeg location and PATH env so Electron inside Obsidian detects ffmpeg
+  - 7dae9c8 vault backup: 2026-08-03 05:49:07
+  - 9c3c093 refactor: move potongan video folder to 02 - Resources/Videos/potongan video and remove video folder
+  - 1cdf2a1 fix: use download-sections --force-keyframes-at-cuts to download ONLY the 42s clip segment
+  - 7846d03 vault backup: 2026-08-03 05:38:19
+  - 13e8d97 feat: add YouTube video clip cutter (trim MP4 + AI summary) button & modal
+  - 259bd60 vault backup: 2026-08-03 05:28:11
+  - 5c2f063 docs: add README.md and CHANGELOG.md for vault automation
+  - 265a2ff Add daily progress report for 2026-08-03
   - 1caf32a vault backup: 2026-08-03 05:08:00
-  - 5602ac0 vault backup: 2026-08-03 02:46:25
-  - 4c22e8c vault backup: 2026-08-03 02:25:15
-  - 37d38d4 vault backup: 2026-08-03 02:14:50
-  - eaf7d07 vault backup: 2026-08-03 02:04:42
-  - b348175 vault backup: 2026-08-02 14:15:47
-  - 4bb6764 vault backup: 2026-08-02 06:36:43
-  - 4014ea5 vault backup: 2026-08-02 06:26:55
-  - 199bbe8 vault backup: 2026-08-02 06:06:40
-  - be13227 vault backup: 2026-08-02 05:56:32
-  - 6c2cf45 vault backup: 2026-08-02 05:46:24
-  - 67fb52e vault backup: 2026-08-02 05:36:16
-- Note diperbarui: `02 - Resources/Excalidraw/Video Excalidraw.md`
-- Note diperbarui: `02 - Resources/Videos/video hologram 2/hologramlist.md`
-- Note diperbarui: `02 - Resources/Videos/video Hologram 1/hologramlist.md`
-- Note diperbarui: `02 - Resources/Videos/Koleksi 20 Video Physics Toys Terbaik.md`
-- Note diperbarui: `02 - Resources/Videos/3D pakai botol.md`
-- Note diperbarui: `Excalidraw/Drawing 2026-08-02 05.46.19.excalidraw.md`
-- Note diperbarui: `Excalidraw/Drawing 2026-08-02 06.34.08.excalidraw.md`
+**BelajarEnglish**:
+  - c483c35 Initial commit: BelajarEnglish app
+- Note diperbarui: `04 - Archive/last30days/presiden-prabowo-subianto-dunia-usaha-sentimen-raw.md`
+- Note diperbarui: `04 - Archive/last30days/2026-08-03 - Saham BCA (BBCA).md`
+- Note diperbarui: `04 - Archive/last30days/2026-08-03 - Presiden Prabowo Subianto.md`
+- Note diperbarui: `04 - Archive/last30days/2026-08-03 - Presiden Prabowo Subianto Dunia Usaha.md`
+- Note diperbarui: `04 - Archive/last30days/Last30days.md`
+- Note diperbarui: `04 - Archive/llm-council/LatestVerdict.md`
+- Note diperbarui: `04 - Archive/llm-council/2026-08-03 - Integrasi Fitur AI Studio & Otomasi Obsidian.md`
+- Note diperbarui: `02 - Resources/Videos/Tren Penggunakan Video bayar atau tidak.md`
+- Note diperbarui: `Prabowo.md`
+- Note diperbarui: `Anthropic.md`
 
 ## 2 Suggestions
 
@@ -51,30 +86,3 @@ Namun demikian, tingginya variasi proyek yang dikerjakan bersamaan dalam satu se
 ## 4 Conclusion
 
 Kegiatan pengembangan hari ini berhasil menyelesaikan beberapa milestone penting: aplikasi game edukasi Math Mario dan Duolingo clone telah terinisialisasi, sistem shortcut desktop aktif, plugin Obsidian terintegrasi, serta sistem pemantauan laporan harian otomatis jam 20.00 telah diimplementasikan. Prioritas utama untuk besok adalah melakukan commit pada repositori yang tertunda, merapikan struktur modul kode game, dan menguji eksekusi cron harian pada jam 20.00.
-
-![[02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-43_to_1-21.mp4]]
-
-<iframe width="100%" height="380" src="https://www.youtube.com/embed/cBgT0PG4JkM?start=43&end=81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-> [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**
-> - 📌 **Judul Video:** 160,000+ Cloned These 3 FREE AI Employees: Here's How (GitHub Claude Skills)
-> - 👤 **Kanal:** Helena Liu
-> - ⏱️ **Durasi Potongan:** 0:43 - 1:21 (38 detik)
-> - 📁 **File MP4 Tersimpan:** `02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-43_to_1-21.mp4`
-> - 🧠 **Model AI:** `gemma4:latest`
-> - 🔗 **Link Direct YouTube:** [Buka Segmen Ini di YouTube](https://youtu.be/cBgT0PG4JkM?t=43s)
-> - 🕒 **Dimasukkan Pada:** 3 Agustus 2026 pukul 05.52
-> 
-> 📝 **Ringkasan Otomatis AI Potongan Video:**
-> Sebagai Asisten AI cerdas untuk Obsidian Vault Gasing, berikut adalah analisis 3 poin penting dari segmen video tersebut, difokuskan pada penerapan praktis dan metodologi yang diajarkan:
-
-***
-
-**Ringkasan Analisis Video Segmentasi (0:43 - 1:21)**
-
-• **Strategi Pemanfaatan AI Skala Besar:** Penekanan pembahasan adalah bagaimana memanfaatkan model bahasa besar (LLM) gratis—seperti Claude dan melalui ekosistem GitHub—untuk secara efisien menskalakan tenaga kerja virtual ("AI Employees"). Strategi ini memungkinkan pengguna memproses volume tugas yang sangat besar tanpa biaya operasional tinggi.
-
-• **Metodologi *Prompt Engineering* Spesifik:** Segmen tersebut menyoroti pentingnya teknik *prompt engineering* yang terstruktur dan detail. Untuk "mengkloning" peran karyawan, pengguna tidak hanya memberikan perintah umum, melainkan harus mendefinisikan secara spesifik tugas, batasan peran (persona), gaya bahasa, hingga format keluaran untuk memastikan output AI memiliki kualitas profesional yang konsisten.
-
-• **Aplikasi *Skill Cloning* Profesional:** Hasil akhir dari proses ini adalah kemampuan meniru berbagai peran profesional—seperti analis konten, penulis teknis, atau programmer pemula—melalui instruksi yang terperinci. Ini memungkinkan pengguna menjalankan fungsi-fungsi pekerjaan kompleks secara otomatis hanya dengan mengoptimalkan perintah (*prompts*) pada platform AI.
-
