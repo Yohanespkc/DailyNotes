@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleShare - Obsidian P2P Messenger</title>
+
+  <!-- PWA Metadata -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#17212b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icon-192.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External Libraries (CDN) -->
+  <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-left">
+        <div class="app-icon-wrapper">
+          <svg class="telegram-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .54-1.43.53-.47-.01-1.37-.26-2.04-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.66-2.89 8.01-3.46 3.81-1.6 4.6-1.88 5.12-1.89.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.16-.04.28z"/>
+          </svg>
+        </div>
+        <div class="header-title-box">
+          <h2>TeleShare Obsidian</h2>
+          <div class="connection-status-badge" id="statusBadge">
+            <span class="status-dot offline"></span>
+            <span id="statusText">Memulai P2P Overlay...</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Main Quick Share / Auto-Connect Button -->
+        <button class="btn btn-primary" id="btnShareInvite" title="Undah teman untuk terhubung otomatis">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+          </svg>
+          <span>Link Auto-Connect</span>
+        </button>
+
+        <!-- Install PWA Button (Hidden by default, shows if PWA installable) -->
+        <button class="btn btn-secondary hidden" id="btnInstallPwa">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Install PWA</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main View Grid -->
+    <div class="main-body">
+      <!-- Sidebar Info & Connection Drawer -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-card">
+          <div class="card-header">
+            <h3>ID P2P Anda</h3>
+            <span class="badge" id="myIdBadge">Loading...</span>
+          </div>
+          <div class="id-display-row">
+            <input type="text" id="myPeerIdInput" readonly value="Menghubungkan...">
+            <button class="btn-icon" id="btnCopyMyId" title="Salin ID Anda">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <div class="card-header">
+            <h3>Koneksi Teman</h3>
+            <span class="status-indicator" id="peerConnIndicator">Belum Terhubung</span>
+          </div>
+          <div class="connect-input-group">
+            <input type="text" id="targetPeerIdInput" placeholder="Masukkan ID Teman atau buka via Link...">
+            <button class="btn btn-accent" id="btnConnectPeer">
+              <span>Hubungkan</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="sidebar-card quick-instructions">
+          <h4>🚀 Cara Berbagi Artikel:</h4>
+          <ol>
+            <li>Klik <b>Link Auto-Connect</b> & kirim link/QR ke teman.</li>
+            <li>Saat teman membuka link, Anda & teman langsung <b>Terhubung Instan</b>.</li>
+            <li>Ketik atau drop file <code>.md</code> Obsidian di bawah, lalu klik tombol <b>🚀 Kirim Artikel</b>.</li>
+          </ol>
+        </div>
+      </aside>
+
+      <!-- Chat & Article Exchange Panel -->
+      <main class="chat-panel">
+        <div class="chat-messages" id="chatMessages">
+          <!-- Welcome Placeholder Message -->
+          <div class="chat-notice system-notice">
+            <div class="notice-icon">💬</div>
+            <div class="notice-text">
+              <strong>Selamat Datang di TeleShare Obsidian P2P!</strong><br>
+              Aplikasi komunikasi terenkripsi langsung (Peer-to-Peer) untuk saling berkirim artikel Obsidian dan catatan.
+            </div>
+          </div>
+        </div>
+
+        <!-- File Upload Drag Overlay -->
+        <div class="drop-zone-overlay hidden" id="dropZone">
+          <div class="drop-message">
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+
+              <polyline points="9 15 12 12 15 15"></polyline>
+            </svg>
+            <p>Lepaskan file <code>.md</code> di sini untuk dikirim sebagai Artikel Obsidian</p>
+          </div>
+        </div>
+
+        <!-- Message Input Bar -->
+        <div class="input-bar">
+          <div class="input-actions-left">
+            <label for="fileInput" class="btn-icon" title="Unggah File .md Obsidian">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+            </label>
+            <input type="file" id="fileInput" accept=".md,.txt,.markdown" style="display:none">
+          </div>
+
+          <textarea id="messageInput" placeholder="Ketik pesan atau tempel teks Artikel Markdown Obsidian di sini..." rows="1"></textarea>
+
+          <!-- Requested ONE-CLICK Share Button -->
+          <button class="btn btn-send" id="btnSendMessage" title="Kirim Artikel / Pesan Ke Teman">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+            </svg>
+            <span>Kirim Artikel</span>
+          </button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Invite & QR Code Modal -->
+  <div class="modal-backdrop hidden" id="inviteModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>🔗 Link Auto-Connect TeleShare</h3>
+        <button class="btn-icon close-modal" id="btnCloseInviteModal">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Kirimkan link atau tunjukkan QR Code ini ke teman Anda. Begitu mereka klik atau scan, kalian akan <strong>Otomatis Terhubung</strong>!</p>
+        
+        <div class="qr-container" id="qrCodeBox"></div>
+
+        <div class="share-link-input-group">
+          <input type="text" id="shareUrlInput" readonly>
+          <button class="btn btn-primary" id="btnCopyShareUrl">
+            <span>Salin Link</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Received Article Fullscreen Modal -->
+  <div class="modal-backdrop hidden" id="articleModal">
+    <div class="modal-content modal-large">
+      <div class="modal-header">
+        <h3 id="articleModalTitle">📄 Artikel Obsidian Diterima</h3>
+        <div class="modal-header-actions">
+          <button class="btn btn-primary" id="btnCopyObsidianContent">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Salin ke Obsidian</span>
+          </button>
+          <button class="btn-icon close-modal" id="btnCloseArticleModal">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body article-preview-body" id="articleModalBody">
+        <!-- Rendered markdown html will go here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom App JS -->
+  <script src="app.js"></script>
+
+</body>
+</html>
