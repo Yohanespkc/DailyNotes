@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-08-04
+
+### Added
+- **Automated AI Conversation Recorder (`scripts/ai_chat_recorder.py`)**: Extractor and parser for Antigravity & AI coding tool session transcripts.
+- **Dedicated Obsidian Notes for AI Chats**: Saves individual sessions under `01 - Notes/AI Conversations/YYYY-MM-DD/` with YAML frontmatter, tool invocations, user request overview, and cleaned dialogue transcript.
+- **Master AI Conversation Index (`01 - Notes/AI Conversations/Index.md`)**: Automatically updated master log index of all AI conversations grouped by date.
+- **Daily Note Integration**: Automatically appends `## 💬 Percakapan AI Hari Ini` section to daily progress reports (`05 - Daily Notes/Note Harian - YYYY-MM-DD.md`).
+- **Workspace Customization Rule (`.agents/AGENTS.md`)**: Configured workspace-level rule to ensure auto-sync of AI conversations to Obsidian.
+
+### Changed
+- **Daily Report Generator (`daily_report_generator.py`)**: Updated to automatically trigger `ai_chat_recorder.py` during report generation.
+- **Schedule**: Updated daily report execution time to **18:00 (6:00 PM)**.
+
 ## [1.2.0] - 2026-08-03
 
 ### Added
