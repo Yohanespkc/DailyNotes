@@ -9,6 +9,6 @@
 - [ ] Menggunakan cutting video
 - [ ] Menggunakan excalidraw
 - [ ] LLM Wiki
-- [ ] Cavement (mengurangi token)
+- [ ] Cavement Atau RTK (mengurangi token)
 - [ ] Omnirouter
 
