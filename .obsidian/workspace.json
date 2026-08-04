@@ -11,12 +11,14 @@
             "id": "60df863bf816205b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "obsidian-share-pwa/icon-192.png"
+                "file": "01 - Notes/Daftar Apa yang mau ditambahkan ke PKC.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "icon-192"
+              "icon": "lucide-file",
+              "title": "Daftar Apa yang mau ditambahkan ke PKC"
             }
           }
         ]
@@ -221,6 +223,9 @@
   },
   "active": "60df863bf816205b",
   "lastOpenFiles": [
+    "01 - Notes/Daftar Tugas.md",
+    "01 - Notes/Catatan Pembelajaran 1.md",
+    "obsidian-share-pwa/icon-192.png",
     "02 - Resources/Excalidraw/Video Excalidraw.md",
     "01 - Notes/Panduan Plugins Obsidian.md",
     "05 - Daily Notes/2026-08-03.md",
@@ -229,7 +234,6 @@
     "04 - Archive/last30days/2026-08-03 - Saham BCA (BBCA).md",
     "Excalidraw/Drawing 2026-08-03 12.52.28.excalidraw.md",
     "Teleobsi/Uji_Coba_Teleobsi.md",
-    "01 - Notes/Daftar Tugas.md",
     "01 - Notes/AI Conversations/2026-08-04/2026-08-04 - 18.19 - Saya mau semua percakapan saya dengan AI (antigravity atau y....md",
     "scripts/__pycache__/ai_chat_recorder.cpython-314.pyc",
     "scripts/__pycache__",
@@ -251,14 +255,11 @@
     "scripts/ai_chat_recorder.py",
     "01 - Notes/Daftar Apa yang mau ditambahkan ke PKC.md",
     "01 - Notes/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
-    "01 - Notes/Catatan Pembelajaran 1.md",
-    "Grafana.md",
     "obsidian-share-pwa/server.py",
     "Teleobsi",
     "obsidian-share-pwa/TeleShare_Launcher.html",
     "obsidian-share-pwa/app.js",
     "obsidian-share-pwa/icon-512.png",
-    "obsidian-share-pwa/icon-192.png",
     "04 - Archive/logo_gasing 1.png",
     "Excalidraw/logo_gasing.svg"
   ]
