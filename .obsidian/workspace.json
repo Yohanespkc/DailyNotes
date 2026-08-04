@@ -11,192 +11,15 @@
             "id": "60df863bf816205b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "02 - Resources/Excalidraw/Video Excalidraw.md",
-                "mode": "source",
-                "source": false
+                "file": "obsidian-share-pwa/icon-192.png"
               },
-              "icon": "lucide-file",
-              "title": "Video Excalidraw"
-            }
-          },
-          {
-            "id": "56d65170d7402fc1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
-            }
-          },
-          {
-            "id": "c3c0b7103516937d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Panduan Plugins Obsidian.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Panduan Plugins Obsidian"
-            }
-          },
-          {
-            "id": "03f0e6f8ed2e3619",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "05 - Daily Notes/2026-08-03.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-08-03"
-            }
-          },
-          {
-            "id": "1f93c713c01c35f2",
-            "type": "leaf",
-            "state": {
-              "type": "video",
-              "state": {
-                "file": "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4"
-              },
-              "icon": "lucide-file",
-              "title": "clip_cBgT0PG4JkM_0-00_to_0-42"
-            }
-          },
-          {
-            "id": "c0c7fadca17660f6",
-            "type": "leaf",
-            "state": {
-              "type": "video",
-              "state": {
-                "file": "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4"
-              },
-              "icon": "lucide-file",
-              "title": "clip_cBgT0PG4JkM_0-00_to_0-42"
-            }
-          },
-          {
-            "id": "7b133d3e8772f309",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Archive/last30days/2026-08-03 - Presiden Prabowo Subianto.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-08-03 - Presiden Prabowo Subianto"
-            }
-          },
-          {
-            "id": "5c3c8ed610a80110",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Anthropic.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Anthropic"
-            }
-          },
-          {
-            "id": "198042f4680b717f",
-            "type": "leaf",
-            "state": {
-              "type": "video",
-              "state": {
-                "file": "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4"
-              },
-              "icon": "lucide-file",
-              "title": "clip_cBgT0PG4JkM_0-00_to_0-42"
-            }
-          },
-          {
-            "id": "c24caef026776777",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "05 - Daily Notes/2026-08-03.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-08-03"
-            }
-          },
-          {
-            "id": "b4150ea6935386f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Archive/last30days/2026-08-03 - Saham BCA (BBCA).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-08-03 - Saham BCA (BBCA)"
-            }
-          },
-          {
-            "id": "68db7f08ad78647d",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-08-03 12.52.28.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-08-03 12.52.28.excalidraw"
-            }
-          },
-          {
-            "id": "b29908adb15c2264",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teleobsi/Uji_Coba_Teleobsi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Uji_Coba_Teleobsi"
-            }
-          },
-          {
-            "id": "3b6f6891f52b345f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Daftar Tugas.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Daftar Tugas"
+              "icon": "lucide-image",
+              "title": "icon-192"
             }
           }
-        ],
-        "currentTab": 13
+        ]
       }
     ],
     "direction": "vertical"
@@ -396,8 +219,17 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "3b6f6891f52b345f",
+  "active": "60df863bf816205b",
   "lastOpenFiles": [
+    "02 - Resources/Excalidraw/Video Excalidraw.md",
+    "01 - Notes/Panduan Plugins Obsidian.md",
+    "05 - Daily Notes/2026-08-03.md",
+    "02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4",
+    "04 - Archive/last30days/2026-08-03 - Presiden Prabowo Subianto.md",
+    "04 - Archive/last30days/2026-08-03 - Saham BCA (BBCA).md",
+    "Excalidraw/Drawing 2026-08-03 12.52.28.excalidraw.md",
+    "Teleobsi/Uji_Coba_Teleobsi.md",
+    "01 - Notes/Daftar Tugas.md",
     "01 - Notes/AI Conversations/2026-08-04/2026-08-04 - 18.19 - Saya mau semua percakapan saya dengan AI (antigravity atau y....md",
     "scripts/__pycache__/ai_chat_recorder.cpython-314.pyc",
     "scripts/__pycache__",
@@ -418,24 +250,15 @@
     "01 - Notes/AI Conversations",
     "scripts/ai_chat_recorder.py",
     "01 - Notes/Daftar Apa yang mau ditambahkan ke PKC.md",
-    "01 - Notes/Daftar Tugas.md",
     "01 - Notes/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
     "01 - Notes/Catatan Pembelajaran 1.md",
-    "01 - Notes/Panduan Plugins Obsidian.md",
     "Grafana.md",
-    "Teleobsi/Uji_Coba_Teleobsi.md",
-    "01 - Notes/Top 60 Games Arcade.md",
     "obsidian-share-pwa/server.py",
     "Teleobsi",
     "obsidian-share-pwa/TeleShare_Launcher.html",
     "obsidian-share-pwa/app.js",
-    "obsidian-share-pwa/styles.css",
     "obsidian-share-pwa/icon-512.png",
     "obsidian-share-pwa/icon-192.png",
-    "01 - Notes/CrazyGames - Arcade Games (Page 5).md",
-    "02 - Resources/Clippings/OpenAI Rogue Models Hugging Face Breach.md",
-    "02 - Resources/Clippings/Arcade Games 🕹️ Play on CrazyGames.md",
-    "Games 600.md",
     "04 - Archive/logo_gasing 1.png",
     "Excalidraw/logo_gasing.svg"
   ]
