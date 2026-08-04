@@ -145,6 +145,14 @@ Yohanes Surya
 
     print(f"[{datetime.now()}] Dynamic daily report generated for {target_date}!")
 
+    # Auto-record AI Conversations
+    try:
+        from ai_chat_recorder import record_sessions_for_date
+        record_sessions_for_date(target_date)
+    except Exception as e:
+        print(f"Note: Could not run ai_chat_recorder automatically: {e}")
+
 if __name__ == "__main__":
     date_arg = sys.argv[1] if len(sys.argv) > 1 else None
     generate_report(date_arg)
+
