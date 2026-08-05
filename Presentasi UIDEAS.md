@@ -208,3 +208,96 @@ Setiap slide dilengkapi dengan **Panduan Desain Visual**, **Konten Tampilan Slid
 
 🎙️ **Naskah Presenter (Speaker Notes):**
 > *"Bapak dan Ibu sekalian, cahaya itu telah menyala di Papua, di NTT, di Maluku, dan di seluruh daerah remote Indonesia. Anak-anak yang semula takut kini tersenyum. Guru yang semula monoton kini mengajar dengan gembira. Jika di ujung negeri yang paling sulit saja perubahan ini nyata terjadi, maka tidak ada alasan bagi kita untuk ragu. Mari kita bawa gerakan Metode GASING ini ke seluruh pelosok Nusantara. Terima kasih!"*
+
+
+
+Berikut adalah terjemahan naskah presenter (**Speaker Notes**) dari **Slide 1 hingga Slide 9** dalam bahasa Inggris. 
+
+Naskah ini disunting dengan tata bahasa (*rhetoric & tone*) yang sangat elegan, berkarisma, dan menginspirasi—cocok untuk dibawakan di hadapan audiens internasional, pemangku kepentingan, maupun konferensi global.
+
+---
+
+# 🎙️ SPEAKER NOTES (ENGLISH VERSION) — SLIDES 1 TO 9
+
+---
+
+### 🎙️ **SLIDE 1: Title Slide (Lighting the Beacon in the Remote Corners)**
+
+> *"Good morning/afternoon, ladies and gentlemen.*
+> 
+> *Today, I am here not just to present a statistical report, but to invite you to witness a profound human transformation. In the most remote parts of our nation—across the highlands of Papua and the outer frontiers—a quiet revolution is taking place.*
+> 
+> *Children who were once terrified of mathematics now cheer in joy as they solve equations on the board. Teachers who once felt disheartened now stand with immense pride. Join me as we explore how the GASING Method turns fear into the light of the future."*
+
+---
+
+### 🎙️ **SLIDE 2: The Silent Crisis in Remote Areas**
+
+> *"For decades, remote and frontier regions have suffered from a silent crisis. Mathematics was not merely a difficult subject; it was a source of trauma. Children felt helpless under intense math anxiety, while teachers in remote areas—many of whom were never taught intuitive numeracy themselves—were stuck using rigid, monotonous methods.*
+> 
+> *This created a toxic misconception: the belief that children in remote areas are inherently incapable of learning. Today, we are here to prove that this stigma is 100% FALSE."*
+
+---
+
+### 🎙️ **SLIDE 3: Foundational Philosophy — "No Child is Left Behind"**
+
+> *"Volume 1 of the GASING Method books establishes our core philosophy: **There is no such thing as a slow child.** Period. There are only wrong methods and intimidating environments.*
+> 
+> *GASING dismantles this barrier through three core pillars: **Easy, Fun, and Joyful**. When a child realizes, 'I CAN do this!', that is the exact moment the magic of learning begins."*
+
+---
+
+### 🎙️ **SLIDE 4: Teacher Transformation — "Feel, Transmit, Ignite"**
+
+> *"How do we transform children? By first empowering their teachers! In Volume 2, we apply a core pedagogical principle: **Feel, Transmit, and Ignite.***
+> 
+> *Teachers in Papua who previously struggled with basic arithmetic were first guided to experience their own 'Eureka!' moment—discovering the sheer joy of numbers without fear. Once they felt that joy, they transmitted it through a **Pedagogy of Compassion**. Teachers who once taught monotonically have transformed into educators deeply beloved by their students."*
+
+---
+
+### 🎙️ **SLIDE 5: Neurocognitive Secrets & The Three Windows**
+
+> *"How can the GASING Method take children from zero numeracy to advanced mental math in just 15 to 20 days? The secret lies in neuroscience.*
+> 
+> *We never force abstract numbers at the start. Instead, we use the **Three Windows**: Concrete objects first, then Visual representations, and finally Abstract symbols. Combined with multimodal learning—incorporating songs, body movements, and games—the brain releases dopamine, emotional filters vanish, and children absorb arithmetic logic with astonishing speed."*
+
+---
+
+### 📁 **SLIDE 6: Massive Empirical Evidence (Data of 23,633 Participants)**
+
+> *"This is far more than a heartwarming story. Volume 4 documents rigorous empirical data from **23,633 participants across 127 regencies in 33 provinces**.*
+> 
+> *The resulting Effect Size reached **d = 5.06**! In global educational research standards, an effect size of 0.8 is already considered 'large'. GASING delivered **six times the global benchmark**, accelerating learning speed by 24 times compared to conventional teaching methods."*
+
+---
+
+### 🎙️ **SLIDE 7: Inverse Effectiveness Gradient (Papua Leading Nationally)**
+
+> *"Here is the most groundbreaking scientific insight from our research: the **Inverse Effectiveness Gradient ($r = -0.620$)**. Standard educational interventions usually work best in affluent cities. But GASING does the exact opposite! The regions starting at the lowest baseline experienced the most DRAMATIC leaps in performance.*
+> 
+> *Papua, long assumed to be the most challenging region, led the entire nation with an average improvement ratio of **10.04x**! In Puncak Regency, student performance surged by an astonishing **46.86 times**. This proves that the cognitive potential of remote children is boundless—they simply needed the right method!"*
+
+---
+
+### 🎙️ **SLIDE 8: "This Transformation Will Change..." (The Impact Matrix)**
+
+> *"So, what do all these numbers and breakthroughs truly mean? This transformation changes four fundamental pillars:*
+> 
+> * **First, it changes human destiny:** Turning zero-numeracy children into future doctors, engineers, and professors.
+> * **Second, it restores teacher dignity:** Elevating instructors into master facilitators of multimodal learning.
+> * **Third, it advances social justice:** Shattering regional stigmas and closing the educational divide between urban and remote regions.
+> * **And fourth, it reshapes the nation's future:** Equipping remote children with the **Symphony of 8C skills** (Critical Thinking, Computational Logic, Creativity, and Character) to lead Indonesia's Golden Era 2045."*
+
+---
+
+### 🎙️ **SLIDE 9: Real Proof — From Remote Classrooms to the World Stage**
+
+> *"Ladies and gentlemen, you might ask: 'Does this impact stay confined to remote classrooms?'*
+> 
+> *The answer is right here on this slide. **THIS IS LIVING PROOF.** This transformation goes far beyond exam scores—it catapults human potential onto the global stage!*
+> 
+> *Look at **Livi Sihombing and Witny Warouw** (point to photo). They were rural teachers with limited access. By discovering their inner potential through GASING, they earned master's scholarships at **Tsinghua University**—the #1 ranked university in Asia! The result? They graduated with perfect **GPAs of 4.0 and 3.99, winning 'The Best Thesis' award!***
+> 
+> *Look at young **Yuriel** (point to photo). Hailing from a remote region, he not only solved graduate-level math problems at a young age, but honed his analytical mind to build an **offline 'Telegram' communication system** and an **AI-powered multilingual voice-over device**!*
+> 
+> *Today, these students and teachers from remote frontiers are being trained to represent our nation in international Olympiads and competitions. **When the potential of remote children is ignited, the sky is the only limit!"***
