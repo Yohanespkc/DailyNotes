@@ -14,16 +14,22 @@ TARGET_DIR = VAULT_DIR / "02 - Resources" / "Gemini Images"
 LOG_FILE = VAULT_DIR / "scripts" / "gemini_sync.log"
 TRACKING_FILE = TARGET_DIR / ".synced_log.json"
 
+class FlushFileHandler(logging.FileHandler):
+    def emit(self, record):
+        super().emit(record)
+        self.flush()
+
 # Logging setup
-logging.basicConfig(
-    filename=LOG_FILE,
-    level=logging.INFO,
-    format="[%(asctime)s] %(levelname)s: %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S"
-)
-console = logging.StreamHandler(sys.stdout)
-console.setLevel(logging.INFO)
-logging.getLogger().addHandler(console)
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+file_handler = FlushFileHandler(LOG_FILE, encoding='utf-8')
+file_handler.setFormatter(logging.Formatter("[%(asctime)s] %(levelname)s: %(message)s", datefmt="%Y-%m-%d %H:%M:%S"))
+logger.addHandler(file_handler)
+
+console_handler = logging.StreamHandler(sys.stdout)
+console_handler.setFormatter(logging.Formatter("[%(asctime)s] %(levelname)s: %(message)s", datefmt="%Y-%m-%d %H:%M:%S"))
+logger.addHandler(console_handler)
 
 VALID_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"}
 
@@ -49,21 +55,17 @@ def is_gemini_image(file_path: Path) -> bool:
     if file_path.suffix.lower() not in VALID_EXTENSIONS:
         return False
     name_lower = file_path.name.lower()
-    # Check if filename contains 'gemini' or starts with typical Gemini download prefix
-    if "gemini" in name_lower:
-        return True
-    return False
+    return "gemini" in name_lower
 
 def is_file_ready(file_path: Path) -> bool:
     """Ensure file download is complete and file is not locked/writing."""
-    # Ignore temporary download files
     if file_path.name.endswith((".crdownload", ".download", ".tmp")):
         return False
     try:
         initial_size = file_path.stat().st_size
         if initial_size == 0:
             return False
-        time.sleep(0.5)
+        time.sleep(0.3)
         return file_path.stat().st_size == initial_size
     except (OSError, FileNotFoundError):
         return False
@@ -73,16 +75,29 @@ def sync_gemini_images():
     synced_set = load_synced_log()
     copied_count = 0
 
-    for file_path in DOWNLOADS_DIR.iterdir():
-        if is_gemini_image(file_path) and is_file_ready(file_path):
-            file_key = f"{file_path.name}_{file_path.stat().st_size}"
-            if file_key in synced_set:
-                continue
+    try:
+        files = list(DOWNLOADS_DIR.iterdir())
+    except Exception as e:
+        logging.error(f"Error reading downloads directory: {e}")
+        return 0
 
+    for file_path in files:
+        if not is_gemini_image(file_path):
+            continue
+
+        try:
+            st_size = file_path.stat().st_size
+        except (OSError, FileNotFoundError):
+            continue
+
+        file_key = f"{file_path.name}_{st_size}"
+        if file_key in synced_set:
+            continue
+
+        if is_file_ready(file_path):
             target_path = TARGET_DIR / file_path.name
-            # Handle collision if file already exists in target
             counter = 1
-            while target_path.exists() and target_path.stat().st_size != file_path.stat().st_size:
+            while target_path.exists() and target_path.stat().st_size != st_size:
                 stem = file_path.stem
                 suffix = file_path.suffix
                 target_path = TARGET_DIR / f"{stem}_{counter}{suffix}"
@@ -103,9 +118,9 @@ def main():
     daemon_mode = "--once" not in sys.argv
     logging.info(f"Starting Gemini Image Sync Service (Daemon: {daemon_mode})...")
 
-    # Initial sync
     copied = sync_gemini_images()
-    logging.info(f"Initial sync complete. Copied {copied} new image(s).")
+    if copied > 0:
+        logging.info(f"Sync step complete. Copied {copied} new image(s).")
 
     if not daemon_mode:
         return
