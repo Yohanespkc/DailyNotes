@@ -39,14 +39,12 @@
             "id": "9c2cd79dfe9772dd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Presentasi UIDEAS.md",
-                "mode": "source",
-                "source": false
+                "file": "02 - Resources/Gemini Images/Gemini_Generated_Image_3egd9w3egd9w3egd.jpeg"
               },
-              "icon": "lucide-file",
-              "title": "Presentasi UIDEAS"
+              "icon": "lucide-image",
+              "title": "Gemini_Generated_Image_3egd9w3egd9w3egd"
             }
           },
           {
@@ -262,6 +260,8 @@
   },
   "active": "9c2cd79dfe9772dd",
   "lastOpenFiles": [
+    "02 - Resources/Gemini Images/Gemini_Generated_Image_1gwl961gwl961gwl.jpeg",
+    "Presentasi UIDEAS.md",
     "01 - Notes/AI Conversations/2026-08-06/2026-08-06 - 06.53 - Tolong agar AI lokal mengambil gambar hasil gemini yang ada....md",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_test_final_check.png",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_live_test_999.png",
@@ -282,7 +282,6 @@
     "01 - Notes/AI Conversations/2026-08-06/2026-08-06 - 04.00 - tolong atur nilai skor pada gempo agar total score di Gempo....md",
     "01 - Notes/AI Conversations/2026-08-06",
     "Belajar Obsidian dan AI.md",
-    "Presentasi UIDEAS.md",
     "Presentasi",
     "01 - Notes/Daftar Apa yang mau ditambahkan ke PKC.md",
     "01 - Notes/AI Conversations/Index.md",
@@ -305,7 +304,6 @@
     "scripts/__pycache__/ai_chat_recorder.cpython-314.pyc",
     "scripts/__pycache__",
     "01 - Notes/AI Conversations/2026-08-04/2026-08-04 - 18.18 - Saya mau semua percakapan saya dengan AI (antigravity atau y....md",
-    "01 - Notes/AI Conversations/2026-08-04/2026-08-04 - 15.05 - tolong atur nilai skor pada gempo agar total score di Gempo....md",
     "01 - Notes/AI Conversations/2026-08-04",
     "01 - Notes/AI Conversations"
   ]
