@@ -22,17 +22,13 @@
             }
           },
           {
-            "id": "fd464baa847e026b",
+            "id": "79065e7c3e0491dd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terapi kesehatan.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Terapi kesehatan"
+              "title": "New tab"
             }
           }
         ],
@@ -236,7 +232,7 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "fd464baa847e026b",
+  "active": "79065e7c3e0491dd",
   "lastOpenFiles": [
     "01 - Notes/Daftar Apa yang mau ditambahkan ke PKC.md",
     "Terapi kesehatan.md",
