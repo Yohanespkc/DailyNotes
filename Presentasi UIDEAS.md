@@ -241,7 +241,7 @@ Naskah ini disunting dengan tata bahasa (*rhetoric & tone*) yang sangat elegan, 
 
 ### 🎙️ **SLIDE 3: Foundational Philosophy — "No Child is Left Behind"**
 
-> *"Volume 1 of the GASING Method books establishes our core philosophy: **There is no such thing as a slow child.** Period. There are only wrong methods and intimidating environments.*
+> *"GASING Method books establishes our core philosophy: **There is no such thing as a slow child.** Period. There are only wrong methods and intimidating environments.*
 > 
 > *GASING dismantles this barrier through three core pillars: **Easy, Fun, and Joyful**. When a child realizes, 'I CAN do this!', that is the exact moment the magic of learning begins."*
 
@@ -249,7 +249,7 @@ Naskah ini disunting dengan tata bahasa (*rhetoric & tone*) yang sangat elegan, 
 
 ### 🎙️ **SLIDE 4: Teacher Transformation — "Feel, Transmit, Ignite"**
 
-> *"How do we transform children? By first empowering their teachers! In Volume 2, we apply a core pedagogical principle: **Feel, Transmit, and Ignite.***
+> *"How do we transform children? By first empowering their teachers! GASING apply a core pedagogical principle: **Feel, Transmit, and Ignite.***
 > 
 > *Teachers in Papua who previously struggled with basic arithmetic were first guided to experience their own 'Eureka!' moment—discovering the sheer joy of numbers without fear. Once they felt that joy, they transmitted it through a **Pedagogy of Compassion**. Teachers who once taught monotonically have transformed into educators deeply beloved by their students."*
 
@@ -265,7 +265,7 @@ Naskah ini disunting dengan tata bahasa (*rhetoric & tone*) yang sangat elegan, 
 
 ### 📁 **SLIDE 6: Massive Empirical Evidence (Data of 23,633 Participants)**
 
-> *"This is far more than a heartwarming story. Volume 4 documents rigorous empirical data from **23,633 participants across 127 regencies in 33 provinces**.*
+> *"This is far more than a heartwarming story.  rigorous empirical data from **23,633 participants across 127 regencies in 33 provinces**.*
 > 
 > *The resulting Effect Size reached **d = 5.06**! In global educational research standards, an effect size of 0.8 is already considered 'large'. GASING delivered **six times the global benchmark**, accelerating learning speed by 24 times compared to conventional teaching methods."*
 
