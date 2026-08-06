@@ -1,1 +1,1 @@
- seti
+Update readme@, changelog dan gitpush
