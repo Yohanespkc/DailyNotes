@@ -1,0 +1,23 @@
+---
+title: "Rekomendasi hosting web"
+tags:
+  - ai-chat
+  - claude
+date: 2026-08-06
+---
+
+# 💬 Rekomendasi hosting web
+
+**Tanggal:** `2026-08-06`  
+**Sumber:** Claude Desktop / Claude.ai  
+
+---
+
+### 📌 Ringkasan Percakapan Claude
+
+*Catatan percakapan ini dibuat dari riwayat Claude Desktop Anda.*
+
+> [!NOTE] 💡 **Instruksi Sinkronisasi Penuh Isi Chat**
+> Untuk menyinkronkan seluruh riwayat teks lengkap dari percakapan ini ke Obsidian:
+> 1. Download file `conversations.json` dari Claude.ai (**Settings -> Account -> Export Data**).
+> 2. Jalankan `python3 scripts/import_claude_conversations.py`.
