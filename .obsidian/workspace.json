@@ -48,6 +48,20 @@
             }
           },
           {
+            "id": "5a1340a083b12849",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Presentasi UIDEAS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Presentasi UIDEAS"
+            }
+          },
+          {
             "id": "79065e7c3e0491dd",
             "type": "leaf",
             "state": {
@@ -58,7 +72,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -258,8 +272,12 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "9c2cd79dfe9772dd",
+  "active": "5a1340a083b12849",
   "lastOpenFiles": [
+    "Belajar Obsidian dan AI.md",
+    "Terapi kesehatan.md",
+    "Webdesign dengan Kimi K3.md",
+    "02 - Resources/Gemini Images/Gemini_Generated_Image_y712cay712cay712.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_zdabofzdabofzdab.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_8sedb8sedb8sedb8.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_9wx7ha9wx7ha9wx7.jpeg",
@@ -269,10 +287,8 @@
     "02 - Resources/Gemini Images/Gemini_Generated_Image_6tzdui6tzdui6tzd.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_5feu6k5feu6k5feu.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_3egd9w3egd9w3egd.jpeg",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_1gwl961gwl961gwl.jpeg",
     "Presentasi UIDEAS.md",
     "01 - Notes/AI Conversations/2026-08-06/2026-08-06 - 06.53 - Tolong agar AI lokal mengambil gambar hasil gemini yang ada....md",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_test_final_check.png",
     "scripts/gemini_sync.log",
     "scripts/gemini_image_sync.py",
     "02 - Resources/Gemini Images",
@@ -281,7 +297,6 @@
     "01 - Notes/AI Conversations/2026-08-06/2026-08-06 - 04.54 - saham apa yang perlu saya pertimbangkan untuk beli.md",
     "01 - Notes/AI Conversations/2026-08-06/2026-08-06 - 04.00 - tolong atur nilai skor pada gempo agar total score di Gempo....md",
     "01 - Notes/AI Conversations/2026-08-06",
-    "Belajar Obsidian dan AI.md",
     "Presentasi",
     "01 - Notes/Daftar Apa yang mau ditambahkan ke PKC.md",
     "01 - Notes/AI Conversations/Index.md",
@@ -289,7 +304,6 @@
     "01 - Notes/AI Conversations/2026-08-05/2026-08-05 - 04.10 - setup RTK untuk proyek Buku4volume saja. Jangan untuk proyek....md",
     "04 - Archive/AI Programming - Design Isolation (Grill-me, Superpowers, OpenSpec).md",
     "Git push.md",
-    "Terapi kesehatan.md",
     "01 - Notes/Daftar Tugas.md",
     "01 - Notes/Catatan Pembelajaran 1.md",
     "02 - Resources/Excalidraw/Video Excalidraw.md",
@@ -303,7 +317,6 @@
     "01 - Notes/AI Conversations/2026-08-04/2026-08-04 - 18.19 - Saya mau semua percakapan saya dengan AI (antigravity atau y....md",
     "scripts/__pycache__/ai_chat_recorder.cpython-314.pyc",
     "scripts/__pycache__",
-    "01 - Notes/AI Conversations/2026-08-04/2026-08-04 - 18.18 - Saya mau semua percakapan saya dengan AI (antigravity atau y....md",
     "01 - Notes/AI Conversations/2026-08-04",
     "01 - Notes/AI Conversations"
   ]
