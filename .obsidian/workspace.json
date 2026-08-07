@@ -20,109 +20,8 @@
               "icon": "lucide-file",
               "title": "Daftar Apa yang mau ditambahkan ke PKC"
             }
-          },
-          {
-            "id": "e2c6faf0a1ed16fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Belajar Obsidian dan AI.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Belajar Obsidian dan AI"
-            }
-          },
-          {
-            "id": "9c2cd79dfe9772dd",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "02 - Resources/Gemini Images/Gemini_Generated_Image_y712cay712cay712.jpeg"
-              },
-              "icon": "lucide-image",
-              "title": "Gemini_Generated_Image_y712cay712cay712"
-            }
-          },
-          {
-            "id": "5a1340a083b12849",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "02 - Resources/Gemini Images/Gemini_Generated_Image_zdabofzdabofzdab.jpeg"
-              },
-              "icon": "lucide-image",
-              "title": "Gemini_Generated_Image_zdabofzdabofzdab"
-            }
-          },
-          {
-            "id": "32a7964ddafbc26f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Translator off line Antigravity.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Translator off line Antigravity"
-            }
-          },
-          {
-            "id": "e774a2df0d0c4b72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Server dan Kursi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Server dan Kursi"
-            }
-          },
-          {
-            "id": "d70094cf11ddd1a5",
-            "type": "leaf",
-            "state": {
-              "type": "smart-release-notes-view",
-              "state": {},
-              "icon": "file-text",
-              "title": "Release Notes"
-            }
-          },
-          {
-            "id": "79065e7c3e0491dd",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "b622b2c152ae0dcb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/AI Conversations/Claude/README - Petunjuk Import Claude.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README - Petunjuk Import Claude"
-            }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "vertical"
@@ -334,8 +233,18 @@
       "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "e04689de63811493",
+  "active": "60df863bf816205b",
   "lastOpenFiles": [
+    "02 - Resources/Gemini Images/Gemini_Generated_Image_y712cay712cay712.jpeg",
+    "02 - Resources/Gemini Images/Gemini_Generated_Image_zdabofzdabofzdab.jpeg",
+    "Translator off line Antigravity.md",
+    "Server dan Kursi.md",
+    "02 - Resources/Videos/Belajar Obsidian dan AI.md",
+    "scratch/ISI PKC.md",
+    "Teleobsi/Uji_Coba_Teleobsi.md",
+    "02 - Resources/Audio/Cloning suara free.md",
+    "01 - Notes/AI Conversations/Claude/README - Petunjuk Import Claude.md",
+    "02 - Resources/Audio",
     "01 - Notes/AI Conversations/2026-08-07/2026-08-07 - 09.16 - kamu perbaiki.md",
     "01 - Notes/AI Conversations/2026-08-07/2026-08-07 - 09.13 - kamu perbaiki.md",
     "01 - Notes/AI Conversations/2026-08-07/2026-08-07 - 09.07 - kamu perbaiki.md",
@@ -357,23 +266,12 @@
     "01 - Notes/AI Conversations/ChatGPT/02 - Pemrograman & IT/2026-08-07 - 02 - Perbedaan Hermes OpenClaw Antigravity.md",
     "01 - Notes/AI Conversations/ChatGPT/02 - Pemrograman & IT",
     "01 - Notes/AI Conversations/ChatGPT/04 - Sejarah, Bisnis & Umum/2026-08-07 - 15 - Pertanyaan AI untuk Huawei.md",
-    "01 - Notes/AI Conversations/ChatGPT/04 - Sejarah, Bisnis & Umum/2026-08-07 - 14 - Cara Hilangkan Noda Kuning.md",
-    "01 - Notes/AI Conversations/ChatGPT/04 - Sejarah, Bisnis & Umum/2026-08-07 - 09 - Perusahaan Unicorn Indonesia.md",
-    "01 - Notes/AI Conversations/ChatGPT/04 - Sejarah, Bisnis & Umum/2026-08-07 - 01 - Umur Presiden Soekarno.md",
     "01 - Notes/AI Conversations/ChatGPT/04 - Sejarah, Bisnis & Umum",
     "scripts/organize_chatgpt_chats.py",
-    "01 - Notes/AI Conversations/ChatGPT/2026-08-07 - 17 - Apa itu Sistem Operasi.md",
-    "01 - Notes/AI Conversations/ChatGPT/2026-08-07 - 16 - Nama Ksatria Octagon.md",
-    "01 - Notes/AI Conversations/ChatGPT/2026-08-07 - 15 - Pertanyaan AI untuk Huawei.md",
-    "01 - Notes/AI Conversations/ChatGPT/2026-08-07 - 14 - Cara Hilangkan Noda Kuning.md",
-    "01 - Notes/AI Conversations/ChatGPT/2026-08-07 - 13 - Game Edukasi Chain Sums.md",
     "01 - Notes/AI Conversations/ChatGPT",
     "scripts/create_chatgpt_notes.py",
     "scripts/import_chatgpt_conversations.py",
     "01 - Notes/AI Conversations/Claude/04 - Keuangan & Saham",
-    "01 - Notes/AI Conversations/Claude/05 - Teknologi & AI Tools",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_zdabofzdabofzdab.jpeg",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_y712cay712cay712.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_y8hkixy8hkixy8hk.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_xwcg3exwcg3exwcg.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_xjxdv7xjxdv7xjxd.jpeg",
