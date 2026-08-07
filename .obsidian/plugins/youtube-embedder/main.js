@@ -177,7 +177,7 @@ class VideoClipPromptModal extends Modal {
   }
 }
 
-class TextToSpeechPromptModal extends Modal {
+class SaveAppPromptModal extends Modal {
   constructor(app, onSubmit) {
     super(app);
     this.onSubmit = onSubmit;
@@ -186,139 +186,60 @@ class TextToSpeechPromptModal extends Modal {
   onOpen() {
     const { contentEl } = this;
     contentEl.empty();
-    contentEl.createEl("h3", { text: "🎙️ Text-to-Speech (TTS) Voice Generator" });
+    contentEl.createEl("h3", { text: "🌐 Simpan Referensi Aplikasi Online" });
 
-    const activeView = this.app.workspace.getActiveViewOfType(MarkdownView);
-    let defaultText = "";
-    if (activeView) {
-      defaultText = activeView.editor.getSelection();
-    }
-
-    let textInput = defaultText;
-    let selectedPreset = "custom";
-    let selectedVoice = "id-ID-ArdiNeural";
-    let rateInput = "+0%";
-    let pitchInput = "+0Hz";
+    let appUrl = "";
+    let appName = "";
+    let appDesc = "";
 
     new Setting(contentEl)
-      .setName("Teks untuk Disintesis")
-      .setDesc("Masukkan teks yang ingin diubah menjadi suara")
-      .addTextArea((text) => {
-        text.setPlaceholder("Ketik naskah di sini...")
-          .setValue(defaultText)
-          .onChange((val) => {
-            textInput = val;
-          });
-        text.inputEl.rows = 4;
-        text.inputEl.style.width = "100%";
+      .setName("URL / Link Aplikasi")
+      .setDesc("Masukkan alamat website aplikasi online")
+      .addText((text) => {
+        text.setPlaceholder("https://www.text-to-speech.online/en/").onChange((val) => {
+          appUrl = val;
+        });
         setTimeout(() => text.inputEl.focus(), 50);
       });
 
-    let voiceDropdown;
-    let rateText;
-    let pitchText;
-
     new Setting(contentEl)
-      .setName("Profil Karakter Gasing")
-      .setDesc("Pilih preset pengisi suara karakter Gasing")
-      .addDropdown((dropdown) => {
-        dropdown
-          .addOption("custom", "Kustom / Lainnya...")
-          .addOption("prof_gasing", "Profesor Gasing (Ardi, +2Hz, +10%)")
-          .addOption("narator", "Narator Petualangan (Ardi, -4Hz, -2%)")
-          .addOption("ksatria", "Ksatria Octagon (Ardi, +12Hz, +18%)")
-          .addOption("xander", "Xander (Ardi, +15Hz, +10%)")
-          .addOption("komandan", "Komandan/Jenderal (Ardi, -3Hz, +5%)")
-          .addOption("ratu", "Sang Ratu (Gadis, -3Hz, -5%)")
-          .addOption("master_tutor", "Master Tutor GASING (Ardi, +3Hz, +5%)")
-          .setValue(selectedPreset)
-          .onChange((val) => {
-            selectedPreset = val;
-            const presets = {
-              prof_gasing: { voice: "id-ID-ArdiNeural", pitch: "+2Hz", rate: "+10%" },
-              narator: { voice: "id-ID-ArdiNeural", pitch: "-4Hz", rate: "-2%" },
-              ksatria: { voice: "id-ID-ArdiNeural", pitch: "+12Hz", rate: "+18%" },
-              xander: { voice: "id-ID-ArdiNeural", pitch: "+15Hz", rate: "+10%" },
-              komandan: { voice: "id-ID-ArdiNeural", pitch: "-3Hz", rate: "+5%" },
-              ratu: { voice: "id-ID-GadisNeural", pitch: "-3Hz", rate: "-5%" },
-              master_tutor: { voice: "id-ID-ArdiNeural", pitch: "+3Hz", rate: "+5%" },
-              custom: { voice: "id-ID-ArdiNeural", pitch: "+0Hz", rate: "+0%" }
-            };
-
-            const preset = presets[val];
-            if (preset) {
-              selectedVoice = preset.voice;
-              rateInput = preset.rate;
-              pitchInput = preset.pitch;
-
-              if (voiceDropdown) voiceDropdown.setValue(selectedVoice);
-              if (rateText) rateText.setValue(rateInput);
-              if (pitchText) pitchText.setValue(pitchInput);
-            }
-          });
-      });
-
-    new Setting(contentEl)
-      .setName("Suara AI (Voice)")
-      .setDesc("Pilih suara AI dari Microsoft Edge")
-      .addDropdown((dropdown) => {
-        voiceDropdown = dropdown;
-        dropdown
-          .addOption("id-ID-ArdiNeural", "id-ID-ArdiNeural (Pria Indo)")
-          .addOption("id-ID-GadisNeural", "id-ID-GadisNeural (Wanita Indo)")
-          .addOption("en-US-AriaNeural", "en-US-AriaNeural (Wanita Eng)")
-          .addOption("en-US-GuyNeural", "en-US-GuyNeural (Pria Eng)")
-          .setValue(selectedVoice)
-          .onChange((val) => {
-            selectedVoice = val;
-          });
-      });
-
-    new Setting(contentEl)
-      .setName("Kecepatan (Rate)")
-      .setDesc("Atur kecepatan suara (contoh: +10%, -5%, +0%)")
+      .setName("Nama Aplikasi")
+      .setDesc("Masukkan nama aplikasi/tool tersebut")
       .addText((text) => {
-        rateText = text;
-        text.setValue(rateInput).onChange((val) => {
-          rateInput = val;
+        text.setPlaceholder("Contoh: Text-to-Speech Online").onChange((val) => {
+          appName = val;
         });
       });
 
     new Setting(contentEl)
-      .setName("Nada (Pitch)")
-      .setDesc("Atur nada suara (contoh: +2Hz, -4Hz, +0Hz)")
-      .addText((text) => {
-        pitchText = text;
-        text.setValue(pitchInput).onChange((val) => {
-          pitchInput = val;
+      .setName("Deskripsi / Kegunaan")
+      .setDesc("Jelaskan secara singkat untuk apa aplikasi ini digunakan")
+      .addTextArea((text) => {
+        text.setPlaceholder("Contoh: Konverter teks ke suara AI gratis dengan suara natural...").onChange((val) => {
+          appDesc = val;
         });
+        text.inputEl.rows = 3;
+        text.inputEl.style.width = "100%";
       });
 
     new Setting(contentEl).addButton((btn) =>
       btn
-        .setButtonText("🎙️ Hasilkan & Sisipkan Audio")
+        .setButtonText("🌐 Simpan & Sisipkan Referensi")
         .setCta()
         .onClick(() => {
-          if (!textInput || !textInput.trim()) {
-            new Notice("⚠️ Harap masukkan teks naskah!");
+          if (!appUrl || !appUrl.trim()) {
+            new Notice("⚠️ Harap masukkan URL aplikasi!");
+            return;
+          }
+          if (!appName || !appName.trim()) {
+            new Notice("⚠️ Harap masukkan nama aplikasi!");
             return;
           }
           this.close();
-          const presetsNames = {
-            prof_gasing: "Profesor Gasing",
-            narator: "Narator Petualangan",
-            ksatria: "Ksatria Octagon",
-            xander: "Xander (Pangeran)",
-            komandan: "Komandan / Jenderal",
-            ratu: "Sang Ratu",
-            master_tutor: "Master Tutor GASING"
-          };
           this.onSubmit({
-            text: textInput.trim(),
-            voice: selectedVoice,
-            rate: rateInput.trim(),
-            pitch: pitchInput.trim(),
-            presetName: presetsNames[selectedPreset] || ""
+            url: appUrl.trim(),
+            name: appName.trim(),
+            description: appDesc.trim()
           });
         })
     );
@@ -356,9 +277,9 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
       this.openVideoClipModal();
     });
 
-    // 5. Ribbon Icon for Text-to-Speech (TTS) (🎙️)
-    this.addRibbonIcon("audio-lines", "Text-to-Speech (TTS)", async () => {
-      this.openTTSModal();
+    // 5. Ribbon Icon for Save Online App / Tool (🌐)
+    this.addRibbonIcon("globe", "Save Online App / Tool", async () => {
+      this.openSaveAppModal();
     });
 
     // Command Palette Entries
@@ -395,10 +316,10 @@ module.exports = class YouTubeEmbedderPlugin extends Plugin {
     });
 
     this.addCommand({
-      id: "generate-text-to-speech",
-      name: "Text-to-Speech (TTS)",
+      id: "save-online-app",
+      name: "Save Online App / Tool",
       callback: async () => {
-        this.openTTSModal();
+        this.openSaveAppModal();
       }
     });
   }
@@ -1761,79 +1682,21 @@ PENTING: Fokuskan analisis HANYA pada bagian durasi menit ${startTimeInput} samp
     new Notice(`✅ Potongan Video (${startTimeInput} -> ${endTimeInput}) & Ringkasan AI berhasil disisipkan!`);
   }
 
-  openTTSModal() {
+  openSaveAppModal() {
     const file = this.app.workspace.getActiveFile();
     if (!file) {
-      new Notice("⚠️ Harap buka catatan terlebih dahulu sebelum menekan tombol TTS!");
+      new Notice("⚠️ Harap buka catatan terlebih dahulu sebelum menekan tombol!");
       return;
     }
 
-    new TextToSpeechPromptModal(this.app, async (options) => {
-      const loadingNotice = new Notice(`🎙️ Sedang mensintesis teks menjadi audio...\n⏳ Mohon tunggu sebentar!`, 0);
-      try {
-        await this.processTTS(file, options);
-      } catch (err) {
-        new Notice(`❌ Gagal menghasilkan audio: ${err.message}`, 5000);
-      } finally {
-        loadingNotice.hide();
-      }
+    new SaveAppPromptModal(this.app, async (options) => {
+      await this.insertAppMarkup(file, options);
     }).open();
   }
 
-  async processTTS(file, options) {
-    const { text, voice, rate, pitch, presetName } = options;
+  async insertAppMarkup(file, options) {
+    const { url, name, description } = options;
 
-    const vaultBasePath = (this.app.vault.adapter && typeof this.app.vault.adapter.getBasePath === "function") 
-      ? this.app.vault.adapter.getBasePath() 
-      : "/Users/yohanessurya/Documents/Development/Gasing-obs/Gasing";
-      
-    const relativeFolder = path.join("02 - Resources", "Audios", "tts");
-    const targetDir = path.join(vaultBasePath, relativeFolder);
-
-    if (!fs.existsSync(targetDir)) {
-      fs.mkdirSync(targetDir, { recursive: true });
-    }
-
-    // Generate unique name: tts_[first_3_words]_[timestamp].mp3
-    const cleanTextSlug = text
-      .toLowerCase()
-      .replace(/[^a-z0-9\s]/g, "")
-      .trim()
-      .split(/\s+/)
-      .slice(0, 3)
-      .join("_");
-    
-    const timestamp = Math.floor(Date.now() / 1000);
-    const fileName = `tts_${cleanTextSlug || "speech"}_${timestamp}.mp3`;
-    const relativeFilePath = path.join(relativeFolder, fileName);
-    const fullOutputPath = path.join(targetDir, fileName);
-
-    // Resolve edge-tts path
-    const venvEdgeTtsPath = "/Users/yohanessurya/Documents/Development/BelajarVideo/VibeVoice/.venv/bin/edge-tts";
-    const edgeTtsPath = fs.existsSync(venvEdgeTtsPath) ? venvEdgeTtsPath : "edge-tts";
-
-    // Escape text for shell command
-    const escapedText = text.replace(/"/g, '\\"').replace(/\n/g, ' ');
-
-    // Construct CLI command
-    const cmd = `"${edgeTtsPath}" -t "${escapedText}" -v "${voice}" --rate "${rate}" --pitch "${pitch}" --write-media "${fullOutputPath}"`;
-
-    const execEnv = Object.assign({}, process.env, {
-      PATH: `/opt/homebrew/bin:/usr/local/bin:${process.env.PATH || ""}`
-    });
-
-    await new Promise((resolve, reject) => {
-      exec(cmd, { env: execEnv }, (error, stdout, stderr) => {
-        if (error) {
-          console.error("edge-tts error:", stderr || stdout);
-          reject(new Error(stderr || error.message));
-        } else {
-          resolve(fullOutputPath);
-        }
-      });
-    });
-
-    // Formatting insertion
     const now = new Date();
     const formattedDate = now.toLocaleString("id-ID", {
       year: "numeric",
@@ -1843,8 +1706,8 @@ PENTING: Fokuskan analisis HANYA pada bagian durasi menit ${startTimeInput} samp
       minute: "2-digit"
     });
 
-    const presetInfo = presetName ? `\n> - 👤 **Karakter Preset:** ${presetName}` : "";
-    const embedResult = `\n![[${relativeFilePath}]]\n\n> [!NOTE] 🎙️ **Detail Audio TTS**\n> - 📌 **Naskah:** "${text.length > 100 ? text.substring(0, 100) + "..." : text}"${presetInfo}\n> - 🗣️ **Model Suara:** \`${voice}\`\n> - ⏱️ **Pengaturan:** Rate \`${rate}\` | Pitch \`${pitch}\`\n> - 🕒 **Dimasukkan Pada:** ${formattedDate}\n\n`;
+    const descriptionLine = description ? `\n> - 📝 **Deskripsi:** ${description}` : "";
+    const embedResult = `\n> [!INFO] 🌐 **Aplikasi Web: ${name}**${descriptionLine}\n> - 🔗 **URL:** ${url}\n> - 🚀 **Link Akses:** **[Buka Aplikasi Online](${url})**\n> - 🕒 **Dimasukkan Pada:** ${formattedDate}\n\n`;
 
     // Insert at cursor position if possible, otherwise append
     const activeView = this.app.workspace.getActiveViewOfType(MarkdownView);
@@ -1857,6 +1720,6 @@ PENTING: Fokuskan analisis HANYA pada bagian durasi menit ${startTimeInput} samp
       await this.app.vault.modify(file, content + embedResult);
     }
 
-    new Notice(`✅ Audio TTS berhasil disintesis dan disisipkan!`);
+    new Notice(`✅ Referensi aplikasi "${name}" berhasil disisipkan!`);
   }
 };
