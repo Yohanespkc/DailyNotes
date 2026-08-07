@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Daftar Apa yang mau ditambahkan ke PKC.md",
+                "file": "Presentasi UIDEAS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daftar Apa yang mau ditambahkan ke PKC"
+              "title": "Presentasi UIDEAS"
             }
           }
         ]
@@ -209,7 +209,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.73828125
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -235,10 +235,14 @@
   },
   "active": "60df863bf816205b",
   "lastOpenFiles": [
+    "Games 600.md",
+    "02 - Resources/Videos/Terapi kesehatan.md",
+    "02 - Resources/Videos/Webdesign dengan Kimi K3.md",
+    "obsidian-share-pwa/Translator off line Antigravity.md",
+    "01 - Notes/Daftar Apa yang mau ditambahkan ke PKC.md",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_y712cay712cay712.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_zdabofzdabofzdab.jpeg",
-    "Translator off line Antigravity.md",
-    "Server dan Kursi.md",
+    "02 - Resources/Videos/Server dan Kursi.md",
     "02 - Resources/Videos/Belajar Obsidian dan AI.md",
     "scratch/ISI PKC.md",
     "Teleobsi/Uji_Coba_Teleobsi.md",
@@ -262,10 +266,7 @@
     "01 - Notes/AI Conversations/ChatGPT/02 - Pemrograman & IT/2026-08-07 - 17 - Apa itu Sistem Operasi.md",
     "01 - Notes/AI Conversations/ChatGPT/02 - Pemrograman & IT/2026-08-07 - 07 - Lomba Bug Bounty NASA.md",
     "01 - Notes/AI Conversations/ChatGPT/02 - Pemrograman & IT/2026-08-07 - 06 - Cara Membuat Akun Git.md",
-    "01 - Notes/AI Conversations/ChatGPT/02 - Pemrograman & IT/2026-08-07 - 04 - Apa itu Embedding.md",
-    "01 - Notes/AI Conversations/ChatGPT/02 - Pemrograman & IT/2026-08-07 - 02 - Perbedaan Hermes OpenClaw Antigravity.md",
     "01 - Notes/AI Conversations/ChatGPT/02 - Pemrograman & IT",
-    "01 - Notes/AI Conversations/ChatGPT/04 - Sejarah, Bisnis & Umum/2026-08-07 - 15 - Pertanyaan AI untuk Huawei.md",
     "01 - Notes/AI Conversations/ChatGPT/04 - Sejarah, Bisnis & Umum",
     "scripts/organize_chatgpt_chats.py",
     "01 - Notes/AI Conversations/ChatGPT",
