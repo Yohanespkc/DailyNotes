@@ -36,7 +36,12 @@ def find_chatgpt_source():
         for zp in glob.glob(zp_pattern):
             try:
                 with zipfile.ZipFile(zp, 'r') as zf:
-                    if 'conversations.json' in zf.namelist():
+                    namelist = zf.namelist()
+                    if 'conversations.json' in namelist:
+                        return ("zip", zp)
+                    # Support split files like conversations-000.json
+                    has_split = any(name.startswith('conversations-') and name.endswith('.json') for name in namelist)
+                    if has_split:
                         return ("zip", zp)
             except Exception:
                 pass
@@ -119,7 +124,7 @@ def process_chatgpt_data(json_data_bytes):
             out.write("\n".join(md_content))
         total_count += 1
 
-    print(f"✅ Berhasil mengimpor {total_count} percakapan ChatGPT ke:\n   {OUTPUT_DIR}")
+    return total_count
 
 if __name__ == "__main__":
     stype, spath = find_chatgpt_source()
@@ -130,15 +135,28 @@ if __name__ == "__main__":
         else:
             stype, spath = 'json', arg
 
+    total_imported = 0
     if stype == 'json':
         print(f"📖 Membaca data ChatGPT dari JSON: {spath}")
         with open(spath, 'rb') as f:
-            process_chatgpt_data(f.read())
+            total_imported = process_chatgpt_data(f.read())
     elif stype == 'zip':
         print(f"📦 Membaca data ChatGPT dari file ZIP: {spath}")
         with zipfile.ZipFile(spath, 'r') as zf:
-            json_bytes = zf.read('conversations.json')
-            process_chatgpt_data(json_bytes)
+            namelist = zf.namelist()
+            if 'conversations.json' in namelist:
+                json_bytes = zf.read('conversations.json')
+                total_imported = process_chatgpt_data(json_bytes)
+            else:
+                # Find all conversations-*.json files
+                split_files = sorted([name for name in namelist if name.startswith('conversations-') and name.endswith('.json')])
+                for sfile in split_files:
+                    print(f"   -> Membaca {sfile}...")
+                    json_bytes = zf.read(sfile)
+                    total_imported += process_chatgpt_data(json_bytes)
+    
+    if total_imported > 0:
+        print(f"✅ Berhasil mengimpor {total_imported} percakapan ChatGPT ke:\n   {OUTPUT_DIR}")
     else:
         print("❌ File 'conversations.json' atau '.zip' export dari ChatGPT belum ditemukan di folder Downloads.")
         print("\nSilakan unduh Export Data dari ChatGPT:")
