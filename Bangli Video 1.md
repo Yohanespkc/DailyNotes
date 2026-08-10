@@ -91,3 +91,32 @@ Analisis Ringkas (Menit 1.25 – 2.10)
 • [Poin penting ketiga, merangkum hasil atau instruksi utama dari segmen tersebut.]
 ***
 
+
+![[02 - Resources/Videos/potongan video/clip_atc5hY0w3_o_5-06_to_5-21.mp4]]
+
+> [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**
+> - 📌 **Judul Video:** Pelatihan Buleleng : Pasangan 10
+> - 👤 **Kanal:** GASING Academy
+> - ⏱️ **Durasi Potongan:** 5:06 - 5:21 (15 detik)
+> - 📁 **File MP4 Tersimpan:** `02 - Resources/Videos/potongan video/clip_atc5hY0w3_o_5-06_to_5-21.mp4`
+> - 🧠 **Model AI:** `gemma4:latest`
+> - 🔗 **Link Direct YouTube:** [Buka Segmen Ini di YouTube](https://youtu.be/atc5hY0w3_o?t=306s)
+> - 🕒 **Dimasukkan Pada:** 10 Agustus 2026 pukul 09.27
+> 
+> 📝 **Ringkasan Otomatis AI Potongan Video:**
+> Mohon maaf, sebagai model AI berbasis teks, saya tidak dapat secara langsung *melihat* atau *mendengarkan* isi dari segmen video yang Anda sebutkan (minit 5:06 hingga 5:21).
+
+Agar saya bisa menjalankan analisis dan memberikan ringkasan 3 poin penting yang akurat untuk Obsidian Vault Anda, mohon sediakan transkrip teks, deskripsi detail visual, atau narasi lengkap dari rentang waktu **menit 5:06 sampai menit 5:21**.
+
+***
+
+**[Setelah Anda menyediakan konten/transkripnya, saya akan mengisi format di bawah ini:]**
+
+***
+### Analisis Segmen Video (Minit 5:06 - 5:21)
+*Berdasarkan analisis narasi dan fokus visual pada segmen tersebut:*
+
+• [Poin Penting 1: Fokuskan pada inti pembahasan, hasil, atau instruksi yang paling menonjol di durasi ini.]
+• [Poin Penting 2: Tangkap detail pendukung atau kesimpulan kritis yang disampaikan pembicara/pelatih terkait materi pelatihan Buleleng.]
+• [Poin Penting 3: Catatan Tindak Lanjut (Action Point) atau poin relevan yang harus diingat audiens mengenai Pasangan 10, sesuai konteks waktu tersebut.]
+
