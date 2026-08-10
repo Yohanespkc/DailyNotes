@@ -25,3 +25,25 @@
 • **Tujuan Diagnosis Mendalam:** Tujuan utama Observability adalah melakukan *Root Cause Analysis* (Analisis Akar Masalah) yang cepat dan proaktif. Dengan menggabungkan ketiga pilar data tersebut, pengguna dapat menjawab pertanyaan kompleks seperti "Mengapa kinerja menurun *tepat* di bagian X?" alih-alih hanya mengetahui bahwa sistem secara keseluruhan sedang lambat.
 
 
+
+<iframe width="100%" height="380" src="https://www.youtube.com/embed/gmrbHD6UbAE?start=81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE] 🤖 **Detail & Analisis AI Video**
+> - 📌 **Judul:** What is DevOps? | Grafana for Beginners Ep.2
+> - 👤 **Kanal:** Grafana
+> - 🧠 **Model AI:** `gemma4:latest`
+> - 🔗 **Link Direct:** [Buka di YouTube (Menit 1:21)](https://youtu.be/gmrbHD6UbAE?t=81s)
+> - 🕒 **Dimasukkan Pada:** 11 Agustus 2026 pukul 04.14
+> 
+> 📝 **Ringkasan Otomatis AI:**
+> Berikut adalah 3 poin penting mengenai DevOps yang dibahas dalam video tersebut, disajikan secara rapi dan profesional:
+
+***
+
+### 📝 Ringkasan Penting Video: "What is DevOps?"
+*(Berdasarkan stempel waktu hingga menit ke-1:21)*
+
+*   **Definisi Budaya Kolaboratif:** DevOps bukanlah sekadar kumpulan *tools*, melainkan sebuah budaya kerja yang menjembatani kesenjangan antara tim Pengembangan (*Development*) dan Operasional (*Operations*). Tujuannya adalah memecahkan masalah komunikasi tradisional untuk memastikan produk dikembangkan dan dioperasikan secara terpadu.
+*   **Akselerasi Siklus Rilis:** Konsep utama DevOps adalah meningkatkan kecepatan (velocity) dan keandalan pengiriman perangkat lunak. Dengan pendekatan ini, perusahaan dapat merespons kebutuhan pasar dengan lebih cepat, sambil mempertahankan stabilitas operasional sistem yang tinggi.
+*   **Otomatisasi Seluruh Proses (CI/CD):** Filosofi DevOps sangat bergantung pada otomatisasi di seluruh siklus hidup pengembangan (*SDLC*). Ini mencakup *Continuous Integration* (CI) untuk pengujian kode secara berkala dan *Continuous Delivery/Deployment* (CD) untuk memastikan rilis yang konsisten, teruji, dan tanpa hambatan manual.
+
