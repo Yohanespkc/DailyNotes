@@ -58,3 +58,36 @@ Setelah menerima transkrip audio/visual dari segmen waktu tersebut, ringkasan ti
 
 • **Penekanan pada Konsistensi Kecepatan (Kecepatan dan Akurasi):** Poin kunci terakhir adalah sinergi antara kecepatan dan akurasi. Meskipun tujuannya adalah penyelesaian yang cepat ("1 Menit"), namun penutupan segmen ini menekankan bahwa hasil yang maksimal tidak boleh mengorbankan ketelitian, sehingga proses harus dilakukan secara berulang dan konsisten sesuai SOP (Standar Operasional Prosedur).
 
+
+
+
+![[02 - Resources/Videos/potongan video/clip_pqfGHv_SEXE_1.25_to_2.10.mp4]]
+
+> [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**
+> - 📌 **Judul Video:** Pasangan 10 Bangli I Pelatihan Kab. Bangli 3
+> - 👤 **Kanal:** GASING Academy
+> - ⏱️ **Durasi Potongan:** 1.25 - 2.10 (1 detik)
+> - 📁 **File MP4 Tersimpan:** `02 - Resources/Videos/potongan video/clip_pqfGHv_SEXE_1.25_to_2.10.mp4`
+> - 🧠 **Model AI:** `gemma4:latest`
+> - 🔗 **Link Direct YouTube:** [Buka Segmen Ini di YouTube](https://youtu.be/pqfGHv_SEXE?t=1s)
+> - 🕒 **Dimasukkan Pada:** 10 Agustus 2026 pukul 08.39
+> 
+> 📝 **Ringkasan Otomatis AI Potongan Video:**
+> Mohon maaf, sebagai model bahasa AI, saya hanya bisa menganalisis dan membuat ringkasan berdasarkan teks atau transkrip yang Anda sediakan.
+
+Anda telah memberikan detail video, judul, dan segmen waktunya (1:25 – 2:10), namun **saya belum diberikan transkrip atau konten audio/visual dari durasi tersebut.**
+
+Untuk dapat menyajikan analisis ringkasan 3 poin penting khusus untuk Obsidian Vault Anda, mohon sertakan salinan teks (transkrip) dari segmen waktu antara menit 1.25 hingga menit 2.10.
+
+Setelah transkrip diterima, saya akan menganalisisnya dan menyusun hasilnya dalam format berikut:
+
+***
+**[Jika Transkrip Disediakan]:**
+
+Analisis Ringkas (Menit 1.25 – 2.10)
+
+• [Poin penting pertama yang spesifik mengenai konten.]
+• [Poin penting kedua, fokus pada inti pembahasan atau poin kunci dalam segmen tersebut.]
+• [Poin penting ketiga, merangkum hasil atau instruksi utama dari segmen tersebut.]
+***
+
