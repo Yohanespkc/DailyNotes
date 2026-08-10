@@ -4,62 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "eabcabed226228be",
-        "type": "split",
+        "id": "fa2df8a8810fbd72",
+        "type": "tabs",
         "children": [
           {
-            "id": "fa2df8a8810fbd72",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ae09584ca66f5b17",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Teks 1.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Teks 1"
-                }
-              }
-            ]
+            "id": "ae09584ca66f5b17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teks 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Teks 1"
+            }
           },
           {
-            "id": "4ceca1cd418f30d7",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "e50e9b590a1f172a",
-                "type": "leaf",
-                "state": {
-                  "type": "graph",
-                  "state": {},
-                  "icon": "lucide-git-fork",
-                  "title": "Graph view"
-                }
+            "id": "09d62341a2b456ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bangli Video 1.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "b2b7d0c5f8826079",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "02 - Resources/Videos/update video 10 agt 2026.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "update video 10 agt 2026"
-                }
-              }
-            ],
-            "currentTab": 1
+              "icon": "lucide-file",
+              "title": "Bangli Video 1"
+            }
           }
         ],
-        "direction": "horizontal"
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -274,9 +251,14 @@
       "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "e04689de63811493",
+  "active": "09d62341a2b456ff",
   "lastOpenFiles": [
+    "02 - Resources/Videos/potongan video/clip_NtAiFFuXATo_0-02_to_1-11.mp4",
+    "02 - Resources/Videos/potongan video/clip_NtAiFFuXATo_0-02_to_1-11.mp4.part",
+    "02 - Resources/Videos/potongan video/clip_GNqZV6kBMPw_1-00_to_1-20.mp4",
+    "02 - Resources/Videos/potongan video/clip_GNqZV6kBMPw_1-00_to_1-20.mp4.part",
     "Teks 1.md",
+    "Bangli Video 1.md",
     "02 - Resources/Videos/update video 10 agt 2026.md",
     "05 - Daily Notes/Note Harian - 2026-08-09.md",
     "05 - Daily Notes/2026-08-09.md",
@@ -301,17 +283,12 @@
     "02 - Resources/Videos/Top Repositori 9 Agt 2026.md",
     "01 - Notes/AI Conversations/2026-08-09/2026-08-09 - 04.26 - file dari chatgpt sudah saya download tolong kamu lanjutkan....md",
     "01 - Notes/AI Conversations/2026-08-09/2026-08-09 - 03.53 - kemarin sampai dimana Lanjutkan.md",
-    "01 - Notes/AI Conversations/2026-08-09",
     "01 - Notes/AI Conversations/ChatGPT/Index - ChatGPT Conversations.md",
     "01 - Notes/AI Conversations/ChatGPT/03 - Game & Hiburan/2025-04-01 - 10.00 - Gambar Kata-Kata Kreatif.md",
     "01 - Notes/AI Conversations/ChatGPT/04 - Sejarah, Bisnis & Umum/2025-05-09 - 17.25 - Bel Listrik Statis Fun.md",
     "01 - Notes/AI Conversations/ChatGPT/04 - Sejarah, Bisnis & Umum/2025-05-27 - 04.05 - Pertanyaan Juri Lomba BCA.md",
     "01 - Notes/AI Conversations/ChatGPT/03 - Game & Hiburan/2025-07-11 - 06.12 - Hapus Background Gambar PPT.md",
     "01 - Notes/AI Conversations/ChatGPT/05 - Topik Umum Lainnya/2025-10-11 - 12.19 - Cek paket roaming Telkomsel.md",
-    "01 - Notes/AI Conversations/ChatGPT/03 - Game & Hiburan/2024-03-31 - 05.28 - Children playing snakes  ladders.md",
-    "01 - Notes/AI Conversations/ChatGPT/05 - Topik Umum Lainnya/2024-02-08 - 21.21 - Brain Fog Understanding Causes.md",
-    "01 - Notes/AI Conversations/ChatGPT/05 - Topik Umum Lainnya",
-    "02 - Resources/APPS online",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_y712cay712cay712.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_zdabofzdabofzdab.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_y8hkixy8hkixy8hk.jpeg",
