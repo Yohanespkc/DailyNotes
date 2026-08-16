@@ -11,10 +11,14 @@
             "id": "756eb7c74915aaad",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Trending topic video 17 Agt.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Trending topic video 17 Agt"
             }
           }
         ]
@@ -234,6 +238,7 @@
   },
   "active": "756eb7c74915aaad",
   "lastOpenFiles": [
+    "Trending topic video 17 Agt.md",
     "Teks 1.md",
     "Bangli Video 1.md",
     "Grafana untuk pemula.md",
@@ -270,7 +275,6 @@
     "01 - Notes/AI Conversations/ChatGPT/01 - GASING & Matematika/2023-04-23 - 15.29 - Pembelajaran Matematika Penjumlahan.md",
     "01 - Notes/AI Conversations/ChatGPT/01 - GASING & Matematika/2023-03-07 - 06.51 - Indonesia Excels in Math.md",
     "01 - Notes/AI Conversations/ChatGPT/01 - GASING & Matematika/2023-02-25 - 16.38 - New chat.md",
-    "00 - Dashboards/Papan Kanban Proyek Gasing.md",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_y712cay712cay712.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_zdabofzdabofzdab.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_y8hkixy8hkixy8hk.jpeg",
