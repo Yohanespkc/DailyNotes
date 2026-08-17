@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "Trending topic video 17 Agt"
             }
+          },
+          {
+            "id": "b9a09bdcc9f14836",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -236,7 +247,7 @@
       "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "756eb7c74915aaad",
+  "active": "b9a09bdcc9f14836",
   "lastOpenFiles": [
     "Trending topic video 17 Agt.md",
     "Teks 1.md",
