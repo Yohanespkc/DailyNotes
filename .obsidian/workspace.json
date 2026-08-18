@@ -25,10 +25,14 @@
             "id": "b9a09bdcc9f14836",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Top Video 19 Aug 2026.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Top Video 19 Aug 2026"
             }
           }
         ],
@@ -249,6 +253,7 @@
   },
   "active": "b9a09bdcc9f14836",
   "lastOpenFiles": [
+    "Top Video 19 Aug 2026.md",
     "Trending topic video 17 Agt.md",
     "Teks 1.md",
     "Bangli Video 1.md",
@@ -285,7 +290,6 @@
     "01 - Notes/AI Conversations/ChatGPT/01 - GASING & Matematika/2023-04-23 - 19.39 - Alat peraga perkalian bilangan.md",
     "01 - Notes/AI Conversations/ChatGPT/01 - GASING & Matematika/2023-04-23 - 15.29 - Pembelajaran Matematika Penjumlahan.md",
     "01 - Notes/AI Conversations/ChatGPT/01 - GASING & Matematika/2023-03-07 - 06.51 - Indonesia Excels in Math.md",
-    "01 - Notes/AI Conversations/ChatGPT/01 - GASING & Matematika/2023-02-25 - 16.38 - New chat.md",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_y712cay712cay712.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_zdabofzdabofzdab.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_y8hkixy8hkixy8hk.jpeg",
