@@ -76,9 +76,37 @@
               "icon": "lucide-file",
               "title": "Logo GASING Baru"
             }
+          },
+          {
+            "id": "42563e34fbff7708",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "e8abfb9715d91e69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Produk terjemahan rasberry pi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Produk terjemahan rasberry pi"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -293,13 +321,15 @@
       "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "e8a57c1e3836fe45",
+  "active": "e8abfb9715d91e69",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Produk terjemahan rasberry pi.md",
+    "Logo GASING Baru.md",
     "05 - Daily Notes/Note Harian - 2026-08-20.md",
     "05 - Daily Notes/2026-08-20.md",
     "Logo GASING baru.jpeg",
     "Music Generator.md",
-    "Logo GASING Baru.md",
     "Obsidian dan AI.md",
     "Top Video 19 Aug 2026.md",
     "Trending topic video 17 Agt.md",
@@ -331,8 +361,6 @@
     "02 - Resources/Videos/update video 10 agt 2026.md",
     "05 - Daily Notes/Note Harian - 2026-08-09.md",
     "05 - Daily Notes/2026-08-09.md",
-    "01 - Notes/AI Conversations/ChatGPT/01 - GASING & Matematika/2023-04-27 - 14.43 - Metode Matematika Gasing.md",
-    "01 - Notes/AI Conversations/2026-08-09/2026-08-09 - 04.41 - saya juga ingin download semua percakapan saya di gemini dan....md",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_y712cay712cay712.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_zdabofzdabofzdab.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_y8hkixy8hkixy8hk.jpeg",
