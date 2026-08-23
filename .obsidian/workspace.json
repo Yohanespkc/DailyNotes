@@ -20,149 +20,8 @@
               "icon": "lucide-file",
               "title": "Trending topic video 17 Agt"
             }
-          },
-          {
-            "id": "b9a09bdcc9f14836",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Top Video 19 Aug 2026.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Top Video 19 Aug 2026"
-            }
-          },
-          {
-            "id": "3908ac9aa99c73c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Obsidian dan AI.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Obsidian dan AI"
-            }
-          },
-          {
-            "id": "e3fb9e5256f9a604",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Music Generator.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Music Generator"
-            }
-          },
-          {
-            "id": "e8a57c1e3836fe45",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Logo GASING Baru.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Logo GASING Baru"
-            }
-          },
-          {
-            "id": "42563e34fbff7708",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
-            }
-          },
-          {
-            "id": "e8abfb9715d91e69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Produk terjemahan rasberry pi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Produk terjemahan rasberry pi"
-            }
-          },
-          {
-            "id": "49abec75ab89aece",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Top Dev tools 21 Agt 2026.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Top Dev tools 21 Agt 2026"
-            }
-          },
-          {
-            "id": "c0c72ad61a6591b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tritunggal.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tritunggal"
-            }
-          },
-          {
-            "id": "4f436a13257e2d1e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fanita.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Fanita"
-            }
-          },
-          {
-            "id": "2cc866214ad37781",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fanita 2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Fanita 2"
-            }
           }
-        ],
-        "currentTab": 10
+        ]
       }
     ],
     "direction": "vertical"
@@ -377,22 +236,31 @@
       "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "2cc866214ad37781",
+  "active": "756eb7c74915aaad",
   "lastOpenFiles": [
-    "Fanita.md",
-    "Fanita 2.md",
-    "Tritunggal.md",
-    "Top Dev tools 21 Agt 2026.md",
-    "Khotbah",
-    "Produk terjemahan rasberry pi.md",
-    "Untitled.md",
+    "Top Video 19 Aug 2026.md",
+    "Obsidian dan AI.md",
+    "Music Generator.md",
     "Logo GASING Baru.md",
+    "Untitled.md",
+    "Produk terjemahan rasberry pi.md",
+    "Top Dev tools 21 Agt 2026.md",
+    "Tritunggal.md",
+    "Fanita.md",
+    "02 - Resources/Gemini Images/Gemini_Generated_Image_cubpg5cubpg5cubp.jpeg",
+    "02 - Resources/Gemini Images/Tuban.jpeg",
+    "02 - Resources/Gemini Images/Gemini_Generated_Image_r4ydmmr4ydmmr4yd 1.jpeg",
+    "02 - Resources/Gemini Images/Gemini_Generated_Image_n1ypjun1ypjun1yp 1.jpeg",
+    "02 - Resources/Gemini Images/Gemini_Generated_Image_9wx7ha9wx7ha9wx7 1.jpeg",
+    "02 - Resources/Gemini Images/Gemini_Generated_Image_kr3h2lkr3h2lkr3h 1.jpg",
+    "02 - Resources/Gemini Images/Gemini_Generated_Image_qjispeqjispeqjis 1.jpg",
+    "02 - Resources/Gemini Images/Gemini_Generated_Image_9milzz9milzz9mil 1.jpg",
+    "02 - Resources/Gemini Images/Gemini_Generated_Image_lhx9swlhx9swlhx9 1.jpg",
+    "02 - Resources/Gemini Images/Gemini_Generated_Image_xj54esxj54esxj54 1.jpg",
+    "Fanita 2.md",
+    "Khotbah",
     "05 - Daily Notes/Note Harian - 2026-08-20.md",
     "05 - Daily Notes/2026-08-20.md",
-    "Logo GASING baru.jpeg",
-    "Music Generator.md",
-    "Obsidian dan AI.md",
-    "Top Video 19 Aug 2026.md",
     "Trending topic video 17 Agt.md",
     "Teks 1.md",
     "Bangli Video 1.md",
@@ -410,21 +278,11 @@
     "02 - Resources/Grafana",
     "Untitled",
     "02 - Resources/Videos/Private Cloud.md",
-    "05 - Daily Notes/Note Harian - 2026-08-10.md",
     "02 - Resources/Videos/potongan video/clip_atc5hY0w3_o_5-06_to_5-21.mp4",
     "02 - Resources/Videos/potongan video/clip_atc5hY0w3_o_5-06_to_5-21.mp4.part",
     "02 - Resources/Videos/potongan video/clip_pqfGHv_SEXE_1.25_to_2.10.mp4",
     "02 - Resources/Videos/potongan video/clip_pqfGHv_SEXE_1.25_to_2.10.mp4.part",
     "02 - Resources/Videos/potongan video/clip_NtAiFFuXATo_0-02_to_1-11.mp4",
-    "02 - Resources/Videos/potongan video/clip_NtAiFFuXATo_0-02_to_1-11.mp4.part",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_y712cay712cay712.jpeg",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_zdabofzdabofzdab.jpeg",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_y8hkixy8hkixy8hk.jpeg",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_xwcg3exwcg3exwcg.jpeg",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_xjxdv7xjxdv7xjxd.jpeg",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_xj54esxj54esxj54-2.jpg",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_xj54esxj54esxj54.jpg",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_xermdnxermdnxerm.jpeg",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_x105h0x105h0x105.jpeg"
+    "02 - Resources/Videos/potongan video/clip_NtAiFFuXATo_0-02_to_1-11.mp4.part"
   ]
 }
