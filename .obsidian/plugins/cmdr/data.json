@@ -6,6 +6,11 @@
       "id": "youtube-embedder:insert-youtube-video",
       "name": "Insert Video",
       "icon": "video"
+    },
+    {
+      "id": "templater-obsidian:03 - Templates/Template Artikel AI.md",
+      "name": "Template Artikel AI",
+      "icon": "globe"
     }
   ]
 }
