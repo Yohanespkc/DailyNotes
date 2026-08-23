@@ -22,35 +22,21 @@
             }
           },
           {
-            "id": "6db37486a38ed9b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "pegadaian.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "pegadaian"
-            }
-          },
-          {
             "id": "34cb142e5bf50182",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 - Daily Notes/villa 1.md",
+                "file": "Fanita.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "villa 1"
+              "title": "Fanita"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -243,6 +229,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "cmdr:Templater: Insert Template Artikel AI": false,
       "youtube-embedder:Text-to-Speech (TTS)": false,
       "youtube-embedder:Save Online App / Tool": false,
       "youtube-embedder:Potong Video YouTube (Trim MP4 + AI Summary)": false,
@@ -267,19 +254,22 @@
   },
   "active": "34cb142e5bf50182",
   "lastOpenFiles": [
-    "03 - Templates/Template Artikel AI.md",
-    "villa.md",
+    "GASING Academy/Logo GASING Baru.md",
+    "02 - Resources/Videos/Top Dev tools 21 Agt 2026.md",
+    "GASING Academy",
+    "Khotbah/Tritunggal.md",
     "05 - Daily Notes/villa 1.md",
+    "Untitled.md",
+    "Untitled.base",
+    "Untitled.canvas",
+    "03 - Templates/Template Artikel AI.md",
+    "Private/villa.md",
     "pegadaian.md",
-    "Trending topic video 17 Agt.md",
-    "Top Video 19 Aug 2026.md",
+    "02 - Resources/Videos/Trending topic video 17 Agt.md",
+    "02 - Resources/Videos/Top Video 19 Aug 2026.md",
     "Obsidian dan AI.md",
     "Music Generator.md",
-    "Logo GASING Baru.md",
-    "Untitled.md",
     "Produk terjemahan rasberry pi.md",
-    "Top Dev tools 21 Agt 2026.md",
-    "Tritunggal.md",
     "Fanita.md",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_cubpg5cubpg5cubp.jpeg",
     "02 - Resources/Gemini Images/Tuban.jpeg",
@@ -301,18 +291,14 @@
     "Proyek Cherie.md",
     "google ONE credit.md",
     "05 - Daily Notes/Note Harian - 2026-08-14 05.03.md",
-    "Untitled.canvas",
     "2026-08-15.md",
-    "Untitled.base",
     "Excalidraw/Drawing 2026-08-15 05.03.02.excalidraw.md",
-    "05 - Daily Notes/Note Harian - 2026-08-11.md",
     "02 - Resources/Grafana",
-    "Untitled",
+    "Private",
     "02 - Resources/Videos/potongan video/clip_atc5hY0w3_o_5-06_to_5-21.mp4",
     "02 - Resources/Videos/potongan video/clip_atc5hY0w3_o_5-06_to_5-21.mp4.part",
     "02 - Resources/Videos/potongan video/clip_pqfGHv_SEXE_1.25_to_2.10.mp4",
     "02 - Resources/Videos/potongan video/clip_pqfGHv_SEXE_1.25_to_2.10.mp4.part",
-    "02 - Resources/Videos/potongan video/clip_NtAiFFuXATo_0-02_to_1-11.mp4",
-    "02 - Resources/Videos/potongan video/clip_NtAiFFuXATo_0-02_to_1-11.mp4.part"
+    "02 - Resources/Videos/potongan video/clip_NtAiFFuXATo_0-02_to_1-11.mp4"
   ]
 }
