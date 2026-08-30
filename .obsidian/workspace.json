@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "membuat animasi 2D video"
             }
+          },
+          {
+            "id": "fb956f1e56e35b00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2D Video 30 menit.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2D Video 30 menit"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -266,12 +280,13 @@
       "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "24850a961304161b",
+  "active": "fb956f1e56e35b00",
   "lastOpenFiles": [
+    "membuat animasi 2D video.md",
+    "2D Video 30 menit.md",
     "05 - Daily Notes/Note Harian - 2026-08-30.md",
     "05 - Daily Notes/2026-08-30.md",
     "membuat animasi video.md",
-    "membuat animasi 2D video.md",
     "Gadget 1.md",
     "Web 10 K cara mencarinya.md",
     "Gadget menarik 1.md",
@@ -293,7 +308,6 @@
     "Private/google ONE credit.md",
     "GASING Academy/Proyek Cherie.md",
     "Teks 1.md",
-    "02 - Resources/Videos/Produk terjemahan rasberry pi.md",
     "GASING Academy",
     "Untitled.base",
     "Untitled.canvas",
