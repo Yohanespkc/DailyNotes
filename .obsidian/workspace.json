@@ -8,49 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6a71de084f95b40e",
+            "id": "421e9aa592cddedc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gadget menarik 1.md",
+                "file": "membuat animasi video.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gadget menarik 1"
+              "title": "membuat animasi video"
             }
           },
           {
-            "id": "b9a182d08ec7fe57",
+            "id": "24850a961304161b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web 10 K cara mencarinya.md",
+                "file": "membuat animasi 2D video.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Web 10 K cara mencarinya"
-            }
-          },
-          {
-            "id": "786a939aae85bafd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gadget 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Gadget 1"
+              "title": "membuat animasi 2D video"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -280,10 +266,12 @@
       "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "786a939aae85bafd",
+  "active": "24850a961304161b",
   "lastOpenFiles": [
-    "Web 10 K cara mencarinya.md",
+    "membuat animasi video.md",
+    "membuat animasi 2D video.md",
     "Gadget 1.md",
+    "Web 10 K cara mencarinya.md",
     "Gadget menarik 1.md",
     "video 25 agt.md",
     "website 10K.md",
@@ -306,8 +294,6 @@
     "02 - Resources/Videos/Produk terjemahan rasberry pi.md",
     "02 - Resources/Videos/potongan video/Obsidian dan AI.md",
     "02 - Resources/Videos/Music Generator.md",
-    "02 - Resources/Grafana/Grafana untuk pemula.md",
-    "CHANGELOG.md",
     "GASING Academy",
     "Untitled.base",
     "Untitled.canvas",
