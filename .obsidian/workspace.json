@@ -8,48 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "421e9aa592cddedc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "membuat animasi video.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "membuat animasi video"
-            }
-          },
-          {
-            "id": "24850a961304161b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "membuat animasi 2D video.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "membuat animasi 2D video"
-            }
-          },
-          {
-            "id": "fb956f1e56e35b00",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2D Video 30 menit.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2D Video 30 menit"
-            }
-          },
-          {
             "id": "7e33f2d74852a36b",
             "type": "leaf",
             "state": {
@@ -64,21 +22,21 @@
             }
           },
           {
-            "id": "6a37e54bab549f59",
+            "id": "6f938c56de2ed753",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Buat Drama.md",
+                "file": "membuat prompt presentasi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Buat Drama"
+              "title": "membuat prompt presentasi"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -308,10 +266,11 @@
       "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "6a37e54bab549f59",
+  "active": "6f938c56de2ed753",
   "lastOpenFiles": [
-    "Untitled.md",
     "Buat Drama.md",
+    "membuat prompt presentasi.md",
+    "Untitled.md",
     "2D Video 30 menit.md",
     "membuat animasi 2D video.md",
     "05 - Daily Notes/Note Harian - 2026-08-30.md",
@@ -335,7 +294,6 @@
     "villa 3.md",
     "villa 2 Sanur.md",
     "pegadaian.md",
-    "Private/google ONE credit.md",
     "GASING Academy",
     "Untitled.base",
     "Untitled.canvas",
