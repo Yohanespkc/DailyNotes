@@ -19,3 +19,4 @@ Berdasarkan judul dan konteks video tutorial, berikut adalah ringkasan 3 poin pe
 *   **Pemanfaatan Fitur Grok Secara Gratis:** Pembahasan utama adalah cara memaksimalkan fungsi dari platform "Grok" untuk produksi video, dengan penekanan bahwa proses ini dapat diakses secara gratis dan tanpa batas ("sepuasnya"), menjadikan alat ini sangat terjangkau bagi kreator konten.
 *   **Langkah-Langkah Teknis di Stempel Waktu 1:21:** Inti dari tutorial terletak pada tahapan implementasi yang ditunjukkan pada menit 1:21. Penonton akan diajarkan langkah-langkah spesifik untuk memasukkan *prompt* atau instruksi yang diperlukan agar Grok dapat menghasilkan video yang diinginkan secara otomatis.
 
+![[Screenshot 2026-09-03 at 05.15.52.png]]![[Screenshot 2026-09-03 at 05.18.30.png]]
