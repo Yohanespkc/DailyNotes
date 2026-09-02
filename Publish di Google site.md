@@ -19,3 +19,4 @@ Berikut adalah 3 poin penting yang sangat informatif dan ringkas:
 *   **Fokus pada Struktur Interaktivitas dan Narasi Inti:** Pengembangan game interaktif menuntut pemahaman mendalam tentang *user flow* dan alur cerita yang bercabang (*branching narrative*). AI sangat membantu dalam memvariasikan konten di dalam struktur ini (misalnya, membuat berbagai versi dialog untuk satu karakter), namun kerangka utama dan emosi naratif harus tetap dirancang oleh desainer.
 *   **Optimalisasi Peran *Prompt Engineering*:** Keberhasilan memanfaatkan AI dalam pembuatan game sangat bergantung pada kualitas *input* (prompt). Peserta diajarkan bahwa kemampuan memberikan perintah (prompt) yang spesifik, terstruktur, dan kontekstual adalah keterampilan paling vital yang harus dikuasai agar *output* dari AI relevan dan dapat langsung diintegrasikan ke dalam *game development*.
 
+![[Screenshot 2026-09-03 at 03.53.52.png]]![[Screenshot 2026-09-03 at 03.58.34.png]]
