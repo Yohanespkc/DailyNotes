@@ -14,6 +14,8 @@
 - [ ] Harus bisa pilih berbagai agen, ada agen yang bisa mutusin, ada agen yang kerja rodi dsb. 
 - [ ] Misalnya RTK itu hebat mengurangi token tapi ketika debug ia kehilangan bagian penting di tengahnya. 
 - [ ] Editor yang seperti Obsidian
+- [ ] Video 3D Berbagai prompt
+- [ ] 
 - [ ] 
 
 
