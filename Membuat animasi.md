@@ -17,4 +17,4 @@
 *   **Penguasaan Konten yang Luas dan Detail:** Model ini mampu menghasilkan output yang sangat kaya, kohesif, dan terstruktur, terutama saat diminta untuk menyusun narasi, skenario, atau konten yang membutuhkan *creative writing* yang berkualitas tinggi dan profesional.
 *   **Relevansi Praktis untuk Pengguna:** Keunggulan ini menempatkan Claude 3.5 sebagai alat yang optimal untuk pengguna yang membutuhkan asisten AI untuk tugas-tugas yang kompleks, seperti *brainstorming* ide tingkat lanjut, analisis teks yang padat, atau penyelesaian masalah yang multi-langkah.
 
-![[Screenshot 2026-09-05 at 04.14.28.png]]
+![[Screenshot 2026-09-05 at 04.14.28.png]]![[Screenshot 2026-09-05 at 04.17.29.png]]
