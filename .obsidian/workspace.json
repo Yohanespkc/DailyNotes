@@ -69,16 +69,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Membuat video gratis dengan grok.md",
+                "file": "02 - Resources/Videos/Membuat video gratis dengan grok.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Membuat video gratis dengan grok"
             }
+          },
+          {
+            "id": "0d3d6b4f139857b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Resources/Videos/Web 10 K cara mencarinya.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Web 10 K cara mencarinya"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -304,54 +318,54 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "1f068542b1488cf4",
+  "active": "e04689de63811493",
   "lastOpenFiles": [
-    "Screenshot 2026-09-03 at 05.18.30.png",
-    "Screenshot 2026-09-03 at 05.15.52.png",
-    "Publish di Google site.md",
-    "Membuat video gratis dengan grok.md",
-    "Screenshot 2026-09-03 at 03.58.34.png",
-    "Screenshot 2026-09-03 at 03.53.52.png",
-    "Berbagai Prompt.md",
-    "Screenshot 2026-09-03 at 03.19.50.png",
-    "Screenshot 2026-09-03 at 03.13.38.png",
-    "Screenshot 2026-09-03 at 03.12.44.png",
+    "Private/villa 2 Sanur.md",
+    "02 - Resources/Videos/video 25 agt.md",
+    "Untitled.md",
+    "Prompt/Screenshot 2026-09-03 at 05.18.30.png",
+    "Prompt/Screenshot 2026-09-01 at 05.46.12.png",
+    "Prompt/Screenshot 2026-09-03 at 03.12.44.png",
+    "02 - Resources/Videos/Publish di Google site.md",
+    "PWA.md",
+    "Prompt/Prompt 1.md",
+    "Private/pegadaian.md",
+    "02 - Resources/Videos/membuat animasi 2D video.md",
+    "Gadget/Gadget 1.md",
+    "Gadget",
+    "02 - Resources/Videos/Buat Drama.md",
+    "CHANGELOG.md",
+    "Prompt/Berbagai Prompt.md",
+    "02 - Resources/Videos/2D Video 30 menit.md",
+    "Teleobsi/Uji_Coba_Teleobsi.md",
+    "2026-08-15.md",
+    "02 - Resources/Videos/website 10K.md",
+    "Prompt/Screenshot 2026-09-05 at 03.57.39.png",
+    "Prompt/Screenshot 2026-09-05 at 03.56.53.png",
+    "02 - Resources/Videos/Membuat video gratis dengan grok.md",
+    "Prompt",
+    "Prompt/membuat prompt presentasi.md",
+    "Prompt/Screenshot 2026-09-03 at 05.15.52.png",
+    "Prompt/Screenshot 2026-09-03 at 03.58.34.png",
+    "Prompt/Screenshot 2026-09-03 at 03.53.52.png",
+    "Prompt/Screenshot 2026-09-03 at 03.19.50.png",
+    "Prompt/Screenshot 2026-09-03 at 03.13.38.png",
     "05 - Daily Notes/Note Harian - 2026-09-01.md",
     "05 - Daily Notes/2026-09-01.md",
-    "Screenshot 2026-09-01 at 05.46.12.png",
-    "membuat prompt presentasi.md",
-    "Buat Drama.md",
-    "Untitled.md",
-    "2D Video 30 menit.md",
-    "membuat animasi 2D video.md",
     "05 - Daily Notes/Note Harian - 2026-08-30.md",
     "05 - Daily Notes/2026-08-30.md",
-    "membuat animasi video.md",
-    "Gadget 1.md",
-    "Web 10 K cara mencarinya.md",
-    "Gadget menarik 1.md",
-    "video 25 agt.md",
-    "website 10K.md",
-    "PWA.md",
+    "02 - Resources/Videos/membuat animasi video.md",
+    "02 - Resources/Videos/Web 10 K cara mencarinya.md",
+    "Gadget/Gadget menarik 1.md",
     "05 - Daily Notes/Note Harian - 2026-08-29.md",
-    "05 - Daily Notes/2026-08-29.md",
-    "05 - Daily Notes/Note Harian - 2026-08-28.md",
-    "05 - Daily Notes/2026-08-28.md",
-    "05 - Daily Notes/Note Harian - 2026-08-27.md",
-    "05 - Daily Notes/2026-08-27.md",
     "GASING Academy",
     "Untitled.base",
     "Untitled.canvas",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_cubpg5cubpg5cubp.jpeg",
-    "02 - Resources/Gemini Images/Tuban.jpeg",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_r4ydmmr4ydmmr4yd 1.jpeg",
     "Khotbah",
     "02 - Resources/Grafana",
     "Private",
     "02 - Resources/Videos/potongan video/clip_atc5hY0w3_o_5-06_to_5-21.mp4",
     "02 - Resources/Videos/potongan video/clip_atc5hY0w3_o_5-06_to_5-21.mp4.part",
-    "02 - Resources/Videos/potongan video/clip_pqfGHv_SEXE_1.25_to_2.10.mp4",
-    "02 - Resources/Videos/potongan video/clip_pqfGHv_SEXE_1.25_to_2.10.mp4.part",
-    "02 - Resources/Videos/potongan video/clip_NtAiFFuXATo_0-02_to_1-11.mp4"
+    "02 - Resources/Videos/potongan video/clip_pqfGHv_SEXE_1.25_to_2.10.mp4"
   ]
 }
