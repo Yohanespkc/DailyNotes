@@ -15,7 +15,7 @@
 - [ ] Misalnya RTK itu hebat mengurangi token tapi ketika debug ia kehilangan bagian penting di tengahnya. 
 - [ ] Editor yang seperti Obsidian
 - [ ] Video 3D Berbagai prompt
-- [ ] 
+- [ ] Membuat Game, Preview Aplikasi, Memeriksa error, Memnta perbaikan, mengembangkan fitur. Lebih ke arah Canvas Gemini
 - [ ] 
 
 
