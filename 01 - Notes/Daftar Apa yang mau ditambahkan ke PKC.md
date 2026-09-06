@@ -16,7 +16,9 @@
 - [ ] Editor yang seperti Obsidian
 - [ ] Video 3D Berbagai prompt
 - [ ] Membuat Game, Preview Aplikasi, Memeriksa error, Memnta perbaikan, mengembangkan fitur. Lebih ke arah Canvas Gemini
-- [ ] 
+- [ ]Jenjutsu akan membuat video menjadi lebih cepat. Misalnya kita punya video asli, kita hanya ganti karakter, maka langsung jadi sesuatu yang baru. https://www.youtube.com/watch?v=1JD3mEcZzDU
+- Gunakan freefootage
+- 
 
 
 <iframe width="100%" height="380" src="https://www.youtube.com/embed/LfK9reA2JZE?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
