@@ -1,7 +1,7 @@
 Gunakan istilah 1:1, ia bisa cari games di git hub
 
 ![[Screenshot 2026-09-11 at 03.14.21.png]]![[Screenshot 2026-09-11 at 03.17.58.png]]![[Screenshot 2026-09-11 at 03.33.45.png]]
-
+![[Screenshot 2026-09-11 at 04.35.59.png]]
 
 <iframe width="100%" height="380" src="https://www.youtube.com/embed/HVrwoywwvdw?start=81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
