@@ -244,14 +244,12 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false,
-      "smart-connections:Smart Connections: Open random connection": false,
-      "smart-connections:Smart Connections: Open connections view": false,
-      "smart-connections:Toggle Footer Connections": false
+      "obsidian-kanban:Create new board": false
     }
   },
   "active": "19dfb48f3e54ef6b",
   "lastOpenFiles": [
+    "Screenshot 2026-09-11 at 05.34.31.png",
     "Screenshot 2026-09-11 at 04.35.59.png",
     "3D Video.md",
     "GPT  6 AGI.md",
@@ -289,7 +287,6 @@
     "Prompt/Screenshot 2026-09-05 at 04.37.02.png",
     "Prompt/Screenshot 2026-09-05 at 04.35.26.png",
     "Prompt/Screenshot 2026-09-05 at 04.34.32.png",
-    "Prompt/Screenshot 2026-09-05 at 04.33.13.png",
     "Untitled 1",
     "Gadget",
     "Prompt",
