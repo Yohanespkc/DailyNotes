@@ -273,13 +273,18 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false
     }
   },
   "active": "195ff7bbc561ec90",
   "lastOpenFiles": [
-    "Prompt Ksatria Gaber.md",
+    "prompt doodle.md",
+    "MASTER PROMPT — INTERACTIVE VIRAL WHITEBOARD EXPLAINER VIDEO GENERATOR.pdf",
     "Sprint a.md",
+    "Prompt Ksatria Gaber.md",
     "Perpustakaan Prompt.md",
     "Membuat games lengkap.md",
     "Screenshot 2026-09-11 at 05.34.31.png",
@@ -308,8 +313,6 @@
     "Untitled 1.md",
     "Untitled 3.md",
     "Untitled 2.md",
-    "05 - Daily Notes/Note Harian - 2026-09-06.md",
-    "05 - Daily Notes/2026-09-06.md",
     "Screenshot 2026-09-06 at 11.50.15.png",
     "github-recovery-codes.txt",
     "Untitled",
@@ -323,7 +326,6 @@
     "Untitled.base",
     "Untitled.canvas",
     "Khotbah",
-    "02 - Resources/Grafana",
-    "Private"
+    "02 - Resources/Grafana"
   ]
 }
