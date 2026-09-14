@@ -1,5 +1,6 @@
 
 
+
 - [ ] Games Suara
 - [ ] Games points
 - [ ] Games Connection
@@ -12,4 +13,6 @@ Tug war penjumlahan
 Membuat sama-sama Games (PKC + ….)
 
 Games harus bisa di upgrade secara berkalia.
+
+Membuat Canva yang konek dengan Antigravity
 - [ ] 
