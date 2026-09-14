@@ -43,3 +43,26 @@
 
 • **Mengoptimalkan Alur Kerja (Workflow) Animasi:** Pada stempel waktu 1:21, pembahasan menyoroti langkah teknis penting, yaitu bagaimana menempatkan elemen animasi secara berurutan dan mengatur *timing* pergerakan dengan presisi. Perhatian terhadap transisi dan durasi adegan singkat sangat krusial agar animasi tidak terlihat kaku dan tetap mempertahankan ritme naratif.
 
+
+
+
+<iframe width="100%" height="380" src="https://www.youtube.com/embed/IEt-OK8GLSM?start=81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE] 🤖 **Detail & Analisis AI Video**
+> - 📌 **Judul:** Canva Whiteboard Animation: A COMPLETE Guide
+> - 👤 **Kanal:** Maev Graphics
+> - 🧠 **Model AI:** `gemma4:latest`
+> - 🔗 **Link Direct:** [Buka di YouTube (Menit 1:21)](https://youtu.be/IEt-OK8GLSM?t=81s)
+> - 🕒 **Dimasukkan Pada:** 15 September 2026 pukul 03.52
+> 
+> 📝 **Ringkasan Otomatis AI:**
+> Sebagai Asisten AI cerdas untuk Obsidian Vault Gasing, berikut adalah analisis ringkasan 3 poin penting dari video "Canva Whiteboard Animation: A COMPLETE Guide" yang berfokus pada area sekitar stempel waktu 1:21.
+
+***
+
+**Ringkasan Pembelajaran Utama (1:21)**
+
+• **Optimalisasi Template dan Elemen Kanvas:** Video menekankan pentingnya memilih *template* yang sesuai sebelum memulai animasi. Fokus utama adalah memahami cara memanipulasi elemen dasar (seperti bentuk dan teks) di kanvas agar proses animasi papan tulis (whiteboard) terlihat natural dan terstruktur.
+• **Penggunaan Fitur Animasi Sapuan Tangan (Hand-Drawn Effect):** Pembahasan mendalam pada penggunaan fitur animasi khas "papan tulis" yang mensimulasikan goresan tangan atau proses penggambaran. Hal ini bukan hanya sekadar animasi transisi, melainkan bagian integral dari narasi visual untuk meningkatkan keterlibatan penonton.
+• **Kontrol Alur Kerja dan *Timing* Animasi:** Pada segmen ini, fokus beralih ke aspek *timing* yang krusial. Pembelajar diajarkan cara mengatur urutan kemunculan (timing) setiap elemen animasi secara berurutan untuk menjaga alur cerita tetap cepat, koheren, dan tidak terputus-putus.
+
