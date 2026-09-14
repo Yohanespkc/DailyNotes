@@ -58,3 +58,13 @@ Catatan otomatis seluruh rekaman percakapan dengan AI (Antigravity / AI Coding T
 - **[04.27]** [[2026-08-09 - 04.27 - file dari chatgpt sudah saya download tolong kamu lanjutkan...|file dari chatgpt sudah saya download tolong kamu lanjutkan...]] *(ID: `3715e088`)*
 - **[04.41]** [[2026-08-09 - 04.41 - saya juga ingin download semua percakapan saya di gemini dan...|saya juga ingin download semua percakapan saya di gemini dan...]] *(ID: `46c7c5e6`)*
 
+
+## 📅 --help
+
+
+
+## 📅 2026-09-15
+
+- **[02.33]** [[2026-09-15 - 02.33 - bagaimana caranya agar video pada asyiknya belajar itu lebih...|bagaimana caranya agar video pada asyiknya belajar itu lebih...]] *(ID: `c58ea4ef`)*
+- **[02.33]** [[2026-09-15 - 02.33 - potong video ini pada detik ke 33 sampai detik 55. Berikan h...|potong video ini pada detik ke 33 sampai detik 55. Berikan h...]] *(ID: `512216c5`)*
+
