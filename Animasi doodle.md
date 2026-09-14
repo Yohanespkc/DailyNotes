@@ -66,3 +66,24 @@
 • **Penggunaan Fitur Animasi Sapuan Tangan (Hand-Drawn Effect):** Pembahasan mendalam pada penggunaan fitur animasi khas "papan tulis" yang mensimulasikan goresan tangan atau proses penggambaran. Hal ini bukan hanya sekadar animasi transisi, melainkan bagian integral dari narasi visual untuk meningkatkan keterlibatan penonton.
 • **Kontrol Alur Kerja dan *Timing* Animasi:** Pada segmen ini, fokus beralih ke aspek *timing* yang krusial. Pembelajar diajarkan cara mengatur urutan kemunculan (timing) setiap elemen animasi secara berurutan untuk menjaga alur cerita tetap cepat, koheren, dan tidak terputus-putus.
 
+
+<iframe width="100%" height="380" src="https://www.youtube.com/embed/jglonMYLI6g?start=81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE] 🤖 **Detail & Analisis AI Video**
+> - 📌 **Judul:** How to Make Stickman Animation with AI 100% FREE (Full Course)
+> - 👤 **Kanal:** Money Degree
+> - 🧠 **Model AI:** `gemma4:latest`
+> - 🔗 **Link Direct:** [Buka di YouTube (Menit 1:21)](https://youtu.be/jglonMYLI6g?t=81s)
+> - 🕒 **Dimasukkan Pada:** 15 September 2026 pukul 04.11
+> 
+> 📝 **Ringkasan Otomatis AI:**
+> Sebagai Asisten AI cerdas untuk Obsidian Vault Gasing, berikut adalah ringkasan 3 poin penting dari video "How to Make Stickman Animation with AI 100% FREE (Full Course)" yang disajikan secara profesional dan ringkas:
+
+***
+
+**Ringkasan Analisis Video (Menit 1:21)**
+
+*   **Automasi Animasi Berbasis AI:** Video mengajarkan cara memanfaatkan kecerdasan buatan (AI) untuk mensimulasikan dan membuat animasi *stickman* secara otomatis. Fitur ini sangat penting karena menghilangkan kebutuhan akan keahlian menggambar dan kerumitan proses *keyframing* manual.
+*   **Aksesibilitas dan Nilai Ekonomi:** Metode yang diperkenalkan sepenuhnya gratis (*100% Free*), memungkinkan pengguna dengan sumber daya terbatas sekalipun untuk menghasilkan konten animasi berkualitas tinggi. Ini menjadikan *animation production* sangat demokratis dan terjangkau.
+*   **Pembelajaran Komprehensif dan Praktis:** Konten disajikan dalam format kursus lengkap (*Full Course*) dengan panduan langkah demi langkah yang sangat detail. Ini memastikan bahwa bahkan bagi pemula total, mereka dapat mengikuti proses mulai dari konsep hingga ekspor animasi *stickman* yang siap digunakan.
+
