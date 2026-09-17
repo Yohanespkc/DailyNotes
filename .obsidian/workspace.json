@@ -153,12 +153,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Membuat Voice Over.md",
+                "file": "Google flow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Membuat Voice Over"
+              "title": "Google flow"
             }
           }
         ],
@@ -330,13 +330,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daftar Link Video Menarik.md",
+                "file": "Google flow.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Daftar Link Video Menarik"
+              "title": "Outline"
             }
           },
           {
@@ -360,7 +360,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -385,15 +385,18 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "11deeff24c0792b6",
+  "active": "49317dbe5950210d",
   "lastOpenFiles": [
+    "Membuat Voice Over.md",
     "Screenshot 2026-09-17 at 03.31.40 1.png",
     "Screenshot 2026-09-17 at 03.31.40.png",
     "30 kegunaan GPT 6 + higgsfield.md",
-    "Membuat Voice Over.md",
     "GPT-6_Astra_Links_and_Prompts.docx.pdf",
     "Ide Creativity Bisnis.md",
     "Prompt Canva.md",
@@ -408,7 +411,6 @@
     "02 - Resources/Gemini Images/Gemini_Generated_Image_ot91kiot91kiot91.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_12ba6112ba6112ba.jpeg",
     "02 - Resources/Gemini Images/Gemini_Generated_Image_k2gi7uk2gi7uk2gi.jpeg",
-    "02 - Resources/Gemini Images/Gemini_Generated_Image_ccqmqkccqmqkccqm.jpeg",
     "Google flow.md",
     "Animasi doodle.md",
     "01 - Notes/AI Conversations/2026-09-15/2026-09-15 - 02.33 - potong video ini pada detik ke 33 sampai detik 55. Berikan h....md",
