@@ -207,14 +207,12 @@
             "id": "d3c82d8303e0bc5a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Googleflow film panjang.md",
-                "mode": "source",
-                "source": false
+                "file": "KODE RAHASIA UNTUK GENERATE VIDEO DI GOOGLE FLOW.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Googleflow film panjang"
+              "icon": "lucide-file-text",
+              "title": "KODE RAHASIA UNTUK GENERATE VIDEO DI GOOGLE FLOW"
             }
           }
         ],
@@ -386,7 +384,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Googleflow film panjang.md",
+                "file": "KODE RAHASIA UNTUK GENERATE VIDEO DI GOOGLE FLOW.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -441,11 +439,15 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false
     }
   },
   "active": "d3c82d8303e0bc5a",
   "lastOpenFiles": [
+    "Googleflow film panjang.md",
     "Membuat games lengkap.md",
     "video panjang.md",
     "Screenshot 2026-09-18 at 05.05.51.png",
@@ -453,7 +455,6 @@
     "Video Majapahit.md",
     "Chatgpt 150 cara cepat.md",
     "150 KODE RAHASIA CHATGPT.pdf",
-    "Googleflow film panjang.md",
     "Google flow.md",
     "Membuat Voice Over.md",
     "Screenshot 2026-09-17 at 03.31.40 1.png",
