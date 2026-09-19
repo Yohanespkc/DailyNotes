@@ -207,12 +207,14 @@
             "id": "d3c82d8303e0bc5a",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "KODE RAHASIA UNTUK GENERATE VIDEO DI GOOGLE FLOW.pdf"
+                "file": "01 - Notes/Daftar Tugas.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "KODE RAHASIA UNTUK GENERATE VIDEO DI GOOGLE FLOW"
+              "icon": "lucide-file",
+              "title": "Daftar Tugas"
             }
           }
         ],
@@ -384,7 +386,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "KODE RAHASIA UNTUK GENERATE VIDEO DI GOOGLE FLOW.pdf",
+                "file": "01 - Notes/Daftar Tugas.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -444,6 +446,7 @@
   },
   "active": "d3c82d8303e0bc5a",
   "lastOpenFiles": [
+    "KODE RAHASIA UNTUK GENERATE VIDEO DI GOOGLE FLOW.pdf",
     "Googleflow film panjang.md",
     "Membuat games lengkap.md",
     "video panjang.md",
@@ -478,7 +481,6 @@
     "videomp4/Lagu Pasangan Bilangan Sepuluh Versi Sumedang (Sunda)_33s-55s.mp4.part",
     "videomp4",
     "COde Rahasia Google Flow.md",
-    "KODE RAHASIA UNTUK GENERATE VIDEO DI GOOGLE FLOW.pdf",
     "Sprint a.md",
     "prompt doodle.md",
     "MASTER PROMPT — INTERACTIVE VIRAL WHITEBOARD EXPLAINER VIDEO GENERATOR.pdf",
