@@ -1,5 +1,5 @@
 
-![[02 - Resources/Videos/potongan video/clip_GNqZV6kBMPw_1-00_to_1-20.mp4]]
+![[clip_GNqZV6kBMPw_1-00_to_1-20.mp4]]
 
 > [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**
 > - 📌 **Judul Video:** Belajar Matematika Melalui Permainan Tradisional Bali I Pelatihan Kab. Bangli 3
@@ -34,7 +34,7 @@ Setelah menerima transkrip audio/visual dari segmen waktu tersebut, ringkasan ti
 
 
 
-![[02 - Resources/Videos/potongan video/clip_NtAiFFuXATo_0-02_to_1-11.mp4]]
+![[clip_NtAiFFuXATo_0-02_to_1-11.mp4]]
 
 > [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**
 > - 📌 **Judul Video:** Pengurangan Jutaan Selesai dalam 1 Menit! I Pelatihan Kab. Bangli 3
@@ -61,7 +61,7 @@ Setelah menerima transkrip audio/visual dari segmen waktu tersebut, ringkasan ti
 
 
 
-![[02 - Resources/Videos/potongan video/clip_pqfGHv_SEXE_1.25_to_2.10.mp4]]
+![[clip_pqfGHv_SEXE_1.25_to_2.10.mp4]]
 
 > [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**
 > - 📌 **Judul Video:** Pasangan 10 Bangli I Pelatihan Kab. Bangli 3
@@ -92,7 +92,7 @@ Analisis Ringkas (Menit 1.25 – 2.10)
 ***
 
 
-![[02 - Resources/Videos/potongan video/clip_atc5hY0w3_o_5-06_to_5-21.mp4]]
+![[clip_atc5hY0w3_o_5-06_to_5-21.mp4]]
 
 > [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**
 > - 📌 **Judul Video:** Pelatihan Buleleng : Pasangan 10

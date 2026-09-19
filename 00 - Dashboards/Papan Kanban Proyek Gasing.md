@@ -6,7 +6,7 @@ kanban-plugin: board
 
 ## 📌 Ide & Backlog
 
-- [ ] [[02 - Resources/Videos/Koleksi Video Referensi|Riset Video AI Terbaru]]
+- [ ] [[Koleksi Video Referensi|Riset Video AI Terbaru]]
 - [ ] Buat kurikulum pelatihan Gasing tingkat dasar
 - [ ] Eksplorasi plugin Excalidraw lanjutan
 

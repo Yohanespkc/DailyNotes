@@ -1,7 +1,7 @@
 
 
 
-![[02 - Resources/Videos/potongan video/clip_cBgT0PG4JkM_0-00_to_0-42.mp4]]
+![[clip_cBgT0PG4JkM_0-00_to_0-42.mp4]]
 
 > [!NOTE] 🎬 **Detail & Analisis AI Potongan Video (MP4)**
 > - 📌 **Judul Video:** 160,000+ Cloned These 3 FREE AI Employees: Here's How (GitHub Claude Skills)
