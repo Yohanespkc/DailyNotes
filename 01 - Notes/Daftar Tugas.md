@@ -20,8 +20,9 @@ Membuat Canva yang konek dengan Antigravity
 - Buat animasi doodle di PKC
 - Buat Office di PKC seperti anthropic
 - Buat tutorial step by step belajar Fisika 
-- Buat Libre-chat dan Home assistant
+- Buat Libre-chat dan Home assistant, chat gpt prompt
 - (https://www.youtube.com/watch?v=GBcIPr_LJTE)
+
 
 <iframe width="100%" height="380" src="https://www.youtube.com/embed/GBcIPr_LJTE?start=81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
