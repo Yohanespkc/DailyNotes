@@ -230,3 +230,68 @@ Secara kebetulan hasil akhirnya sama-sama mengarah ke angka $8gR$ di buku, tetap
 ![[WhatsApp Image 2026-09-19 at 15.06.47 (1).jpeg]]
 
 ![[WhatsApp Image 2026-09-19 at 15.06.47.jpeg]]
+
+**Ringkasnya:** dengan A meluncur bebas, batas atasnya ternyata tetap v₀ ≤ √(8gR), tetapi muncul batas bawah baru, v₀ ≥ √(7gR), agar A tetap menempel di dinding hoop sampai puncak. Di jawaban sebelumnya saya menulis bahwa jawabannya akan berbeda. Itu kurang tepat untuk batas atasnya.
+
+Saya memakai kondisi awal yang sama dengan buku: A di titik terendah dengan kecepatan nol terhadap tanah, massa hoop = m, dan I = mR².
+
+## Pemodelan
+
+Misalkan v adalah kecepatan pusat hoop, sehingga ω = v/R. Posisi A dinyatakan dengan sudut φ dari titik terendah, diukur dari pusat hoop. Kecepatan A terhadap pusat hoop adalah u, dengan u₀ = v₀ di awal karena A diam terhadap tanah. Kecepatan A terhadap tanah adalah (v − u cosφ, u sinφ).
+
+Tulis c = cosφ, s = sinφ, dan λ = v₀²/(gR).
+
+**Energi:**
+
+mv² + ½m(v² − 2vuc + u²) + mgR(1 − c) = mv₀²
+
+**Besaran kekal kedua.** Karena hoop menggelinding tanpa slip, koordinat posisi hoop bersifat siklik dalam Lagrangian, sehingga momentum konjugatnya kekal:
+
+3v − uc = 2v₀
+
+Momentum horizontal total tidak kekal karena ada gesekan tanah, tetapi besaran ini kekal.
+
+Dari kedua persamaan itu diperoleh:
+
+**u² = [2v₀² − 6gR(1 − c)] / (3 − c²)**
+
+Di puncak (c = −1), u² = v₀² − 6gR. Jadi λ ≥ 6 dibutuhkan agar A sampai ke puncak.
+
+## Gaya normal
+
+Persamaan A dalam kerangka hoop, dengan pusat hoop dipercepat horizontal sebesar a, memberikan:
+
+- Arah radial: N = mu²/R + mgc + mas
+- Arah tangensial: Rφ'' = ac − gs
+
+Dengan syarat kekal di atas, a = −s(gc + u²/R)/(3 − c²). Maka:
+
+**N = 2mg(2λ − 6 + 9c − c³) / (3 − c²)²**
+
+(Cek: di dasar, N = mv₀²/R + mg, sesuai.)
+
+## Syarat 1: A tetap menempel (N ≥ 0)
+
+Suku 9c − c³ naik terhadap c, sehingga N paling kecil di puncak:
+
+N_puncak = mg(λ − 7)
+
+Jadi A mencapai puncak sambil tetap menempel jika **v₀² ≥ 7gR**. Jika v₀² < 7gR, A lepas dari dinding sebelum puncak dan terlempar sebagai proyektil. Kelanjutannya bergantung pada tumbukan A dengan hoop, sehingga berada di luar model ini.
+
+## Syarat 2: hoop tidak melompat (N_g ≥ 0)
+
+Pusat hoop tidak bergerak vertikal, sehingga N_g = mg + Nc. Gaya dari A pada hoop mengarah keluar sepanjang garis pusat-A, dan komponen vertikalnya −Nc. Substitusi memberikan:
+
+N_g/mg = G(c)/(3 − c²)², dengan G(c) = 9 + (4λ − 12)c + 12c² − c⁴
+
+Untuk c > 0, N_g > mg. Untuk c < 0, koefisien λ negatif, sehingga kondisi terburuk terjadi pada λ terbesar, dan di tiap posisi kondisi terburuk terjadi di puncak:
+
+N_g,puncak = mg(8 − λ)
+
+Untuk λ = 8, G = (1 + c)²(9 + 2c − c²) ≥ 0 di seluruh lintasan. Jadi λ ≤ 8 sudah cukup agar hoop tidak melompat.
+
+## Hasil
+
+**7gR ≤ v₀² ≤ 8gR**
+
+Untuk A yang meluncur bebas, batas atas √(8gR) sama dengan jawaban buku. Kesamaan ini kebetulan terjadi di nilai kritisnya, karena di puncak kedua model sama-sama mensyaratkan u² ≤ 2gR. Pada model A menempel, u² = (v₀² − 2gR)/3, dan pada model A meluncur bebas, u² = v₀² − 6gR. Keduanya bernilai 2gR tepat pada v₀² = 8gR. Di luar titik itu, gaya di hoop berbeda. Di puncak, N_g = mg(8 − λ) untuk A meluncur bebas, sedangkan untuk A menempel N' = mg(8 − λ)/3.
