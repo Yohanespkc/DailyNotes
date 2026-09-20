@@ -27,7 +27,7 @@ Untuk sisi pelaporan. Mesin validasi XBRL open source, bersertifikat Validating 
 
 ## Lapisan AI lokal (sovereign)
 
-Untuk bagian LLM-nya: Sahabat-AI adalah pilihan paling defensible secara politis — koleksi LLM open source untuk Bahasa Indonesia dan bahasa daerah, kolaborasi Indosat dan GoTo, dibangun sebagai bukti komitmen Indonesia pada kedaulatan AI, dibangun di atas SEA-LION dari AI Singapore dan tersedia di Ollama. Realistisnya, untuk akurasi tugas teknis, kombinasikan: Qwen 3 atau SEA-LION untuk reasoning, Sahabat-AI untuk pemahaman bahasa/dialek pengaduan. Serving pakai vLLM, parsing dokumen pakai Docling, orkestrasi RAG pakai RAGFlow — semuanya jalan di GPU on-prem, nol data keluar.
+Untuk bagian LLM-nya: : Qwen 3  Serving pakai vLLM, parsing dokumen pakai Docling, orkestrasi RAG pakai RAGFlow — semuanya jalan di GPU on-prem, nol data keluar.
 
 ## Tiga kandidat proyek konkret
 
