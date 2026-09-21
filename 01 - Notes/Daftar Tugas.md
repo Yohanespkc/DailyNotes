@@ -24,6 +24,9 @@ Membuat Canva yang konek dengan Antigravity
 - (https://www.youtube.com/watch?v=GBcIPr_LJTE)
 Buat  chatgpt dengan banyak prompt
 Buat melatih AI 
+
+Buat seperti https://app.boloku.com/ (Saingan antigravity: kita buat Pkc untuk anak-anak, pkc untuk remaja, pkc untuk dewasa) - kita namakan GASAI.
+
 Buat Search engine (semuanya ada dalam link di atas)
 
 <iframe width="100%" height="380" src="https://www.youtube.com/embed/GBcIPr_LJTE?start=81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
