@@ -26,7 +26,7 @@ Buat  chatgpt dengan banyak prompt
 Buat melatih AI 
 
 Buat seperti https://app.boloku.com/ (Saingan antigravity: kita buat Pkc untuk anak-anak, pkc untuk remaja, pkc untuk dewasa) - kita namakan GASAI.
-Buat m-card sehingga membuat codingnya sangat cepat.
+Buat m-card sehingga membuat codingnya sangat cepat. Buat list 20 aplikasi yang siap dibangun dengan look up table.  UBah warna, ubah avatar, ubah judul dsb. Pakai tokoh yang lucu. 
 
 
 Buat Search engine (semuanya ada dalam link di atas)
