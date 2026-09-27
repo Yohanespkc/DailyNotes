@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Video INAAI.md",
+                "file": "OJK.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Video INAAI"
+              "title": "OJK"
             }
           }
         ]
@@ -83,14 +83,10 @@
             "id": "756eb7c74915aaad",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "video 25 agt.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "video 25 agt"
+              "title": "New tab"
             }
           },
           {
@@ -107,8 +103,7 @@
               "title": "Games SO"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -204,7 +199,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Video INAAI.md",
+                "file": "OJK.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -259,14 +254,18 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "49317dbe5950210d",
+  "active": "31c097594721df97",
   "lastOpenFiles": [
+    "05 - Daily Notes/Note Harian - 2026-09-27 14.18.md",
+    "Video INAAI.md",
     "Screenshot 2026-09-24 at 09.15.25.png",
     "Games SO.md",
-    "Video INAAI.md",
     "Editor Gambar Opensource.md",
     "Vibe coding 8 git.md",
     "01 - Notes/Daftar Tugas.md",
@@ -305,7 +304,6 @@
     "SOAL FISIKA",
     "Videos/KODE RAHASIA UNTUK GENERATE VIDEO DI GOOGLE FLOW.pdf",
     "Videos/150 KODE RAHASIA CHATGPT.pdf",
-    "Prompt/Screenshot 2026-09-17 at 03.31.40 1.png",
     "Videos/GPT-6_Astra_Links_and_Prompts.docx.pdf",
     "01 - Notes/AI Conversations/2026-09-15",
     "01 - Notes/AI Conversations/--help",
