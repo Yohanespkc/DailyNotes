@@ -14,6 +14,8 @@ Membuat sama-sama Games (PKC + ….)
 
 Games harus bisa di upgrade secara berkalia.
 
+Pelajari Lumina
+
 Membuat Canva yang konek dengan Antigravity
 - [ ]Pakai anti gravity untuk membuat doodle tapi pakai soal dan jawab dari buku Fisika.
 - Minta antigravity atau claude untuk melakukannya.
@@ -53,3 +55,8 @@ Buat Search engine (semuanya ada dalam link di atas)
 
 • **Pemanfaatan Teknologi Tingkat Lanjut:** Konten ini memperkenalkan alat-alat canggih yang membutuhkan pemahaman teknis, seperti *static analysis* (melalui Ghidra) dan integrasi arsitektur mikroservis. Penekanan pada proyek-proyek ini menandakan peningkatan kebutuhan bagi para pengguna *advanced user* dan *developer* di ekosistem *open-source*.
 
+
+viggle animate Harus dipelajari
+
+
+![[Screenshot 2026-09-28 at 13.59.09.png]]
