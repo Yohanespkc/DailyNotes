@@ -20,8 +20,37 @@
               "icon": "lucide-file",
               "title": "OJK"
             }
+          },
+          {
+            "id": "5117594b5dfff797",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Video 29 Sept.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Video 29 Sept"
+            }
+          },
+          {
+            "id": "da51684d972265e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -199,7 +228,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OJK.md",
+                "file": "Untitled.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -254,17 +283,22 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "31c097594721df97",
+  "active": "da51684d972265e1",
   "lastOpenFiles": [
+    "Video 29 Sept.md",
+    "Untitled.md",
+    "OJK.md",
     "05 - Daily Notes/Note Harian - 2026-09-28.md",
     "05 - Daily Notes/2026-09-28.md",
     "01 - Notes/Daftar Tugas.md",
     "Screenshot 2026-09-28 at 14.01.49.png",
     "Screenshot 2026-09-28 at 13.59.09.png",
-    "OJK.md",
     "05 - Daily Notes/Note Harian - 2026-09-27.md",
     "05 - Daily Notes/2026-09-27.md",
     "05 - Daily Notes/Note Harian - 2026-09-27 14.18.md",
@@ -295,8 +329,6 @@
     "Prompt/Perpustakaan Prompt.md",
     "Videos/Mengubah karakter video Jenjutsu.md",
     "Videos/Membuat Video Burung.md",
-    "Prompt/Membuat prompt singkat.md",
-    "Membuat video.md",
     "Prompt/MASTER PROMPT — INTERACTIVE VIRAL WHITEBOARD EXPLAINER VIDEO GENERATOR.pdf",
     "SOAL FISIKA",
     "Videos/KODE RAHASIA UNTUK GENERATE VIDEO DI GOOGLE FLOW.pdf",

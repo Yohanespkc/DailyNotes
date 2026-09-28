@@ -183,3 +183,26 @@ Setelah menyisir HF, tiga hal yang **tidak ada** dan sangat dibutuhkan:
 
 Nomor 2 menurut saya paling strategis. Membuat _benchmark_ memposisikan Bapak sebagai penentu standar, bukan sekadar penyedia sistem — dan ini paling nyambung dengan Blueprint SupTech yang sedang disusun OJK. Biayanya pun paling ringan.
 
+
+<iframe width="100%" height="380" src="https://www.youtube.com/embed/ngyFRCNq0Yc?start=81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE] 🤖 **Detail & Analisis AI Video**
+> - 📌 **Judul:** GPT 6 Astra, Claude Fable 5.1, Gemini 3.8, realtime Minimax, new world models: AI NEWS
+> - 👤 **Kanal:** AI Search
+> - 🧠 **Model AI:** `gemma4:latest`
+> - 🔗 **Link Direct:** [Buka di YouTube (Menit 1:21)](https://youtu.be/ngyFRCNq0Yc?t=81s)
+> - 🕒 **Dimasukkan Pada:** 29 September 2026 pukul 04.46
+> 
+> 📝 **Ringkasan Otomatis AI:**
+> Sebagai Asisten AI cerdas untuk Obsidian Vault Gasing, berikut adalah analisis ringkasan 3 poin penting dari pembahasan AI NEWS pada stempel waktu 1:21.
+
+***
+
+**Ringkasan Utama (1:21): Peningkatan Kapabilitas Model Generasi Baru**
+
+• **Kompetisi Model Generasi Berikutnya:** Pembahasan menyoroti perkembangan model-model terdepan seperti GPT 6, Claude Fable 5.1, dan Gemini 3.8, menunjukkan akselerasi dan peningkatan kapabilitas multimodal yang signifikan dari para pemain kunci di industri AI.
+
+• **Adopsi Model Dunia Nyata (World Models):** Teknologi yang diperkenalkan berfokus pada pengembangan "world models" dan pemrosesan *real-time* (contoh: Minimax). Ini menandakan pergeseran fokus AI dari sekadar pemrosesan bahasa menjadi simulasi pemahaman fisik dan interaksi dunia secara lebih realistis.
+
+• **Fokus pada Interaksi Real-Time dan Penalaran:** Peningkatan ini menekankan kemampuan AI untuk beroperasi secara *real-time*, memungkinkan penalaran yang lebih mendalam, dan transisi dari konten statis menjadi asisten yang mampu bereaksi dan berinteraksi dengan lingkungan secara instan.
+
