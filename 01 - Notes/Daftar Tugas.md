@@ -60,3 +60,6 @@ viggle animate Harus dipelajari
 
 
 ![[Screenshot 2026-09-28 at 13.59.09.png]]
+
+Bagus buat GAMES GASING 3D
+![[Screenshot 2026-09-28 at 14.01.49.png]]
