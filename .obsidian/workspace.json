@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "Branch Proyek-4 back up.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Branch Proyek-4 back up"
             }
           }
         ],
@@ -228,7 +228,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md",
+                "file": "Branch Proyek-4 back up.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -283,13 +283,16 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false
     }
   },
   "active": "da51684d972265e1",
   "lastOpenFiles": [
     "Video 29 Sept.md",
-    "Untitled.md",
+    "Branch Proyek-4 back up.md",
     "OJK.md",
     "05 - Daily Notes/Note Harian - 2026-09-28.md",
     "05 - Daily Notes/2026-09-28.md",
