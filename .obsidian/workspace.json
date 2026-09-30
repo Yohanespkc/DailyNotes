@@ -4,53 +4,80 @@
     "type": "split",
     "children": [
       {
-        "id": "648f5194b5b9dd88",
-        "type": "tabs",
+        "id": "79dee20c87835e3f",
+        "type": "split",
         "children": [
           {
-            "id": "31c097594721df97",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OJK.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "OJK"
-            }
+            "id": "d2b98a5fa7d4a96d",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "31c097594721df97",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "OJK.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "OJK"
+                }
+              }
+            ]
           },
           {
-            "id": "5117594b5dfff797",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Video 29 Sept.md",
-                "mode": "source",
-                "source": false
+            "id": "648f5194b5b9dd88",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5117594b5dfff797",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Video 29 Sept.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Video 29 Sept"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Video 29 Sept"
-            }
-          },
-          {
-            "id": "da51684d972265e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Branch Proyek-4 back up.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "da51684d972265e1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Branch Proyek-4 back up.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Branch Proyek-4 back up"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Branch Proyek-4 back up"
-            }
+              {
+                "id": "37b041067bd71914",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "video yang salah.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "video yang salah"
+                }
+              }
+            ],
+            "currentTab": 2
           }
         ],
-        "currentTab": 2
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -228,7 +255,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Branch Proyek-4 back up.md",
+                "file": "video yang salah.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -289,12 +316,14 @@
       "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "da51684d972265e1",
+  "active": "37b041067bd71914",
   "lastOpenFiles": [
+    "Screenshot 2026-09-30 at 16.35.33.png",
+    "Branch Proyek-4 back up.md",
+    "video yang salah.md",
     "05 - Daily Notes/Note Harian - 2026-09-29.md",
     "05 - Daily Notes/2026-09-29.md",
     "Video 29 Sept.md",
-    "Branch Proyek-4 back up.md",
     "OJK.md",
     "05 - Daily Notes/Note Harian - 2026-09-28.md",
     "05 - Daily Notes/2026-09-28.md",
@@ -323,12 +352,10 @@
     "Z-private/Passkey Git hub.png",
     "Z-private/Local Host.md",
     "Z-private/Ide Creativity Bisnis.md",
-    "SOAL FISIKA/Soal Benda agar cincin tidak melompat.md",
     "Prompt/Screenshot 2026-09-18 at 05.05.51.png",
     "Prompt/Screenshot 2026-09-17 at 03.31.40.png",
     "Prompt/Screenshot 2026-09-11 at 03.14.21.png",
     "Prompt/Screenshot 2026-09-11 at 03.33.45.png",
-    "Prompt/Perpustakaan Prompt.md",
     "Prompt/MASTER PROMPT — INTERACTIVE VIRAL WHITEBOARD EXPLAINER VIDEO GENERATOR.pdf",
     "SOAL FISIKA",
     "Videos/KODE RAHASIA UNTUK GENERATE VIDEO DI GOOGLE FLOW.pdf",
