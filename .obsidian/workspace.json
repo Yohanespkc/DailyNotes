@@ -179,14 +179,10 @@
             "id": "a3559506a452fd50",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Pull Request Ben Koo.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Pull Request Ben Koo"
+              "title": "New tab"
             }
           }
         ],
@@ -368,7 +364,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pull Request Ben Koo.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -434,7 +429,7 @@
     "05 - Daily Notes/Note Harian - 2026-10-04.md",
     "05 - Daily Notes/2026-10-04.md",
     "alasan kenapa obat kanker dari Kemenyan.md",
-    "Pull Request Ben Koo.md",
+    "Pull Request Ben Koo #53.md",
     "20 kode rahasia AI.md",
     "Dari Ben.md",
     "05 - Daily Notes/Note Harian - 2026-10-02.md",
