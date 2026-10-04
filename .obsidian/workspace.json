@@ -179,14 +179,60 @@
             "id": "a3559506a452fd50",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Ben Koo No 59.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Ben Koo No 59"
+            }
+          },
+          {
+            "id": "fc7ceee107215cd8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ben Koo No 58.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ben Koo No 58"
+            }
+          },
+          {
+            "id": "d9e39d1c72f419bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ben Koo 57.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ben Koo 57"
+            }
+          },
+          {
+            "id": "9d801409037b195d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ben Koo 54.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ben Koo 54"
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 15
       }
     ],
     "direction": "vertical"
@@ -364,6 +410,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Ben Koo 54.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -418,14 +465,15 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false,
-      "smart-connections:Smart Connections: Open random connection": false,
-      "smart-connections:Smart Connections: Open connections view": false,
-      "smart-connections:Toggle Footer Connections": false
+      "obsidian-kanban:Create new board": false
     }
   },
-  "active": "a3559506a452fd50",
+  "active": "9d801409037b195d",
   "lastOpenFiles": [
+    "Ben Koo 57.md",
+    "Ben Koo 54.md",
+    "Ben Koo No 58.md",
+    "Ben Koo No 59.md",
     "05 - Daily Notes/Note Harian - 2026-10-04.md",
     "05 - Daily Notes/2026-10-04.md",
     "alasan kenapa obat kanker dari Kemenyan.md",
@@ -450,13 +498,9 @@
     "IOS.md",
     "3 Bedroom.md",
     "05 - Daily Notes/Note Harian - 2026-09-30 03.55.md",
-    "villa murah 3 bedroom.md",
     "Screenshot 2026-09-30 at 16.49.06.png",
     "Screenshot 2026-09-30 at 16.48.31.png",
     "Screenshot 2026-09-30 at 16.35.33.png",
-    "Branch Proyek-4 back up.md",
-    "05 - Daily Notes/Note Harian - 2026-09-29.md",
-    "05 - Daily Notes/2026-09-29.md",
     "Screenshot 2026-09-28 at 14.01.49.png",
     "Screenshot 2026-09-28 at 13.59.09.png",
     "Screenshot 2026-09-24 at 09.15.25.png",
