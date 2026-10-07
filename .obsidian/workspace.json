@@ -383,12 +383,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Server.md",
+                    "file": "update Games.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Server"
+                  "title": "update Games"
                 }
               }
             ],
@@ -573,7 +573,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Server.md",
+                "file": "update Games.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -633,22 +633,22 @@
   },
   "active": "7e15aedd94748dae",
   "lastOpenFiles": [
-    "Iphone.md",
-    "Server.md",
     "Untuk HP - PWA.md",
-    "Apps keuangan.md",
-    "Peringatan no. 59.md",
-    "README.md",
+    "Server.md",
     "Screenshot 2026-10-06 at 11.16.55.png",
-    "update Games.md",
+    "README.md",
+    "Native Apps.md",
     "Membership Apple Dev.md",
+    "Apps keuangan.md",
+    "Dari Ben.md",
+    "hosting.md",
+    "update Games.md",
+    "Iphone.md",
+    "Peringatan no. 59.md",
     "05 - Daily Notes/Note Harian - 2026-10-06.md",
     "05 - Daily Notes/2026-10-06.md",
     "Ben KOO/Video INAAI.md",
-    "hosting.md",
-    "Native Apps.md",
     "Penjelasan Ben Koo no 73.md",
-    "Dari Ben.md",
     "Ben KOO/Dari Ben.md",
     "Z-private/villa murah 3 bedroom.md",
     "Video YS.md",
@@ -661,7 +661,6 @@
     "Ben KOO/Pull Request Ben Koo no.53.md",
     "Riset/OJK.md",
     "Ben KOO/Jalankan IOS.md",
-    "Ben KOO/IOS.md",
     "Riset",
     "Ben KOO",
     "Screenshoot/Screenshot 2026-09-30 at 16.49.45.png",
