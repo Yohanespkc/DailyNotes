@@ -4,398 +4,389 @@
     "type": "split",
     "children": [
       {
-        "id": "4a1de7ce7b03f392",
-        "type": "split",
+        "id": "648f5194b5b9dd88",
+        "type": "tabs",
         "children": [
           {
-            "id": "c859ed0525b06c85",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "985b4af17c20c3c9",
-                "type": "leaf",
-                "state": {
-                  "type": "empty",
-                  "state": {},
-                  "icon": "lucide-file",
-                  "title": "New tab"
-                }
-              }
-            ]
+            "id": "5117594b5dfff797",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Video 29 Sept.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Video 29 Sept"
+            }
           },
           {
-            "id": "648f5194b5b9dd88",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "5117594b5dfff797",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Video 29 Sept.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Video 29 Sept"
-                }
+            "id": "da51684d972265e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Branch Proyek-4 back up.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "da51684d972265e1",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Branch Proyek-4 back up.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Branch Proyek-4 back up"
-                }
+              "icon": "lucide-file",
+              "title": "Branch Proyek-4 back up"
+            }
+          },
+          {
+            "id": "37b041067bd71914",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "video yang salah.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "37b041067bd71914",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "video yang salah.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "video yang salah"
-                }
+              "icon": "lucide-file",
+              "title": "video yang salah"
+            }
+          },
+          {
+            "id": "50ecc465cb493cc8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 - Daily Notes/Note Harian - 2026-09-30 03.55.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "50ecc465cb493cc8",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "05 - Daily Notes/Note Harian - 2026-09-30 03.55.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Note Harian - 2026-09-30 03.55"
-                }
+              "icon": "lucide-file",
+              "title": "Note Harian - 2026-09-30 03.55"
+            }
+          },
+          {
+            "id": "42b71542ee79c116",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3 Bedroom.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "42b71542ee79c116",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "3 Bedroom.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "3 Bedroom"
-                }
+              "icon": "lucide-file",
+              "title": "3 Bedroom"
+            }
+          },
+          {
+            "id": "b004fd8fd39858f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jalankan IOS.md",
+                "mode": "preview",
+                "source": false
               },
-              {
-                "id": "b004fd8fd39858f3",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Jalankan IOS.md",
-                    "mode": "preview",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Jalankan IOS"
-                }
+              "icon": "lucide-file",
+              "title": "Jalankan IOS"
+            }
+          },
+          {
+            "id": "29686405560d1ef4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Videos/COde Rahasia Google Flow.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "29686405560d1ef4",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Videos/COde Rahasia Google Flow.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "COde Rahasia Google Flow"
-                }
+              "icon": "lucide-file",
+              "title": "COde Rahasia Google Flow"
+            }
+          },
+          {
+            "id": "038260b142c42a7b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Proyek Kemenyan.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "038260b142c42a7b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Proyek Kemenyan.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Proyek Kemenyan"
-                }
+              "icon": "lucide-file",
+              "title": "Proyek Kemenyan"
+            }
+          },
+          {
+            "id": "eac308eb8d506a9f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dari Ben.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "eac308eb8d506a9f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Dari Ben.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Dari Ben"
-                }
+              "icon": "lucide-file",
+              "title": "Dari Ben"
+            }
+          },
+          {
+            "id": "612dc41c059e9938",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "20 kode rahasia AI.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "612dc41c059e9938",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "20 kode rahasia AI.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "20 kode rahasia AI"
-                }
+              "icon": "lucide-file",
+              "title": "20 kode rahasia AI"
+            }
+          },
+          {
+            "id": "8a9e282c6fe3eb46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "alasan kenapa obat kanker dari Kemenyan.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "8a9e282c6fe3eb46",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "alasan kenapa obat kanker dari Kemenyan.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "alasan kenapa obat kanker dari Kemenyan"
-                }
+              "icon": "lucide-file",
+              "title": "alasan kenapa obat kanker dari Kemenyan"
+            }
+          },
+          {
+            "id": "a3559506a452fd50",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ben Koo No 59.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "a3559506a452fd50",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Ben Koo No 59.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Ben Koo No 59"
-                }
+              "icon": "lucide-file",
+              "title": "Ben Koo No 59"
+            }
+          },
+          {
+            "id": "fc7ceee107215cd8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ben Koo No 58.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "fc7ceee107215cd8",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Ben Koo No 58.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Ben Koo No 58"
-                }
+              "icon": "lucide-file",
+              "title": "Ben Koo No 58"
+            }
+          },
+          {
+            "id": "d9e39d1c72f419bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ben Koo 57.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "d9e39d1c72f419bf",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Ben Koo 57.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Ben Koo 57"
-                }
+              "icon": "lucide-file",
+              "title": "Ben Koo 57"
+            }
+          },
+          {
+            "id": "9d801409037b195d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ben KOO/Dari Ben.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "9d801409037b195d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Ben KOO/Dari Ben.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Dari Ben"
-                }
+              "icon": "lucide-file",
+              "title": "Dari Ben"
+            }
+          },
+          {
+            "id": "7a2c25580e334d5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dari Ben.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "7a2c25580e334d5a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Dari Ben.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Dari Ben"
-                }
+              "icon": "lucide-file",
+              "title": "Dari Ben"
+            }
+          },
+          {
+            "id": "29c421e7d10a4d5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Peringatan no. 59.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "29c421e7d10a4d5c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Peringatan no. 59.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Peringatan no. 59"
-                }
+              "icon": "lucide-file",
+              "title": "Peringatan no. 59"
+            }
+          },
+          {
+            "id": "da56ab4d6214d97c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Penjelasan Ben Koo no 73.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "da56ab4d6214d97c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Penjelasan Ben Koo no 73.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Penjelasan Ben Koo no 73"
-                }
+              "icon": "lucide-file",
+              "title": "Penjelasan Ben Koo no 73"
+            }
+          },
+          {
+            "id": "9ae4e5364a25a95f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Native Apps.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "9ae4e5364a25a95f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Native Apps.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Native Apps"
-                }
+              "icon": "lucide-file",
+              "title": "Native Apps"
+            }
+          },
+          {
+            "id": "d721e2e02c4c1ef5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ben KOO/Video INAAI.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "d721e2e02c4c1ef5",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Ben KOO/Video INAAI.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Video INAAI"
-                }
+              "icon": "lucide-file",
+              "title": "Video INAAI"
+            }
+          },
+          {
+            "id": "d3bd9d56cbf0381d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "update Games.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "d3bd9d56cbf0381d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "update Games.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "update Games"
-                }
+              "icon": "lucide-file",
+              "title": "update Games"
+            }
+          },
+          {
+            "id": "37d8f8d5360f84f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Peringatan no. 59.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "37d8f8d5360f84f0",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Peringatan no. 59.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Peringatan no. 59"
-                }
+              "icon": "lucide-file",
+              "title": "Peringatan no. 59"
+            }
+          },
+          {
+            "id": "cab0b2630e7314e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Apps keuangan.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "cab0b2630e7314e6",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Apps keuangan.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Apps keuangan"
-                }
+              "icon": "lucide-file",
+              "title": "Apps keuangan"
+            }
+          },
+          {
+            "id": "80a227abafa54a44",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untuk HP - PWA.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "80a227abafa54a44",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Untuk HP - PWA.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Untuk HP - PWA"
-                }
+              "icon": "lucide-file",
+              "title": "Untuk HP - PWA"
+            }
+          },
+          {
+            "id": "aacc2ccdeec0c688",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Iphone.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "aacc2ccdeec0c688",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Iphone.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Iphone"
-                }
+              "icon": "lucide-file",
+              "title": "Iphone"
+            }
+          },
+          {
+            "id": "7e15aedd94748dae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "update Games.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "7e15aedd94748dae",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "update Games.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "update Games"
-                }
-              }
-            ],
-            "currentTab": 25
+              "icon": "lucide-file",
+              "title": "update Games"
+            }
+          },
+          {
+            "id": "1a768a6af697c037",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Perbaikan 1 (8oct 2026).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Perbaikan 1 (8oct 2026)"
+            }
           }
         ],
-        "direction": "horizontal"
+        "currentTab": 26
       }
     ],
     "direction": "vertical"
@@ -573,7 +564,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "update Games.md",
+                "file": "Perbaikan 1 (8oct 2026).md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -628,11 +619,16 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "7e15aedd94748dae",
+  "active": "1a768a6af697c037",
   "lastOpenFiles": [
+    "Perbaikan 1 (8oct 2026).md",
+    "update Games.md",
     "Untuk HP - PWA.md",
     "Server.md",
     "Screenshot 2026-10-06 at 11.16.55.png",
@@ -642,7 +638,6 @@
     "Apps keuangan.md",
     "Dari Ben.md",
     "hosting.md",
-    "update Games.md",
     "Iphone.md",
     "Peringatan no. 59.md",
     "05 - Daily Notes/Note Harian - 2026-10-06.md",
