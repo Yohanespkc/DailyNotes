@@ -1,1 +1,1 @@
-localho
+localhost 3000
