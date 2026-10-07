@@ -106,6 +106,20 @@
             }
           },
           {
+            "id": "80a227abafa54a44",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untuk HP - PWA.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untuk HP - PWA"
+            }
+          },
+          {
             "id": "038260b142c42a7b",
             "type": "leaf",
             "state": {
@@ -330,20 +344,6 @@
             }
           },
           {
-            "id": "80a227abafa54a44",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untuk HP - PWA.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untuk HP - PWA"
-            }
-          },
-          {
             "id": "aacc2ccdeec0c688",
             "type": "leaf",
             "state": {
@@ -363,7 +363,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "update Games.md",
+                "file": "zrevisi SO/update Games.md",
                 "mode": "source",
                 "source": false
               },
@@ -377,16 +377,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Perbaikan 1 (8oct 2026).md",
+                "file": "zrevisi SO/update Games.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Perbaikan 1 (8oct 2026)"
+              "title": "update Games"
             }
           }
         ],
-        "currentTab": 26
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -564,7 +564,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Perbaikan 1 (8oct 2026).md",
+                "file": "zrevisi SO/update Games.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -625,25 +625,26 @@
       "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "1a768a6af697c037",
+  "active": "e04689de63811493",
   "lastOpenFiles": [
-    "Perbaikan 1 (8oct 2026).md",
-    "update Games.md",
     "Untuk HP - PWA.md",
     "Server.md",
+    "Ben KOO/Dari Ben 1.md",
+    "Ben KOO/Peringatan no. 59.md",
+    "zrevisi SO/Perbaikan 1 (8oct 2026).md",
+    "zrevisi SO",
+    "zrevisi SO/update Games.md",
     "Screenshot 2026-10-06 at 11.16.55.png",
     "README.md",
     "Native Apps.md",
     "Membership Apple Dev.md",
     "Apps keuangan.md",
-    "Dari Ben.md",
     "hosting.md",
     "Iphone.md",
-    "Peringatan no. 59.md",
     "05 - Daily Notes/Note Harian - 2026-10-06.md",
     "05 - Daily Notes/2026-10-06.md",
     "Ben KOO/Video INAAI.md",
-    "Penjelasan Ben Koo no 73.md",
+    "Ben KOO/Penjelasan Ben Koo no 73.md",
     "Ben KOO/Dari Ben.md",
     "Z-private/villa murah 3 bedroom.md",
     "Video YS.md",
@@ -655,7 +656,6 @@
     "Screenshoot",
     "Ben KOO/Pull Request Ben Koo no.53.md",
     "Riset/OJK.md",
-    "Ben KOO/Jalankan IOS.md",
     "Riset",
     "Ben KOO",
     "Screenshoot/Screenshot 2026-09-30 at 16.49.45.png",
@@ -672,7 +672,6 @@
     "SOAL FISIKA",
     "Videos/KODE RAHASIA UNTUK GENERATE VIDEO DI GOOGLE FLOW.pdf",
     "Videos/150 KODE RAHASIA CHATGPT.pdf",
-    "Videos/GPT-6_Astra_Links_and_Prompts.docx.pdf",
     "Untitled.canvas"
   ]
 }
