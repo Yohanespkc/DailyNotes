@@ -237,3 +237,204 @@ Sistem pemotongan nilai berjenjang untuk bantuan di permainan **Urutkan Bola (GE
 * **Unit Tests (`npm run test:unit`):** **32 / 32 lulus (100% green)**.
 * **Commit:** `07b157467c fix(gempo-bola): apply real-time 10%, 25%, and 50% point deductions on help clicks`
 * **Git Push:** Berhasil di-push ke `origin/main-bf`. Working tree bersih (*clean*).
+
+Searched for "TIMBANGAN IKAN SUNGAI EUFRAT"
+Viewed unifiedGameRegistry.ts:1915-1955
+Searched for "Z2L2Bermain6"
+Viewed games-config.json:1795-1830
+Searched for "sublevel"
+Searched for "BEKAL BUAH PERJALANAN"
+Viewed unifiedGameRegistry.ts:1800-1960
+Searched for "sublevel-list"
+Searched for "PERANGKAP PIKO MUTANT"
+Searched for "unifiedGameRegistry"
+Viewed worldMapController.ts:410-460
+Viewed worldMapController.ts:470-520
+Viewed worldMapController.ts:520-600
+Viewed gameResolver.ts:50-120
+Viewed SKILL.md:1-81
+Searched for "Z2L2Bermain6"
+Searched for "SB3Bermain4"
+Searched for "z2l2sb3b4"
+Viewed z2l2sb3b4Swarm.ts:1-240
+Viewed z2l2sb3b4Controller.ts:1-351
+Viewed SB3Bermain4.astro:1-191
+Viewed unifiedGameRegistry.ts:1915-1960
+Viewed unifiedGameRegistry.ts:1920-1945
+Searched for "Z2L2Bermain6"
+Searched for "SB2Bermain4"
+Searched for "Z2L2Bermain6"
+Searched for "Z2L2Bermain6"
+Searched for "Z2L2Bermain6"
+Searched for "z2l2-sb3b4-speed-btn"
+Viewed z2l2sb3b4Effects.ts:1-180
+Viewed z2l2sb3b4Types.ts:1-25
+Viewed z2l2-sb3b4.css:1-229
+Viewed z2l2-games.spec.ts:240-270
+Viewed z2l2-games.spec.ts:270-340
+Searched for "speedMultiplier"
+Searched for "innerLevels"
+Searched for "openSublevelPopup"
+Searched for "PERANGKAP PIKO MUTANT"
+Searched for "perangkap piko mutant"
+Viewed unifiedGameRegistry.ts:1730-1950
+Edited unifiedGameRegistry.ts
+Edited unifiedGameRegistry.ts
+Edited z2l2sb3b4Swarm.ts
+Viewed z2l2sb3b4Swarm.ts:10-30
+Viewed z2l2sb3b4Swarm.ts:165-205
+Edited z2l2sb3b4Swarm.ts
+Edited z2l2sb3b4Swarm.ts
+Ran command: `npx oxlint src`
+Ran command: `npm run test:unit`
+Viewed scorePolicy.test.ts:145-180
+Viewed scoringPolicy.ts:155-200
+Searched for "79300"
+Viewed scorePolicy.test.ts:145-165
+Edited scorePolicy.test.ts
+Ran command: `npm run test:unit`
+
+I have initiated the unit test suite (`npm run test:unit`) to verify all score policies, game registries, and mathematical guardrails. I will proceed as soon as the test finishes.
+
+Used tool: manage_task
+Used tool: schedule
+
+Waiting for test suite completion.
+
+Used tool: manage_task
+Used tool: schedule
+
+Tests are in progress. I will report the result as soon as they complete.
+
+Used tool: manage_task
+Used tool: schedule
+Ran command: `npx playwright test e2e/z2l2-games.spec.ts --project=chromium --workers=1`
+Used tool: schedule
+
+E2E integration test for Zone 2 Level 2 games is running. I will review the results once complete.
+
+Used tool: manage_task
+Used tool: manage_task
+Used tool: manage_task
+Ran command: `npx playwright test e2e/z2l2-games.spec.ts -g "SB3 Bermain 4" --project=chromium`
+Used tool: schedule
+Ran command: `curl -I http://localhost:4321/`
+Ran command: `curl -s -o /dev/null -w "%{http_code}" "http://localhost:4321/zone/2/level/2"`
+Ran command: `curl -I "http://localhost:4321/zone/2/level/2"`
+Ran command: `curl -s -o /dev/null -w "%{http_code}" "http://localhost:4321/play?zone=2&level=2"`
+Ran command: `curl -s -o /dev/null -w "%{time_total}s %{http_code}\n" "http://localhost:4321/play?zone=2&level=2"`
+Ran command: `curl -s -o /dev/null -w "%{time_total}s %{http_code}\n" "http://localhost:4321/game/Z2L2Bermain12?zone=2&level=2"`
+Ran command: `npx playwright test e2e/z2l2-games.spec.ts -g "SB3 Bermain 4" --project=chromium`
+Used tool: schedule
+
+Playwright verification is in progress. I will report the outcome once finished.
+
+Used tool: manage_task
+Used tool: manage_task
+Used tool: manage_task
+Ran command: `npx playwright test tests/generated/z2l2_g14.spec.ts --project=chromium`
+Used tool: schedule
+
+Running browser validation for SB3Bermain4. Waiting for test execution to complete.
+
+Used tool: manage_task
+Used tool: manage_task
+Ran command: `git status -s`
+Used tool: manage_task
+Browser task: "Verify Z2L2 Fixes"
+Created verify_ui.cjs
+Ran command: `node /Users/yohanessurya/.gemini/antigravity-ide/brain/2112f99c-b42f-4d72-846f-38755673f2fe/scratch/verify_ui.cjs`
+Edited verify_ui.cjs
+Ran command: `node /Users/yohanessurya/.gemini/antigravity-ide/brain/2112f99c-b42f-4d72-846f-38755673f2fe/scratch/verify_ui.cjs`
+Ran command: `NODE_PATH=/Users/yohanessurya/Documents/Development/so/worktrees/main-bf/web/node_modules node /Users/yohanessurya/.gemini/antigravity-ide/brain/2112f99c-b42f-4d72-846f-38755673f2fe/scratch/verify_ui.cjs`
+Viewed butterflies.png:1-800
+Viewed map_popup.png:1-800
+Searched for "showZoneMap"
+Viewed worldMapController.ts:215-260
+Ran command: `npx tsx -e "
+import { unifiedGameRegistry } from './src/data/unifiedGameRegistry';
+const z2 = unifiedGameRegistry['2'];
+const l2 = z2.chapters.find(c => c.chapterId === 2);
+const games = [];
+l2.innerLevels.forEach(sub => sub.games.forEach(g => games.push({ id: g.gameId, key: g.gameKey, name: g.displayName, implemented: g.isImplemented })));
+console.log('Zone 2 Level 2 Games:');
+console.table(games);
+"`
+Ran command: `npx tsx -e "
+import { unifiedGameRegistry } from './src/data/unifiedGameRegistry';
+const z2 = unifiedGameRegistry['2'];
+console.log(z2.chapters.map(c => ({ id: c.chapterId, innerCount: c.innerLevels?.length })));
+"`
+Ran command: `npx tsx -e "
+import { unifiedGameRegistry } from './src/data/unifiedGameRegistry';
+const z2 = unifiedGameRegistry['2'];
+const l2 = z2.chapters.find(c => c.chapterId === '2');
+const games = [];
+l2.innerLevels.forEach(sub => sub.games?.forEach(g => games.push({ id: g.gameId, key: g.gameKey, name: g.displayName, implemented: g.isImplemented })));
+console.log('Zone 2 Level 2 Games:');
+console.table(games);
+"`
+Ran command: `git diff`
+Ran command: `git checkout -- web/e2e/progress.json`
+Ran command: `rm -f /Users/yohanessurya/.gemini/antigravity-ide/brain/2112f99c-b42f-4d72-846f-38755673f2fe/scratch/verify_ui.cjs`
+Viewed 2026-W41.md:1-60
+Viewed CHANGELOG.md:1-60
+Viewed README.md:1-33
+Viewed 2026-W41.md:5-25
+Edited 2026-W41.md
+Edited README.md
+Viewed CHANGELOG.md:13-26
+Edited CHANGELOG.md
+Viewed README.md:1-60
+Viewed README.md:600-655
+Edited README.md
+Ran command: `git status -s`
+Ran command: `npx oxlint src`
+Ran command: `git branch --show-current`
+Ran command: `git add CHANGELOG.md README.md apps/shared/data/unifiedGameRegistry.ts docs/changelog/2026-W41.md docs/changelog/README.md web/src/data/unifiedGameRegistry.ts web/src/lib/engines/controllers/z2/z2l2sb3b4Swarm.ts web/tests/unit/scorePolicy.test.ts`
+Ran command: `git commit -m "fix(z2l2): remove duplicate Timbangan Ikan stub and reduce butterfly flight speed by 40%
+
+- Remove duplicate unimplemented stub Z2L2Bermain6 (Timbangan Ikan Sungai Eufrat) from unifiedGameRegistry (web & shared), ensuring only canonical implemented Z2L2Bermain7 appears on Zone 2 Level 2 map
+- Slow down butterfly swarm kinematics in SB3Bermain4 by 40% (speedMultiplier = 0.60, max velocity 0.33 px/frame, wobble rate 0.0072, repulsion force 0.012) in z2l2sb3b4Swarm.ts for easy reading and comfortable tapping
+- Update Zone 2 authoritative maxScore in scorePolicy.test.ts to 78,700
+- Update weekly changelog, README, and docs index"`
+Ran command: `git push origin main-bf`
+Used tool: schedule
+Ran command: `test -d /Users/yohanessurya/Documents/Development/so/worktrees/build && echo "build worktree exists" || echo "not found"`
+Ran command: `git status -s`
+Ran command: `git branch --show-current`
+
+Pekerjaan telah selesai dan berhasil diverifikasi serta di-push ke repository. Berikut rincian perbaikan yang telah dilakukan:
+
+---
+
+### 1. Menghapus Duplikat "Timbangan Ikan Sungai Eufrat" (Gambar 1 & Gambar 2)
+* **Penyebab**: Pada registri game Zone 2 Level 2 (`unifiedGameRegistry.ts`), terdapat 2 entri dengan nama *"Timbangan Ikan Sungai Eufrat"*:
+  1. `Z2L2Bermain6` (`gameKey: "SB2Bermain4"`, `isImplemented: false`) — entri stub/kosong yang jika diklik membuka dialog Ular Tangga Istana Langit (Gambar 2).
+  2. `Z2L2Bermain7` (`gameKey: "SB2Bermain2"`, `isImplemented: true`) — modul asli permainan Timbangan Ikan yang sudah diimplementasikan.
+* **Perbaikan**:
+  * Menghapus entri stub `Z2L2Bermain6` dari [web/src/data/unifiedGameRegistry.ts](file:///Users/yohanessurya/Documents/Development/so/worktrees/main-bf/web/src/data/unifiedGameRegistry.ts) dan [apps/shared/data/unifiedGameRegistry.ts](file:///Users/yohanessurya/Documents/Development/so/worktrees/main-bf/apps/shared/data/unifiedGameRegistry.ts).
+  * Menu pop-up sublevel pada Peta Zona 2 Level 2 sekarang **hanya menampilkan 1 tombol "Timbangan Ikan Sungai Eufrat"**, yaitu yang mengarah langsung ke permainan asli (`Z2L2Bermain7`).
+  * Menyesuaikan invarian skor maksimum teoritis Zona 2 pada [web/tests/unit/scorePolicy.test.ts](file:///Users/yohanessurya/Documents/Development/so/worktrees/main-bf/web/tests/unit/scorePolicy.test.ts) dari 79.300 menjadi 78.700 (akibat pembersihan 600 poin game stub).
+
+---
+
+### 2. Memperlambat Gerakan Kupu-Kupu 40% (Gambar 3 — SB3Bermain4)
+* **File Target**: [web/src/lib/engines/controllers/z2/z2l2sb3b4Swarm.ts](file:///Users/yohanessurya/Documents/Development/so/worktrees/main-bf/web/src/lib/engines/controllers/z2/z2l2sb3b4Swarm.ts)
+* **Perbaikan Kinematika**:
+  * Mengatur `speedMultiplier` dasar menjadi **`0.60`** (kecepatan berkurang tepat 40% dari kecepatan semula `1.0`).
+  * Kecepatan awal spawn kupu-kupu turun dari `0.30–0.55` menjadi `0.18–0.33` px/frame.
+  * Batas kecepatan maksimal (`maxSpeed`) dikurangi dari `0.55` menjadi **`0.33`** px/frame.
+  * Kecepatan osilasi lengkungan sayap (`b.phase`) diperlambat 40% dari `0.012` menjadi **`0.0072`** agar lintasan terbang mengayun anggun dan tidak bergetar cepat.
+  * Gaya tolak antar kupu-kupu (*Boids separation force*) diturunkan dari `0.02` menjadi **`0.012`** sehingga saat berdekatan, kupu-kupu berbelok secara halus tanpa hentakan mendadak.
+* **Hasil**: Angka pada tubuh kupu-kupu kini stabil dan sangat mudah dibaca, serta area sentuh/klik menjadi sangat nyaman untuk anak-anak.
+
+---
+
+### 3. Verifikasi Kualitas & Git Push
+* **Oxlint**: `npx oxlint src` lolos dengan **0 error**.
+* **Unit Tests**: `npm run test:unit` **100% pass** (seluruh 22+ suite pengujian skor, regresi, Monte Carlo, dan guardrails).
+* **Dokumentasi**: Memperbarui [docs/changelog/2026-W41.md](file:///Users/yohanessurya/Documents/Development/so/worktrees/main-bf/docs/changelog/2026-W41.md), [docs/changelog/README.md](file:///Users/yohanessurya/Documents/Development/so/worktrees/main-bf/docs/changelog/README.md), [CHANGELOG.md](file:///Users/yohanessurya/Documents/Development/so/worktrees/main-bf/CHANGELOG.md), dan [README.md](file:///Users/yohanessurya/Documents/Development/so/worktrees/main-bf/README.md).
+* **Git Commit & Push**:
+  * Commit: `012dca779b` (*"fix(z2l2): remove duplicate Timbangan Ikan stub and reduce butterfly flight speed by 40%"*)
+  * Status: Berhasil di-push ke remote branch `main-bf` (`07b157467c..012dca779b`).
