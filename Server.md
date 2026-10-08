@@ -37,6 +37,15 @@ Host sogasing-k3s-1
     ServerAliveCountMax 3
 ```
 
+Tolong deploy project SO branch build ke website so-gasing.online melalui server :Host sogasing-jkt-1
+    HostName 10.40.14.9
+    User ubuntu
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
 ---
 
 ### 2. Hasil Uji Koneksi:
