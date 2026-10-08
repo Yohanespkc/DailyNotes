@@ -128,3 +128,112 @@ Laporan lengkap mengenai seluruh perbaikan yang telah dilakukan semenjak commit 
 * **Git Push:**
   * Berhasil terdorong ke remote repository: `cddf431310..535c9903f7 main-bf -> main-bf`.
   * Status working tree saat ini: **Clean**.
+
+
+Searched for "score"
+Viewed movingBallsController.ts:650-710
+Searched for "75 Poin"
+Searched for "btn-bola-help"
+Viewed gempo.astro:1020-1060
+Searched for "bola-level-points"
+Viewed movingBallsController.ts:295-330
+Searched for "HINT_PENALTIES"
+Searched for "aiHintPenalty"
+Viewed popupsPart1.ts:425-443
+Viewed movingBallsController.ts:870-930
+Viewed movingBallsController.ts:220-240
+Viewed movingBallsController.ts:270-290
+Searched for "getLevelPoints"
+Viewed movingBallsController.ts:206-220
+Viewed gempoAiHintRegistry.ts:1-30
+Viewed gempoAiHintRegistry.ts:235-249
+Searched for "HINT_PENALTIES"
+Viewed gempoAiHintRegistry.ts:180-200
+Searched for "help"
+Searched for "btn-bola-reset"
+Searched for "resetCurrentLevel"
+Viewed movingBallsController.ts:935-975
+Viewed movingBallsController.ts:155-180
+Searched for "useHelp"
+Viewed fingerFlowController.ts:1405-1427
+Viewed memoryCardsController.ts:655-680
+Viewed gempo.astro:1038-1052
+Viewed gempo.astro:1040-1055
+Edited gempo.astro
+Viewed movingBallsController.ts:270-320
+Viewed movingBallsController.ts:870-935
+Ran command: `wc -l web/src/lib/gempo/movingBallsController.ts`
+Edited movingBallsController.ts
+Viewed movingBallsController.ts:270-320
+Viewed movingBallsController.ts:225-235
+Viewed movingBallsController.ts:650-675
+Viewed movingBallsController.ts:870-975
+Edited movingBallsController.ts
+Viewed movingBallsController.ts:225-250
+Viewed movingBallsController.ts:295-325
+Edited movingBallsController.ts
+Viewed movingBallsController.ts:295-335
+Edited movingBallsController.ts
+Viewed movingBallsController.ts:660-700
+Edited movingBallsController.ts
+Viewed movingBallsController.ts:880-990
+Viewed movingBallsController.ts:980-1007
+Edited movingBallsController.ts
+Ran command: `npx oxlint src`
+Ran command: `git diff`
+Ran command: `npm run test:unit`
+Used tool: manage_task
+Used tool: manage_task
+Used tool: manage_task
+Used tool: manage_task
+Used tool: manage_task
+Used tool: manage_task
+Ran command: `git status -s`
+Viewed 2026-W41.md:370-405
+Edited 2026-W41.md
+Viewed CHANGELOG.md:15-25
+Edited CHANGELOG.md
+Ran command: `git status -s`
+Ran command: `npx oxlint src`
+Ran command: `git add CHANGELOG.md docs/changelog/2026-W41.md web/src/lib/gempo/movingBallsController.ts web/src/pages/zone/\[zoneId\]/gempo.astro`
+Ran command: `git commit -m "fix(gempo-bola): apply real-time 10%, 25%, and 50% point deductions on help clicks"`
+Ran command: `git push origin main-bf`
+Used tool: manage_task
+Ran command: `git status`
+
+Sistem pemotongan nilai berjenjang untuk bantuan di permainan **Urutkan Bola (GEMPO Zona 1)** telah diimplementasikan, diverifikasi, dan di-push ke repository:
+
+---
+
+### Perubahan yang Dilakukan
+
+1. **Pemotongan Nilai Berjenjang Real-Time ([`movingBallsController.ts`](file:///Users/yohanessurya/Documents/Development/so/worktrees/main-bf/web/src/lib/gempo/movingBallsController.ts)):**
+   * **Klik 1 (Petunjuk 1):** Potongan nilai **10%** diberlakukan (`penaltyRate = 0.10`).
+     * *Contoh Level 3 (Base 75 Pts):* Poin seketika turun dari `75 Poin` menjadi **`68 Poin`** dan muncul indikator **`(-10%)`**.
+   * **Klik 2 (Petunjuk 2):** Potongan nilai **25%** diberlakukan (`penaltyRate = 0.25`).
+     * *Contoh Level 3:* Poin turun menjadi **`56 Poin`** dengan indikator **`(-25%)`**.
+   * **Klik 3 (Petunjuk 3):** Potongan nilai **50%** diberlakukan (`penaltyRate = 0.50`).
+     * *Contoh Level 3:* Poin turun menjadi **`38 Poin`** dengan indikator **`(-50%)`**.
+
+2. **Sinkronisasi Tampilan HUD Atas ([`gempo.astro`](file:///Users/yohanessurya/Documents/Development/so/worktrees/main-bf/web/src/pages/zone/[zoneId]/gempo.astro)):**
+   * Ditambahkan elemen badge [`#bola-penalty-badge`](file:///Users/yohanessurya/Documents/Development/so/worktrees/main-bf/web/src/pages/zone/[zoneId]/gempo.astro) di samping tampilan poin level.
+   * Setiap kali tombol petunjuk diklik, angka poin di pojok kanan atas langsung diperbarui secara interaktif sesuai persentase potongan yang berlaku.
+
+3. **Perhitungan Skor Akhir & Tampilan Kemenangan:**
+   * Di fungsi `completeLevel()`, `basePoints` dihitung berdasarkan poin setelah potongan penalti.
+   * Bonus waktu dihitung proporsional terhadap skor dasar baru tersebut.
+   * Layar selebrasi level selesai (`LEVEL SELESAI!`) menampilkan rincian potongan petunjuk:
+     `Skor Sukses: XX Pts (-XX% Petunjuk)`
+   * Nilai yang disimpan ke database progres (`this.scores`) dan disinkronkan ke akun siswa (`addGempoPoints`) menggunakan nilai bersih setelah potongan.
+
+4. **Reset Status:**
+   * Setiap kali level baru dimulai atau tombol reset diklik, status penalti kembali ke 0% dan angka poin kembali ke nilai penuh tanpa potongan.
+
+---
+
+### Hasil Pengujian & Git Push
+
+* **Linter (`npx oxlint src`):** **0 errors** (47 warnings pra-ada).
+* **Unit Tests (`npm run test:unit`):** **32 / 32 lulus (100% green)**.
+* **Commit:** `07b157467c fix(gempo-bola): apply real-time 10%, 25%, and 50% point deductions on help clicks`
+* **Git Push:** Berhasil di-push ke `origin/main-bf`. Working tree bersih (*clean*).
