@@ -425,12 +425,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Server.md",
+                "file": "Perlu diperbaiki.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Server"
+              "title": "Perlu diperbaiki"
             }
           }
         ],
@@ -598,7 +598,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Server.md",
+                "file": "Perlu diperbaiki.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -661,11 +661,11 @@
   },
   "active": "4a77fafda43ca34a",
   "lastOpenFiles": [
+    "Server.md",
     "05 - Daily Notes/Note Harian - 2026-10-08.md",
     "05 - Daily Notes/2026-10-08.md",
     "server 1.md",
     "pemakaian PWA.md",
-    "Server.md",
     "README.md",
     "Native Apps.md",
     "Membership Apple Dev.md",
