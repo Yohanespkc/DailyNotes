@@ -425,12 +425,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "server 1.md",
+                "file": "Server.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "server 1"
+              "title": "Server"
             }
           }
         ],
@@ -598,7 +598,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "server 1.md",
+                "file": "Server.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -661,8 +661,8 @@
   },
   "active": "4a77fafda43ca34a",
   "lastOpenFiles": [
-    "pemakaian PWA.md",
     "server 1.md",
+    "pemakaian PWA.md",
     "Server.md",
     "README.md",
     "Native Apps.md",

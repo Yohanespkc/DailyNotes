@@ -37,7 +37,7 @@ Host sogasing-k3s-1
     ServerAliveCountMax 3
 ```
 
-Tolong deploy project SO branch build ke website so-gasing.online melalui server :Host sogasing-jkt-1
+Tolong deploy project SO branch main-bf  ke website so-gasing.online melalui server (secara langsung tanpa argo CD) :Host sogasing-jkt-1
     HostName 10.40.14.9
     User ubuntu
     Port 22
