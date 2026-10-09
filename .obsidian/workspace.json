@@ -488,9 +488,23 @@
               "icon": "lucide-file",
               "title": "Audit Mengenal Bilangan"
             }
+          },
+          {
+            "id": "82a0efcbf3a512b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Audit Perkalian.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Audit Perkalian"
+            }
           }
         ],
-        "currentTab": 34
+        "currentTab": 35
       }
     ],
     "direction": "vertical"
@@ -654,7 +668,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Audit Mengenal Bilangan.md",
+                "file": "Audit Perkalian.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -715,10 +729,11 @@
       "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "c1d02a219e88fedb",
+  "active": "82a0efcbf3a512b7",
   "lastOpenFiles": [
-    "Pedoman edit.md",
     "Audit Mengenal Bilangan.md",
+    "Audit Perkalian.md",
+    "Pedoman edit.md",
     "Penjumlahan audit.md",
     "Perbaikan Pengurangan.md",
     "05 - Daily Notes/Note Harian - 2026-10-09.md",
@@ -742,7 +757,6 @@
     "Untuk HP - PWA.md",
     "Videos/COde Rahasia Google Flow.md",
     "Ben KOO/Video INAAI.md",
-    "zrevisi SO/update Games.md",
     "zrevisi SO",
     "Screenshot 2026-10-06 at 11.16.55.png",
     "Screenshoot/Screenshot 2026-09-24 at 09.15.25.png",
