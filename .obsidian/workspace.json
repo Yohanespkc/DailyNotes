@@ -765,12 +765,18 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false
     }
   },
   "active": "4fee9d5489b46909",
   "lastOpenFiles": [
+    "server 1.md",
+    "Untuk HP - PWA.md",
     "Master plan.md",
+    "Server.md",
     "Audit Pembagian.md",
     "Audit Pengurangan.md",
     "Audit Perkalian.md",
@@ -781,10 +787,8 @@
     "05 - Daily Notes/Note Harian - 2026-10-09.md",
     "05 - Daily Notes/2026-10-09.md",
     "Perbaikan Perkalian.md",
-    "Server.md",
     "05 - Daily Notes/Note Harian - 2026-10-08.md",
     "05 - Daily Notes/2026-10-08.md",
-    "server 1.md",
     "pemakaian PWA.md",
     "README.md",
     "Native Apps.md",
@@ -795,7 +799,6 @@
     "Perbaikan SO6.md",
     "Perbaikan SO5.md",
     "perbaikan SO 4.md",
-    "Perbaikan SO3.md",
     "zrevisi SO",
     "Screenshot 2026-10-06 at 11.16.55.png",
     "Screenshoot/Screenshot 2026-09-24 at 09.15.25.png",
