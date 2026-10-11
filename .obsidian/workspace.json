@@ -537,12 +537,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master plan.md",
+                "file": "Server.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Master plan"
+              "title": "Server"
             }
           }
         ],
@@ -710,7 +710,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master plan.md",
+                "file": "Server.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -773,8 +773,8 @@
   },
   "active": "4fee9d5489b46909",
   "lastOpenFiles": [
-    "Audit Pembagian.md",
     "Master plan.md",
+    "Audit Pembagian.md",
     "Audit Pengurangan.md",
     "Audit Perkalian.md",
     "Audit Mengenal Bilangan.md",
