@@ -1,1 +1,0 @@
-![[Logo GASING baru.jpeg]]
