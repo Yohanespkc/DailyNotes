@@ -1,0 +1,1 @@
+![[Screenshot 2026-10-16 at 22.48.28.png]]![[WhatsApp Image 2026-10-16 at 22.56.35.jpeg]]577607 xxxxxx![[Screenshot 2026-10-16 at 22.59.54.png]]
