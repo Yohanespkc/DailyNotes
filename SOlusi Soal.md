@@ -77,3 +77,15 @@ Dengan pendekatan **6 Pilar Sistemik (Macro-View)** ini:
 - Satu perbaikan di level engine langsung menuntaskan puluhan temuan di Excel sekaligus **melindungi game-game lain di Zona 1 s.d. Zona 8** agar tidak pernah mengalami masalah yang sama.
 
 Apakah Bapak setuju untuk langsung saya terapkan **6 Pilar Sistemik** ini (melalui **Sprint R-1 s.d. Sprint R-7** yang terverifikasi Playwright di belakang layar)?
+
+### . Status Modularisasi **Asyiknya Belajar** (`100% < 500 LOC`)
+
+- **Engine Utama:**
+    - `BelajarEngine.astro`: **350 LOC** (dipecah ke 10 sub-komponen di `web/src/components/engines/belajar/*`, masing-masing `40–394 LOC`).
+    - `BelajarInteractiveMenuEngine.astro`: **306 LOC**.
+- **Controller & Sub-modul:**
+    - `belajarController.ts`: **126 LOC** (dipecah ke 25 modul khusus di `web/src/lib/engines/belajar/*`, seluruhnya `30–467 LOC`).
+- **Registri Kuis & Ringkasan Video:**
+    - `belajarQuizRegistry.ts`: **95 LOC** & `belajarVideoSummaryRegistry.ts`: **52 LOC** (data per zona terpisah di `web/src/data/belajar/*`).
+- **Seluruh Komponen Game (`*Belajar*.astro`):**
+    - **0 file > 500 LOC** (seluruhnya `21–280 LOC`).
