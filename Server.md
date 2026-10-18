@@ -37,7 +37,7 @@ Host sogasing-k3s-1
     ServerAliveCountMax 3
 ```
 
-Tolong deploy project SO branch main-bf  ke website so-gasing.online melalui server (secara langsung tanpa argo CD) :Host sogasing-jkt-1
+Tolong deploy project SO branch New-Build  ke website so-gasing.online melalui server (secara langsung tanpa argo CD) :Host sogasing-jkt-1
     HostName 10.40.14.9
     User ubuntu
     Port 22
@@ -45,6 +45,8 @@ Tolong deploy project SO branch main-bf  ke website so-gasing.online melalui ser
     IdentitiesOnly yes
     ServerAliveInterval 30
     ServerAliveCountMax 3
+    Untuk halaman login dan prosesnya tarik dari build branch pakai API Key: ⁠ api__tzJoGY2PFNBNboW9rpjJEhbMwnM0FBsd ⁠
+Dokumentasinya disini: https://api.sms.inaai.ai/docs
 
 ---
 

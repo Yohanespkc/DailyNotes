@@ -659,12 +659,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "prompt.md",
+                "file": "Server.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "prompt"
+              "title": "Server"
             }
           }
         ],
@@ -896,8 +896,8 @@
   },
   "active": "8704586a3e2e8cbc",
   "lastOpenFiles": [
-    "Solusi pakai sistemik.md",
     "prompt.md",
+    "Solusi pakai sistemik.md",
     "SOlusi Soal.md",
     "Fashion.md",
     "Git.md",
