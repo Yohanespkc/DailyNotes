@@ -694,9 +694,23 @@
               "icon": "lucide-file",
               "title": "Membuat video laga"
             }
+          },
+          {
+            "id": "7b0248e80c1cefb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sprint 1 Bermain.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "sprint 1 Bermain"
+            }
           }
         ],
-        "currentTab": 49
+        "currentTab": 50
       }
     ],
     "direction": "vertical"
@@ -922,10 +936,11 @@
       "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "23133cbcae556c1d",
+  "active": "7b0248e80c1cefb3",
   "lastOpenFiles": [
-    "Membuat Video.md",
     "Membuat video laga.md",
+    "sprint 1 Bermain.md",
+    "Membuat Video.md",
     "Server.md",
     "prompt.md",
     "Solusi pakai sistemik.md",
@@ -952,7 +967,6 @@
     "Audit Pengurangan.md",
     "Audit Perkalian.md",
     "Audit Mengenal Bilangan.md",
-    "Pedoman edit.md",
     "zrevisi SO",
     "Screenshot 2026-10-06 at 11.16.55.png",
     "Screenshoot/Screenshot 2026-09-24 at 09.15.25.png",
