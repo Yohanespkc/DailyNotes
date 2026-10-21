@@ -750,9 +750,23 @@
               "icon": "lucide-file",
               "title": "super Apps Gemini"
             }
+          },
+          {
+            "id": "254e8946ed2a61b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cara gitpull PullRequest.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "cara gitpull PullRequest"
+            }
           }
         ],
-        "currentTab": 53
+        "currentTab": 54
       }
     ],
     "direction": "vertical"
@@ -975,10 +989,11 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "9408b3cede2c0a7b",
+  "active": "254e8946ed2a61b7",
   "lastOpenFiles": [
-    "Video buat.md",
     "super Apps Gemini.md",
+    "cara gitpull PullRequest.md",
+    "Video buat.md",
     "Navigasi.md",
     "Screenshot 2026-10-20 at 05.18.09.png",
     "sprint 1 Bermain.md",
@@ -1006,7 +1021,6 @@
     "05 - Daily Notes/2026-10-12.md",
     "Untuk HP - PWA.md",
     "Master plan.md",
-    "Audit Pembagian.md",
     "zrevisi SO",
     "Screenshot 2026-10-06 at 11.16.55.png",
     "Screenshoot/Screenshot 2026-09-24 at 09.15.25.png",
