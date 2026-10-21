@@ -764,9 +764,23 @@
               "icon": "lucide-file",
               "title": "cara gitpull PullRequest"
             }
+          },
+          {
+            "id": "b092a98e89361738",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sprints untuk devices berbeda.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sprints untuk devices berbeda"
+            }
           }
         ],
-        "currentTab": 54
+        "currentTab": 55
       }
     ],
     "direction": "vertical"
@@ -992,11 +1006,12 @@
       "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "254e8946ed2a61b7",
+  "active": "b092a98e89361738",
   "lastOpenFiles": [
+    "cara gitpull PullRequest.md",
+    "Sprints untuk devices berbeda.md",
     "Screenshot 2026-10-21 at 10.21.44.png",
     "super Apps Gemini.md",
-    "cara gitpull PullRequest.md",
     "Video buat.md",
     "Navigasi.md",
     "Screenshot 2026-10-20 at 05.18.09.png",
@@ -1033,7 +1048,6 @@
     "Screenshoot/Screenshot 2026-09-30 at 16.49.45.png",
     "Screenshoot/Screenshot 2026-09-30 at 16.49.53.png",
     "Screenshoot/Screenshot 2026-09-30 at 16.49.06.png",
-    "Screenshoot/Screenshot 2026-09-30 at 16.48.31.png",
     "02 - Resources/Videos/potongan video",
     "02 - Resources/Videos",
     "Prompt/MASTER PROMPT — INTERACTIVE VIRAL WHITEBOARD EXPLAINER VIDEO GENERATOR.pdf",
