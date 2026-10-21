@@ -43,4 +43,4 @@ Setelah pekerjaan selesai dan sudah dites, silakan buat **Pull Request (PR)** 
 
 ---
 
-Terima kasih banyak atas kerja sama dan disiplinnya demi kelancaran bersama! Semangat selalu. 🚀💪
+Terima kasih banyak atas kerja sama dan disiplinnya demi kelancaran bersama! Semangat selalu. 🚀💪![[Screenshot 2026-10-21 at 10.21.44.png]]

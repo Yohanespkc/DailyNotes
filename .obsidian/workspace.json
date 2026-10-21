@@ -986,11 +986,15 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false
     }
   },
   "active": "254e8946ed2a61b7",
   "lastOpenFiles": [
+    "Screenshot 2026-10-21 at 10.21.44.png",
     "super Apps Gemini.md",
     "cara gitpull PullRequest.md",
     "Video buat.md",
@@ -1020,7 +1024,6 @@
     "05 - Daily Notes/Note Harian - 2026-10-12.md",
     "05 - Daily Notes/2026-10-12.md",
     "Untuk HP - PWA.md",
-    "Master plan.md",
     "zrevisi SO",
     "Screenshot 2026-10-06 at 11.16.55.png",
     "Screenshoot/Screenshot 2026-09-24 at 09.15.25.png",
