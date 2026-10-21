@@ -114,3 +114,72 @@ Replay engine akan otomatis memutar kembali rekaman 11 event (`096eb63e`) tadi p
 Coba klik preset **`Samsung Galaxy S24 (360px)`** dan **`iPhone SE (375px)`** di layar Anda saat ini. 
 
 Jika ada tombol atau gambar yang tampak menumpuk atau terpotong, beritahu saya bagian mana yang kurang pas (atau kirim tangkapan layarnya), dan saya akan **langsung menuliskan perbaikan CSS-nya ke dalam kode game Sacred Octagon** untuk Anda!
+
+
+Ran command: `git branch --show-current`
+Ran command: `git branch --show-current`
+
+Berikut penjelasan lengkap mengenai cabang tempat kita bekerja, hubungan antara `LandingPage` dan `SO`, serta ke mana setiap perbaikan tadi dimasukkan:
+
+---
+
+### 1. Di window ini kita kerja di cabang (*branch*) mana?
+
+Di window ini, kita mengelola **dua repositori Git yang berbeda** secara sinkron:
+
+| Repositori | Path di Komputer Anda | Branch Aktif Saat Ini |
+| :--- | :--- | :--- |
+| **LandingPage** (Workbench / Lab Uji) | `/Users/yohanessurya/Documents/Development/MCard_TDD/LandingPage` | **`feat/erb-infrastructure`** |
+| **SacredOctagon / SO** (Game GASING) | `/Users/yohanessurya/Documents/Development/so/worktrees/main-bf/web` | **`feat/responsive-touch-and-h1-conformance`** |
+
+Kedua cabang ini adalah **cabang fitur khusus (*feature branch*)**, sehingga:
+- Cabang **`main`** (SSOT) di kedua repo **100% aman dan tidak tersentuh**.
+- Cabang **`New-Build`** di repo `SO` juga **tidak tersentuh langsung** (perubahan berada di branch `feat` yang bercabang dari `New-Build`).
+
+---
+
+### 2. Apakah `LandingPage` ini bagian dari `SO` juga?
+
+**Bukan, keduanya adalah repositori terpisah dengan peran yang saling melengkapi:**
+
+1. **`LandingPage` (Port 3001)**:
+   - Ini adalah **Alat / Laboratorium Pengujian Mandiri (*Test Harness & Workbench*)**.
+   - Di sinilah web Responsive UI Lab berjalan: menyediakan simulator berbagai ukuran HP/tablet, ring buffer untuk merekam interaksi pengguna, serta database MCard lokal berbasis SQLite untuk menyimpan riwayat audit dan sertifikasi.
+2. **`SacredOctagon` / `SO` (Port 4321)**:
+   - Ini adalah **Aplikasi Game Pembelajaran Matematika GASING** itu sendiri.
+3. **Hubungannya**:
+   - `LandingPage` bertindak sebagai **"Laboratorium Penguji"** (yang membungkus tampilan dalam iframe simulator).
+   - `SO` bertindak sebagai **"Aplikasi Target yang Diuji"**.
+   - Keduanya sengaja dipisah repositorinya agar kode game `SO` tetap bersih, ringan, dan tidak kemasukan script-script pengujian laboratorium.
+
+---
+
+### 3. Lalu perbaikan tadi masuk ke mana?
+
+Perbaikan telah dipisahkan secara tepat sesuai dengan ranahnya masing-masing:
+
+#### A. Perbaikan Tampilan Game (CSS, Tombol Sentuh, `<h1>`, Spanduk Misi)
+👉 **Masuk ke Repositori Game (`SacredOctagon` / `so`)**
+- **Branch**: `feat/responsive-touch-and-h1-conformance` (sudah di-push ke GitHub).
+- **Commit**:
+  1. [`c3547a304e`](file:///Users/yohanessurya/Documents/Development/so/worktrees/main-bf/web): Ukuran tap target 44px (input plate, tombol exit, tombol login) & heading `<h1>` semantik.
+  2. [`fa940b5ccf`](file:///Users/yohanessurya/Documents/Development/so/worktrees/main-bf/web): Kerapian bar atas HUD di landscape (sembunyikan koin sementara di layar sempit), offset spanduk misi, dan pembesaran tombol misi/panah lipat.
+- **File-file game yang diperbarui**:
+  - `web/src/components/KsatriaInputPlate.astro`
+  - `web/src/pages/welcome.astro`
+  - `web/src/pages/login.astro`
+  - `web/src/styles/pages/welcome.css`
+  - `web/src/styles/pages/login.css`
+  - `web/src/components/engines/bermain/BermainTopHudAndBanner.astro`
+  - `web/src/styles/engines/bermain/bermain-engine-1.css`
+
+#### B. Perbaikan Mesin Perekaman (Tombol Start & Handshake)
+👉 **Masuk ke Repositori Laboratorium (`LandingPage`)**
+- **Branch**: `feat/erb-infrastructure` (sudah di-push ke GitHub).
+- **Commit**:
+  - [`05603d1`](file:///Users/yohanessurya/Documents/Development/MCard_TDD/LandingPage): Mengubah `lab-probe-agent.js` menjadi *self-contained* dan menambahkan handshake ping-pong agar tombol `🔴 Start` selalu aktif normal.
+- **File-file lab yang diperbarui**:
+  - `js/harness/lab-probe-agent.js`
+  - `js/harness/capture-probe-agent.js`
+
+Kedua repo kini dalam kondisi **bersih (*clean working tree*)** dan seluruh perubahan fitur telah terunggah dengan aman ke GitHub pada branch fiturnya masing-masing.
