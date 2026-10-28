@@ -4,895 +4,908 @@
     "type": "split",
     "children": [
       {
-        "id": "648f5194b5b9dd88",
-        "type": "tabs",
+        "id": "a9d9b664cda3d962",
+        "type": "split",
         "children": [
           {
-            "id": "5117594b5dfff797",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Video 29 Sept.md",
-                "mode": "source",
-                "source": false
+            "id": "8f1cf41d46f03563",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "689a4da5739b619c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Git.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Git"
+                }
+              }
+            ]
+          },
+          {
+            "id": "648f5194b5b9dd88",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5117594b5dfff797",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Video 29 Sept.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Video 29 Sept"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Video 29 Sept"
-            }
-          },
-          {
-            "id": "da51684d972265e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Branch Proyek-4 back up.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "da51684d972265e1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Branch Proyek-4 back up.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Branch Proyek-4 back up"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Branch Proyek-4 back up"
-            }
-          },
-          {
-            "id": "37b041067bd71914",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "video yang salah.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "37b041067bd71914",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "video yang salah.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "video yang salah"
+                }
               },
-              "icon": "lucide-file",
-              "title": "video yang salah"
-            }
-          },
-          {
-            "id": "50ecc465cb493cc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "05 - Daily Notes/Note Harian - 2026-09-30 03.55.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "50ecc465cb493cc8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "05 - Daily Notes/Note Harian - 2026-09-30 03.55.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Note Harian - 2026-09-30 03.55"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Note Harian - 2026-09-30 03.55"
-            }
-          },
-          {
-            "id": "42b71542ee79c116",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3 Bedroom.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "80a227abafa54a44",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Untuk HP - PWA.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Untuk HP - PWA"
+                }
               },
-              "icon": "lucide-file",
-              "title": "3 Bedroom"
-            }
-          },
-          {
-            "id": "80a227abafa54a44",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untuk HP - PWA.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "b004fd8fd39858f3",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "New tab"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Untuk HP - PWA"
-            }
-          },
-          {
-            "id": "b004fd8fd39858f3",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "038260b142c42a7b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Proyek Kemenyan.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "038260b142c42a7b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Proyek Kemenyan.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Proyek Kemenyan"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Proyek Kemenyan"
-            }
-          },
-          {
-            "id": "eac308eb8d506a9f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dari Ben.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "eac308eb8d506a9f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Dari Ben.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Dari Ben"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Dari Ben"
-            }
-          },
-          {
-            "id": "8a9e282c6fe3eb46",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "alasan kenapa obat kanker dari Kemenyan.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "8a9e282c6fe3eb46",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "alasan kenapa obat kanker dari Kemenyan.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "alasan kenapa obat kanker dari Kemenyan"
+                }
               },
-              "icon": "lucide-file",
-              "title": "alasan kenapa obat kanker dari Kemenyan"
-            }
-          },
-          {
-            "id": "a3559506a452fd50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ben Koo No 59.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "a3559506a452fd50",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Ben Koo No 59.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Ben Koo No 59"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Ben Koo No 59"
-            }
-          },
-          {
-            "id": "612dc41c059e9938",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "fc7ceee107215cd8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ben Koo No 58.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "612dc41c059e9938",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "New tab"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Ben Koo No 58"
-            }
-          },
-          {
-            "id": "d9e39d1c72f419bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uji devices.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "fc7ceee107215cd8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Ben Koo No 58.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Ben Koo No 58"
+                }
               },
-              "icon": "lucide-file",
-              "title": "uji devices"
-            }
-          },
-          {
-            "id": "182480ca59acd8c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Aturan SSOT Bertualang.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "d9e39d1c72f419bf",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "uji devices.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "uji devices"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Aturan SSOT Bertualang"
-            }
-          },
-          {
-            "id": "072b1e259d976a1a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Videos/potongan video/Obsidian dan AI.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "182480ca59acd8c7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Aturan SSOT Bertualang.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Aturan SSOT Bertualang"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Obsidian dan AI"
-            }
-          },
-          {
-            "id": "8dfd063f9871ffcc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "membuat cinematic movie.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "42b71542ee79c116",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Navigasi.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Navigasi"
+                }
               },
-              "icon": "lucide-file",
-              "title": "membuat cinematic movie"
-            }
-          },
-          {
-            "id": "2cd1381c5d5ab843",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software 1.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "072b1e259d976a1a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Videos/potongan video/Obsidian dan AI.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Obsidian dan AI"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Software 1"
-            }
-          },
-          {
-            "id": "74a6b7e7557d89e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "local AI.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "8dfd063f9871ffcc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "membuat cinematic movie.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "membuat cinematic movie"
+                }
               },
-              "icon": "lucide-file",
-              "title": "local AI"
-            }
-          },
-          {
-            "id": "86d5e16d309fddff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Google flow Movie 1.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "2cd1381c5d5ab843",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Software 1.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Software 1"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Google flow Movie 1"
-            }
-          },
-          {
-            "id": "3b80ed3a692491bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Navigasi.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "74a6b7e7557d89e0",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "local AI.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "local AI"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Navigasi"
-            }
-          },
-          {
-            "id": "fa33e32a921c561a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "navigasi 2.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "86d5e16d309fddff",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Google flow Movie 1.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Google flow Movie 1"
+                }
               },
-              "icon": "lucide-file",
-              "title": "navigasi 2"
-            }
-          },
-          {
-            "id": "9d801409037b195d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ben KOO/Dari Ben.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "3b80ed3a692491bd",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Navigasi.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Navigasi"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Dari Ben"
-            }
-          },
-          {
-            "id": "7a2c25580e334d5a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dari Ben.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "fa33e32a921c561a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "navigasi 2.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "navigasi 2"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Dari Ben"
-            }
-          },
-          {
-            "id": "29c421e7d10a4d5c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Peringatan no. 59.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "9d801409037b195d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Ben KOO/Dari Ben.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Dari Ben"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Peringatan no. 59"
-            }
-          },
-          {
-            "id": "da56ab4d6214d97c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Penjelasan Ben Koo no 73.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "7a2c25580e334d5a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Dari Ben.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Dari Ben"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Penjelasan Ben Koo no 73"
-            }
-          },
-          {
-            "id": "d3bd9d56cbf0381d",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "cab0b2630e7314e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Apps keuangan.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "29c421e7d10a4d5c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Peringatan no. 59.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Peringatan no. 59"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Apps keuangan"
-            }
-          },
-          {
-            "id": "aacc2ccdeec0c688",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Iphone.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "da56ab4d6214d97c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Penjelasan Ben Koo no 73.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Penjelasan Ben Koo no 73"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Iphone"
-            }
-          },
-          {
-            "id": "7fcc8b15323a1b68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Perbaikan SO2.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "d3bd9d56cbf0381d",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "New tab"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Perbaikan SO2"
-            }
-          },
-          {
-            "id": "1b7f1f95b95cd8b9",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Server.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
+              {
+                "id": "cab0b2630e7314e6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Apps keuangan.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Apps keuangan"
+                }
               },
-              "icon": "links-going-out",
-              "title": "Outgoing links"
-            }
-          },
-          {
-            "id": "3dd7646d3b4b72c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Perbaikan SO3.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "aacc2ccdeec0c688",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Iphone.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Iphone"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Perbaikan SO3"
-            }
-          },
-          {
-            "id": "3163a26f17c3cb10",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "perbaikan SO 4.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "7fcc8b15323a1b68",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Perbaikan SO2.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Perbaikan SO2"
+                }
               },
-              "icon": "lucide-file",
-              "title": "perbaikan SO 4"
-            }
-          },
-          {
-            "id": "08cc4e8786c1888c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Perbaikan SO5.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "1b7f1f95b95cd8b9",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Server.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Perbaikan SO5"
-            }
-          },
-          {
-            "id": "f5438470209590b7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Perbaikan SO6.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "3dd7646d3b4b72c6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Perbaikan SO3.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Perbaikan SO3"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Perbaikan SO6"
-            }
-          },
-          {
-            "id": "1fc985ccae981f8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Perbaikan SO7.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "3163a26f17c3cb10",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "perbaikan SO 4.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "perbaikan SO 4"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Perbaikan SO7"
-            }
-          },
-          {
-            "id": "ef2b33c901d71a95",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Server.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "08cc4e8786c1888c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Perbaikan SO5.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Perbaikan SO5"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Server"
-            }
-          },
-          {
-            "id": "9516245500eeccef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "pemakaian PWA.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "f5438470209590b7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Perbaikan SO6.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Perbaikan SO6"
+                }
               },
-              "icon": "lucide-file",
-              "title": "pemakaian PWA"
-            }
-          },
-          {
-            "id": "4a77fafda43ca34a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Perbaikan Perkalian.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "1fc985ccae981f8a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Perbaikan SO7.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Perbaikan SO7"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Perbaikan Perkalian"
-            }
-          },
-          {
-            "id": "8faa4c94cf171fbf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Perbaikan Pengurangan.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "ef2b33c901d71a95",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Server.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Server"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Perbaikan Pengurangan"
-            }
-          },
-          {
-            "id": "532b57b87503bb86",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Penjumlahan audit.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "9516245500eeccef",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "pemakaian PWA.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "pemakaian PWA"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Penjumlahan audit"
-            }
-          },
-          {
-            "id": "f064360989cc15d7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Pedoman edit.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "4a77fafda43ca34a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Perbaikan Perkalian.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Perbaikan Perkalian"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Pedoman edit"
-            }
-          },
-          {
-            "id": "c1d02a219e88fedb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Audit Mengenal Bilangan.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "8faa4c94cf171fbf",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Perbaikan Pengurangan.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Perbaikan Pengurangan"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Audit Mengenal Bilangan"
-            }
-          },
-          {
-            "id": "82a0efcbf3a512b7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Audit Perkalian.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "532b57b87503bb86",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Penjumlahan audit.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Penjumlahan audit"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Audit Perkalian"
-            }
-          },
-          {
-            "id": "c507335a3849b8c0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Audit Pengurangan.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "f064360989cc15d7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Pedoman edit.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Pedoman edit"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Audit Pengurangan"
-            }
-          },
-          {
-            "id": "0bc30e89133839dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Audit Pembagian.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "c1d02a219e88fedb",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Audit Mengenal Bilangan.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Audit Mengenal Bilangan"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Audit Pembagian"
-            }
-          },
-          {
-            "id": "4fee9d5489b46909",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Server.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "82a0efcbf3a512b7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Audit Perkalian.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Audit Perkalian"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Server"
-            }
-          },
-          {
-            "id": "87206f358e2fef45",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zona 5.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "c507335a3849b8c0",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Audit Pengurangan.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Audit Pengurangan"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Zona 5"
-            }
-          },
-          {
-            "id": "7ed06bef12517c8e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tips and tricks.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "0bc30e89133839dc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Audit Pembagian.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Audit Pembagian"
+                }
               },
-              "icon": "lucide-file",
-              "title": "tips and tricks"
-            }
-          },
-          {
-            "id": "77a2dafe3257a6de",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Server.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "4fee9d5489b46909",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Server.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Server"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Server"
-            }
-          },
-          {
-            "id": "18c2505b28794e43",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Umur Panjang.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "87206f358e2fef45",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Zona 5.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Zona 5"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Umur Panjang"
-            }
-          },
-          {
-            "id": "689a4da5739b619c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "7ed06bef12517c8e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "tips and tricks.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "tips and tricks"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Git"
-            }
-          },
-          {
-            "id": "5289d11f35b97793",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fashion.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "77a2dafe3257a6de",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Server.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Server"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Fashion"
-            }
-          },
-          {
-            "id": "14d3f5b11c6f9496",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SOlusi Soal.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "18c2505b28794e43",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Umur Panjang.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Umur Panjang"
+                }
               },
-              "icon": "lucide-file",
-              "title": "SOlusi Soal"
-            }
-          },
-          {
-            "id": "1e938923bb07ee73",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Solusi pakai sistemik.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "5289d11f35b97793",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Fashion.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Fashion"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Solusi pakai sistemik"
-            }
-          },
-          {
-            "id": "8704586a3e2e8cbc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Server.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "14d3f5b11c6f9496",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "SOlusi Soal.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "SOlusi Soal"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Server"
-            }
-          },
-          {
-            "id": "ca3c7028ef8a841b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Membuat Video.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "1e938923bb07ee73",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Solusi pakai sistemik.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Solusi pakai sistemik"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Membuat Video"
-            }
-          },
-          {
-            "id": "23133cbcae556c1d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Membuat video laga.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "8704586a3e2e8cbc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Server.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Server"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Membuat video laga"
-            }
-          },
-          {
-            "id": "7b0248e80c1cefb3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sprint 1 Bermain.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "ca3c7028ef8a841b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Membuat Video.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Membuat Video"
+                }
               },
-              "icon": "lucide-file",
-              "title": "sprint 1 Bermain"
-            }
-          },
-          {
-            "id": "1a838d333555d2a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Navigasi.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "23133cbcae556c1d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Membuat video laga.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Membuat video laga"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Navigasi"
-            }
-          },
-          {
-            "id": "fbedf5df31dc585a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Video buat.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "7b0248e80c1cefb3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "sprint 1 Bermain.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "sprint 1 Bermain"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Video buat"
-            }
-          },
-          {
-            "id": "9408b3cede2c0a7b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "super Apps Gemini.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "1a838d333555d2a1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Navigasi.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Navigasi"
+                }
               },
-              "icon": "lucide-file",
-              "title": "super Apps Gemini"
-            }
-          },
-          {
-            "id": "254e8946ed2a61b7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cara gitpull PullRequest.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "fbedf5df31dc585a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Video buat.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Video buat"
+                }
               },
-              "icon": "lucide-file",
-              "title": "cara gitpull PullRequest"
-            }
-          },
-          {
-            "id": "b092a98e89361738",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sprints untuk devices berbeda.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "9408b3cede2c0a7b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "super Apps Gemini.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "super Apps Gemini"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Sprints untuk devices berbeda"
-            }
+              {
+                "id": "254e8946ed2a61b7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "cara gitpull PullRequest.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "cara gitpull PullRequest"
+                }
+              },
+              {
+                "id": "b092a98e89361738",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Sprints untuk devices berbeda.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Sprints untuk devices berbeda"
+                }
+              }
+            ],
+            "currentTab": 14
           }
         ],
-        "currentTab": 21
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -1112,14 +1125,17 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false
     }
   },
-  "active": "fa33e32a921c561a",
+  "active": "42b71542ee79c116",
   "lastOpenFiles": [
+    "navigasi 2.md",
     "Screenshot 2026-10-27 at 14.13.26.png",
     "Navigasi.md",
-    "navigasi 2.md",
     "Audit Mengenal Bilangan.md",
     "Aturan SSOT Bertualang.md",
     "Software 1.md",
@@ -1161,7 +1177,6 @@
     "Ben KOO",
     "Screenshoot/Screenshot 2026-09-30 at 16.49.45.png",
     "Screenshoot/Screenshot 2026-09-30 at 16.49.53.png",
-    "Screenshoot/Screenshot 2026-09-30 at 16.49.06.png",
     "02 - Resources/Videos/potongan video",
     "Untitled.canvas"
   ]
